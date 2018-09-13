@@ -1,0 +1,14 @@
+public class ArrayMaker {
+    public static int[] array(int i){
+        return new int[i];
+    }
+
+    public static void main(String[] args){
+        int i;
+
+        System.out.print("Please input an array length: ");
+        i = TextIO.getlnInt();
+
+        array(i);
+    }
+}

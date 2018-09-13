@@ -1,0 +1,57 @@
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class WordCloud extends JPanel {
+    ArrayList<Word> fileText;
+
+    public WordCloud(String file){
+        try {
+            Scanner filein = new Scanner(new FileReader(file));
+
+            do{
+                String input = filein.next();
+                arraySearch(input);
+            } while  (filein.hasNext());
+        }
+        catch (FileNotFoundException e){
+            fileText.add(new Word(file));
+        }
+    }
+
+    private void arraySearch(String search) {
+        for (Word str : fileText) {
+            if (search.equals(str.word)) {
+                str.frequency++;
+                return;
+            }
+        }
+
+        fileText.add(new Word(search));
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        Font font = new Font("Main", Font.PLAIN, 12);
+        for(Word word : fileText){
+            g.setFont(new Font("Font", Font.PLAIN, 12 * word.frequency));
+
+        }
+    }
+
+    class Word{
+    String word;
+    int frequency;
+
+    Word(){ }
+    Word(String word){
+        this.word = word;
+        this.frequency = 1;
+    }
+}
+}

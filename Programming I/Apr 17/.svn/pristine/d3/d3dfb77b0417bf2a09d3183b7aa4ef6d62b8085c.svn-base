@@ -1,0 +1,56 @@
+import javax.swing.*;
+import javax.swing.border.Border;
+import javax.swing.event.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class RotatingTextPanel extends JPanel implements ActionListener{
+
+    public RotatingTextPanel() {
+        //region Components
+        //region Buttons
+        JButton drawButton = new JButton("Draw");
+        drawButton.addActionListener(this);
+        JButton rotateButton = new JButton("Rotate");
+        rotateButton.addActionListener(this);
+        //#endregion
+
+        //region Text Box
+        JTextArea textBox = new JTextArea("Insert Text Here");
+        //#endregion
+        //#endregion
+
+        //region Layout
+        //region rightPanel
+        JPanel control = new JPanel();
+        control.setLayout(new GridLayout(0,1));
+        control.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        control.add(drawButton);
+        control.add(rotateButton);
+        control.add(textBox);
+        //#endregion
+        //leftPanel
+        JPanel draw = new JPanel();
+        draw.setBackground(Color.BLACK);
+        //#endregion
+
+        setLayout(new GridLayout(0, 2));
+        add(draw);
+        add(control);
+        //#endregion
+
+
+    }
+
+    public void actionPerformed (ActionEvent evt){
+
+    }
+
+    public void Paint(Graphics g){
+        Graphics2D g2 = (Graphics2D)g;
+        g2.setRenderingHint( RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON );
+        g2.setFont(new Font("Serif", Font.PLAIN, 94));
+
+        g2.drawString("test", 50, 50);
+    }
+}

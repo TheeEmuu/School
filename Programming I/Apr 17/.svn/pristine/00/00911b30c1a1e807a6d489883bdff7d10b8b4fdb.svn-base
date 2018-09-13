@@ -1,0 +1,73 @@
+import javax.swing.*;
+import javax.swing.border.Border;
+import javax.swing.event.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class RotatingTextPanel extends JPanel implements ActionListener{
+
+    //region Components
+    private JTextField textBox;
+    private JButton drawButton;
+    private JButton rotateButton;
+    private RandomStringsPanel draw;
+    //#endregion
+    public RotatingTextPanel() {
+        createComponents();
+        createLayout();
+        attachListeners();
+    }
+
+    private void attachListeners() {
+        drawButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                draw = new RandomStringsPanel(getMessage());
+                repaint();
+            }
+        });
+    }
+
+    private void createLayout() {
+        //region Layout
+        //region control
+        JPanel control = new JPanel();
+        control.setLayout(new FlowLayout());
+        control.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        control.add(textBox);
+        control.add(drawButton);
+        control.add(rotateButton);
+        //#endregion
+
+        //region draw
+        draw = new RandomStringsPanel();
+        //#endregion
+
+
+        setLayout(new BorderLayout(5, 7));
+        add(draw, BorderLayout.CENTER);
+        add(control, BorderLayout.SOUTH);
+        //#endregion
+    }
+
+    private void createComponents() {
+        //region Buttons
+        drawButton = new JButton("Draw");
+        drawButton.addActionListener(this);
+        rotateButton = new JButton("Rotate");
+        rotateButton.addActionListener(this);
+        //#endregion
+
+        //region Text Box
+        textBox = new JTextField("Insert Text Here");
+        //#endregion
+    }
+
+    public String getMessage(){
+        return textBox.getText();
+    }
+
+    public void actionPerformed (ActionEvent evt){
+
+    }
+}

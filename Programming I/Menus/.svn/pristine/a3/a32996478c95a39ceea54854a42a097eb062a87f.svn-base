@@ -1,0 +1,53 @@
+import edu.lvc.cds.menus.Menu;
+import edu.lvc.cds.menus.MenuItem;
+
+public class Application {
+	// currently unused, simply here to exhibit that applications can have system-wide data,
+	// stored here and initialized on construction
+	private String restaurant;
+	
+	public Application(String name) {
+		this.restaurant = name;
+	}
+
+	// methods this application uses to do its work.
+	public void operation1(){}
+	public void operation2(){}
+	public void operation3(){}
+
+	public void run() {
+		// create, display and execute a menu of options.
+		Menu menu = new Menu();
+
+		MenuItem item1 = new MenuItem("option 1") {
+			@Override
+			public void perform() {
+				System.out.println("Option 1 selected");
+			}
+		};
+		MenuItem item2 = new MenuItem("option 2") {
+			@Override
+			public void perform() {
+				System.out.println("Option 2 selected");
+			}
+		};
+		MenuItem item3 = new MenuItem("option 3") {
+			@Override
+			public void perform() {
+				System.out.println("Option 3 selected");
+			}
+		};
+
+		
+		menu.addItem(item1);
+		menu.addItem(item2);
+		menu.addItem(item3);
+
+
+
+		// add items to the menu, then present it.
+		menu.presentRepeatedly();
+	}
+	
+	
+}

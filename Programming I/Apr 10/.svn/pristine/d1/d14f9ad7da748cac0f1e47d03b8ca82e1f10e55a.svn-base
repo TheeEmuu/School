@@ -1,0 +1,41 @@
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.io.FileReader;
+import javax.swing.JFrame;
+import java.util.ArrayList;
+
+/**
+ * A program that shows a RandomStringsPanel as its content pane.
+ */
+public class RandomStrings {
+    
+    public static void main(String[] args) {
+        ArrayList<String> words = new ArrayList<String>();
+
+        try {
+            Scanner file = new Scanner(new FileReader("RandomStrings.txt"));
+            while(file.hasNext()){
+                String checkWord = file.next();
+                String[] wordsArray = (String[]) words.toArray();
+                for(int i = 0; i < words.size(); i++){
+                    if (checkWord.equals(wordsArray[i]))
+                        ArrayList.add(checkWord);
+                }
+            }
+        }
+        catch(FileNotFoundException e){
+        }
+
+
+
+        JFrame window = new JFrame("Java!");
+        RandomStringsPanel content = new RandomStringsPanel();
+        window.setContentPane(content);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setLocation(120,70);
+        window.setSize(350,250);
+        window.setVisible(true);
+    }
+
+}
+
