@@ -1,0 +1,134 @@
+import  java.util.Random;
+
+public class Date {
+    //region Variables
+    private int year;
+    private String month;
+    private int day;
+    //endregion
+
+    //region Constructors
+    public Date(int year, int month, int day){
+        this.year = year;
+        this.month = numberToMonth(month);
+        this.day = day;
+    }
+
+    public Date(int year, String month, int day){
+        this.year = year;
+        this.month = month;
+        this.day = day;
+    }
+
+    public Date(){
+        Random random = new Random();
+
+        this.year = 1900 + random.nextInt(200);
+        this.month = numberToMonth(random.nextInt(12) + 1);
+        this.day = random.nextInt(daysInMonth(this.month, this.year)) + 1;
+    }
+    //endregion
+
+    //region Accessors
+    public int getYear() {
+        return year;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public int getDay() {
+        return day;
+    }
+
+    public String getDate(){
+        return String.format("%d %s,%d", day, month, year);
+    }
+    //endregion
+
+    protected static String numberToMonth(int month){
+        if(month == 1){
+            return "January";
+        }
+        if(month == 2){
+            return "February";
+        }
+        if(month == 3){
+            return "March";
+        }
+        if(month == 4){
+            return "April";
+        }
+        if(month == 5){
+            return "May";
+        }
+        if(month == 6){
+            return "June";
+        }
+        if(month == 7){
+            return "July";
+        }
+        if(month == 8){
+            return "August";
+        }
+        if(month == 9){
+            return "September";
+        }
+        if(month == 10){
+            return "October";
+        }
+        if(month == 11){
+            return "November";
+        }
+        if(month == 12){
+            return "December";
+        }
+
+        return "January";
+    }
+
+    protected static int daysInMonth(String month , int year){
+        if (month.equals("January")){
+            return 31;
+        }
+        if (month.equals("February")){
+            if (year % 4 == 0){
+                return 29;
+            }
+            else return 28;
+        }
+        if (month.equals("March")){
+            return 31;
+        }
+        if (month.equals("April")){
+            return 30;
+        }
+        if (month.equals("May")){
+            return 31;
+        }
+        if (month.equals("June")){
+            return 30;
+        }
+        if (month.equals("July")){
+            return 31;
+        }
+        if (month.equals("August")){
+            return 31;
+        }
+        if (month.equals("September")){
+            return 30;
+        }
+        if (month.equals("October")){
+            return 31;
+        }
+        if (month.equals("November")){
+            return 30;
+        }
+        if (month.equals("December")){
+            return 31;
+        }
+        return 0;
+    }
+}
+

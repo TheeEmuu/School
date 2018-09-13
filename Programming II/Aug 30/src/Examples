@@ -1,0 +1,15 @@
+Ex. 2
+    a
+    d
+    e
+    f
+    g
+    h
+
+Ex. 3
+    Double    extends Number
+    Integer   extends Number
+    Number    extends Object
+    Stack     extends Vector
+    Hashtable extends Dictionary
+
