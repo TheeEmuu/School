@@ -2,36 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03cbdfc5-b4dc-4901-a702-80cee2f0d4a9" name="Default Changelist" comment="Fixing sept 18">
-      <change afterPath="$PROJECT_DIR$/../Sept 17/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/Sept 18.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractListIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractSet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractStructure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AllPrime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Assert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedAssertion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedInvariant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedPostcondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedPrecondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Primes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Set.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/SetVector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/SinglyLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/SinglyLinkedListIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/StructCollection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Structure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Vector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/VectorIterator.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Silver Dollar Game/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 13/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sept 13/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Assert.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Assert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/CoinStrip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/CoinStrip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedAssertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedInvariant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedInvariant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedPostcondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedPostcondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedPrecondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedPrecondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Primes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Set.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/SetVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/SetVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/SinglyLinkedListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/SinglyLinkedListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/StructCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/StructCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Structure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Structure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/VectorIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/VectorIterator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,58 +72,75 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FailedAssertion.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AllPrime.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AllPrime.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/List.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="SetVector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SetVector.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="AbstractStructure.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AbstractStructure.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="AbstractListIterator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AbstractListIterator.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="FailedInvariant.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FailedInvariant.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="SinglyLinkedListIterator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SinglyLinkedListIterator.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Primes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Primes.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="StructCollection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StructCollection.java">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Vector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="563">
+              <caret line="484" column="4" selection-start-line="484" selection-start-column="4" selection-end-line="496" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>iterator</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -133,11 +153,20 @@
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2552" />
-    <option name="y" value="-444" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -145,8 +174,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,11 +192,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Programs/Git/mingw64/bin/git.exe" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Progarmming Quiz 2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -187,6 +218,49 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\pengu\AppData\Roaming\Subversion</configuration>
   </component>
@@ -197,6 +271,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537419786781</updated>
+      <workItem from="1537460859321" duration="1347000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing sept 18">
       <created>1537420023072</created>
@@ -208,35 +283,43 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1347000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="2552" y="-444" width="1936" height="1096" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33528784" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3392094" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -275,6 +358,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StructCollection.java">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FailedAssertion.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/List.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetVector.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractStructure.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractListIterator.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FailedInvariant.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SinglyLinkedListIterator.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StructCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="484" column="4" selection-start-line="484" selection-start-column="4" selection-end-line="496" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Primes.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AllPrime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

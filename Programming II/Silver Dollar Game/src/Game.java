@@ -1,3 +1,5 @@
+import structure.Vector;
+
 import java.util.Scanner;
 
 public class Game {
@@ -17,6 +19,13 @@ public class Game {
         player1 = input.next();
         System.out.print("\nPlease enter Player 2's name: ");
         player2 = input.next();
+
+        System.out.println(
+                "\nThe Silver Dollar Game is played by inputting a number\n" +
+                "for the coin you want to move, followed by how many\n" +
+                "you want it to move left.\n\n" +
+                        "The game is won by moving all of the coins to the far left\n" +
+                        "of the board.\n");
     }
 
     public void play(){

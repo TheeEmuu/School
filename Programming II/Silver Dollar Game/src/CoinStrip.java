@@ -1,4 +1,4 @@
-import java.util.Random;
+import structure.Vector;
 
 public class CoinStrip {
     //region Variables
