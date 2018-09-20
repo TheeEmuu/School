@@ -37,10 +37,18 @@ public class CoinStrip {
         return(int)(Math.random() * 100/p) == 1;
     }
 
+    //region Get
     public Vector getCoinStrip(){return coinStrip;}
     public int getCoin(int coin){return (int)coinStrip.get(coin);}
     public int getTotalCoins(){return totalCoins;}
+    //endregion
 
+    /*
+    Checks to see if move is legal before moving
+    If it's legal, the move is made
+
+    return: whether the move was legal or not
+     */
     public boolean move(int coinNumber, int moves){
         if(isLegalMove(coinNumber, moves)){
             coinStrip.set(coinNumber, (int) coinStrip.get(coinNumber) - moves);
@@ -50,6 +58,12 @@ public class CoinStrip {
         return false;
     }
 
+    /*
+    Checks if coinNumber is out of bounds
+    Checks if the coin would pass another
+
+    return: Whether or not the move is legal
+     */
     private boolean isLegalMove(int coinNumber, int moves){
         if(coinNumber >= totalCoins)
             return false;
