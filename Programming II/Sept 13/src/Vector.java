@@ -125,6 +125,16 @@ public class Vector
         elementData[elementCount] = null; // free reference
         return result;
     }
+
+    public Object remove(Object item) {
+        for(int i = 0; i < this.elementCount; ++i) {
+            if (item == this.elementData[i]) {
+                this.remove(i);
+            }
+        }
+
+        return null;
+    }
     
     /**
      * Determine if the Vector contains no values.      
@@ -487,5 +497,28 @@ public class Vector
         return sb.toString();
     }
 
+    public void trimToSize(){
+        int index = elementCount - 1;
+        boolean trim = false;
+
+        while(index >= 0){
+            if(get(index).equals(initialValue))
+                index--;
+            else {
+                trim = true;
+                break;
+            }
+        }
+
+        if(trim){
+            Vector temp = new Vector(index);
+            for(int i = 0; i < index + 1; i++){
+                temp.add(elementData[i]);
+            }
+
+            elementData = new Object[index+1];
+            temp.copyInto(elementData);
+        }
+    }
 }
 
