@@ -51,6 +51,9 @@ public class CoinStrip {
     }
 
     private boolean isLegalMove(int coinNumber, int moves){
+        if(coinNumber >= totalCoins)
+            return false;
+
         if(coinNumber > 0) {
             int newPosition = (int) coinStrip.get(coinNumber) - moves;
 
