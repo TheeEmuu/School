@@ -2,15 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="659ba67b-0952-4c6c-a953-eb958d86bd13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 17/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AbstractIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AbstractList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AbstractListIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AbstractSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AbstractStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AllPrime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Assert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/FailedAssertion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/FailedInvariant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/FailedPostcondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/FailedPrecondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Primes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/SetVector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/SinglyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/SinglyLinkedListIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/StructCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Structure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Vector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 18/src/VectorIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector/Assert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector/FailedAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FailedAssertion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector/FailedInvariant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FailedInvariant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector/FailedPostcondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FailedPostcondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector/FailedPrecondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FailedPrecondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/Sept 18.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractListIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractStructure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AllPrime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Assert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedAssertion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedInvariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedPostcondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedPrecondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/List.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Primes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/SetVector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/SinglyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/SinglyLinkedListIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/StructCollection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Structure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Vector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 17/src/VectorIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sept 18/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +66,7 @@
     <session id="223209302">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="2" />
@@ -46,11 +89,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="769" />
+          <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="769" />
+          <entry key="PLAIN_TEXT" value="38" />
         </counts>
       </usages-collector>
     </session>
@@ -141,8 +186,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Test.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="184">
-                  <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+                <state relative-caret-position="207">
+                  <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -236,7 +281,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537419950108" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537419992050" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sept 17" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -277,6 +322,14 @@
       <option name="presentableId" value="Default" />
       <updated>1536850925459</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finishing up before programming quiz">
+      <created>1537419818099</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537419818099</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -293,7 +346,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,6 +366,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finishing up before programming quiz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishing up before programming quiz" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Problems">
@@ -392,8 +449,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="207">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
