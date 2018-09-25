@@ -10,7 +10,7 @@ public class Test {
         m.set(1,0,4);
         m.set(1,1,5);
         m.set(1,2,6);
-        
+
         System.out.println(m);
         System.out.println(m.transpose());
 
