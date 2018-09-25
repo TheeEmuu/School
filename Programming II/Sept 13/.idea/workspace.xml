@@ -2,61 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="659ba67b-0952-4c6c-a953-eb958d86bd13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Sept 17/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AbstractIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AbstractList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AbstractListIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AbstractSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AbstractStructure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/AllPrime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Assert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/FailedAssertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/FailedInvariant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/FailedPostcondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/FailedPrecondition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Primes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Set.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/SetVector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/SinglyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/SinglyLinkedListIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/StructCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Structure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/Vector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Sept 18/src/VectorIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Silver Dollar Game/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/Sept 18.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractListIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractSet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AbstractStructure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/AllPrime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Assert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedAssertion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedInvariant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedPostcondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/FailedPrecondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/List.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Primes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Set.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/SetVector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/SinglyLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/SinglyLinkedListIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/StructCollection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Structure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/Vector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 17/src/VectorIterator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Sept 18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sept 18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Assert.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Assert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/CoinStrip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/CoinStrip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedAssertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedInvariant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedInvariant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedPostcondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedPostcondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedPrecondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedPrecondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Primes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Set.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/SetVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/SetVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/SinglyLinkedListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/SinglyLinkedListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/StructCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/StructCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Structure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Structure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/VectorIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/VectorIterator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,124 +79,96 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.67403847">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Problems">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="69">
-                  <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Assert.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="69">
-                  <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/FailedAssertion.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/FailedInvariant.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/FailedPostcondition.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/FailedPrecondition.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="184">
-                  <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Vector.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
-                  <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
-                  <folding>
-                    <element signature="method#Vector#0;class#Vector#0" />
-                    <element signature="method#Vector#1;class#Vector#0" />
-                    <element signature="method#set#0;class#Vector#0" />
-                    <element signature="method#add#0;class#Vector#0" />
-                    <element signature="method#add#1;class#Vector#0" />
-                    <element signature="method#remove#0;class#Vector#0" />
-                    <element signature="method#ensureCapacity#0;class#Vector#0" />
-                    <element signature="method#clone#0;class#Vector#0" />
-                    <element signature="method#contains#0;class#Vector#0" />
-                    <element signature="method#copyInto#0;class#Vector#0" />
-                    <element signature="method#indexOf#1;class#Vector#0" />
-                    <element signature="method#lastIndexOf#1;class#Vector#0" />
-                    <element signature="docComment;method#setSize#0;class#Vector#0" />
-                    <element signature="method#toString#0;class#Vector#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Test.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Vector.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="179">
-                  <caret line="264" column="24" selection-start-line="264" selection-start-column="16" selection-end-line="264" selection-end-column="24" />
-                  <folding>
-                    <element signature="method#Vector#0;class#Vector#0" />
-                    <element signature="method#add#1;class#Vector#0" />
-                    <element signature="method#ensureCapacity#0;class#Vector#0" />
-                    <element signature="method#contains#0;class#Vector#0" />
-                    <element signature="method#indexOf#1;class#Vector#0" />
-                    <element signature="method#lastIndexOf#1;class#Vector#0" />
-                    <element signature="e#11254#11255#0" expanded="true" />
-                    <element signature="e#11280#11281#0" expanded="true" />
-                    <element signature="method#toString#0;class#Vector#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Problems" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Problems">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Assert.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Assert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FailedAssertion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FailedAssertion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FailedInvariant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FailedInvariant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FailedPostcondition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FailedPostcondition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FailedPrecondition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FailedPrecondition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vector.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Vector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="128" column="35" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
+              <folding>
+                <element signature="method#Vector#0;class#Vector#0" />
+                <element signature="method#Vector#1;class#Vector#0" />
+                <element signature="method#set#0;class#Vector#0" />
+                <element signature="method#add#0;class#Vector#0" />
+                <element signature="method#add#1;class#Vector#0" />
+                <element signature="method#remove#0;class#Vector#0" />
+                <element signature="method#ensureCapacity#0;class#Vector#0" />
+                <element signature="method#clone#0;class#Vector#0" />
+                <element signature="method#contains#0;class#Vector#0" />
+                <element signature="method#copyInto#0;class#Vector#0" />
+                <element signature="method#indexOf#1;class#Vector#0" />
+                <element signature="method#lastIndexOf#1;class#Vector#0" />
+                <element signature="docComment;method#setSize#0;class#Vector#0" />
+                <element signature="method#toString#0;class#Vector#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -230,6 +180,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>initialValue</find>
+      <find>remove</find>
+      <find>trim</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -245,6 +197,15 @@
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
@@ -259,6 +220,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,14 +239,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537419992050" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sept 17" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -301,9 +264,6 @@
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Sept 13" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -321,6 +281,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536850925459</updated>
+      <workItem from="1537461730092" duration="1236000" />
     </task>
     <task id="LOCAL-00001" summary="Finishing up before programming quiz">
       <created>1537419818099</created>
@@ -332,37 +293,44 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1236000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17329094" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17521368" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -374,59 +342,56 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Problems">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
+        <state relative-caret-position="78">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
+        <state relative-caret-position="78">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FailedAssertion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="182">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FailedInvariant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="182">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FailedPostcondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FailedPrecondition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="208">
           <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FailedPostcondition.java">
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Sept 17/out/production/Sept 17/Vector.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="73" column="5" lean-forward="true" selection-start-line="65" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#5714#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="234">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="2522">
           <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
           <folding>
             <element signature="method#Vector#0;class#Vector#0" />
@@ -447,10 +412,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problems">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FailedAssertion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FailedInvariant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FailedPrecondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FailedPostcondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sept 17/out/production/Sept 17/Vector.class" />
     <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="234">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="128" column="35" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
+          <folding>
+            <element signature="method#Vector#0;class#Vector#0" />
+            <element signature="method#Vector#1;class#Vector#0" />
+            <element signature="method#set#0;class#Vector#0" />
+            <element signature="method#add#0;class#Vector#0" />
+            <element signature="method#add#1;class#Vector#0" />
+            <element signature="method#remove#0;class#Vector#0" />
+            <element signature="method#ensureCapacity#0;class#Vector#0" />
+            <element signature="method#clone#0;class#Vector#0" />
+            <element signature="method#contains#0;class#Vector#0" />
+            <element signature="method#copyInto#0;class#Vector#0" />
+            <element signature="method#indexOf#1;class#Vector#0" />
+            <element signature="method#lastIndexOf#1;class#Vector#0" />
+            <element signature="docComment;method#setSize#0;class#Vector#0" />
+            <element signature="method#toString#0;class#Vector#0" />
+          </folding>
         </state>
       </provider>
     </entry>
