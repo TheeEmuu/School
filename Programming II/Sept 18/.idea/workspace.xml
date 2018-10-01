@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03cbdfc5-b4dc-4901-a702-80cee2f0d4a9" name="Default Changelist" comment="Fixing sept 18">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Silver Dollar Game/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sept 13/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sept 13/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/AbstractStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/AbstractStructure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Assert.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Assert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/CoinStrip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/CoinStrip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedAssertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedAssertion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedInvariant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedInvariant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedPostcondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedPostcondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/FailedPrecondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/FailedPrecondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Primes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Set.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/SetVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/SetVector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/SinglyLinkedListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/SinglyLinkedListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/StructCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/StructCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Structure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Structure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/Vector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Silver Dollar Game/src/VectorIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Silver Dollar Game/src/structure/VectorIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 25/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sept 25/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sept 25/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sept 25/src/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -129,7 +103,7 @@
       <file leaf-file-name="Vector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
+            <state relative-caret-position="11466">
               <caret line="484" column="4" selection-start-line="484" selection-start-column="4" selection-end-line="496" selection-end-column="5" />
             </state>
           </provider>
@@ -174,6 +148,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -192,13 +167,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Progarmming Quiz 2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sept 25" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -272,6 +249,7 @@
       <option name="presentableId" value="Default" />
       <updated>1537419786781</updated>
       <workItem from="1537460859321" duration="1347000" />
+      <workItem from="1537895834772" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing sept 18">
       <created>1537420023072</created>
@@ -284,7 +262,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1347000" />
+    <option name="totallyTimeSpent" value="1382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -296,14 +274,14 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3392094" />
-      <window_info anchor="right" id="Database" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3434829" />
+      <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -329,6 +307,48 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fixing sept 18" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/AllPrime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/List.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SetVector.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractStructure.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractListIterator.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FailedInvariant.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SinglyLinkedListIterator.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Primes.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StructCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11466">
+          <caret line="484" column="4" selection-start-line="484" selection-start-column="4" selection-end-line="496" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FailedAssertion.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -389,7 +409,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
+        <state relative-caret-position="11466">
           <caret line="484" column="4" selection-start-line="484" selection-start-column="4" selection-end-line="496" selection-end-column="5" />
         </state>
       </provider>
@@ -407,9 +427,80 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Sept 18</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
