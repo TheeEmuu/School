@@ -1,0 +1,31 @@
+3n**2 + 2n + 100 is O(n**2):
+
+|3n**2 + 2n + 100| <= c * g(n)
+n >= n0 = 1
+3n**2 >= 3n >= 3
+2n**2 >= 2n >= 2  &&  100n**2 >= 100n >= 100
+3n**2 + 2n + 100 <= 3n**2 + 2n**2 + 100n**2
+3n**2 + 2n + 100 <= 105n**2
+there exists a c and n0 that satisfy the inequality, thus it is O(n**2)
+
+
+3n**2 + 2n + 100 is not O(n)
+
+|3n**2 + 2n + 100| <= c * g(n)
+n >= n0 = 1
+3n**2 >= 3n >= 3
+2n**2 >= 2n >= 2  &&  100n**2 >= 100n >= 100
+There are no functions of the form kn that satisfy kn > kn**2 for all n, thus there can't be a
+equation c*g(n) that is greater than 3n**2, thus 3n**2 + 2n + 100 is not O(n).
+
+
+cn*n+c
+cn**2+c
+n >= n0 = 1
+n**2 >= n >= 1
+cn**2 >= cn >= c
+cn**2+c <= cn**2 + cn**2
+cn**2+c <= 2cn**2
+O(n**2)
+
+
