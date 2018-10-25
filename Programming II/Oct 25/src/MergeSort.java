@@ -1,6 +1,6 @@
 public class MergeSort {
     public static int[] mergeSort(int[] array){
-        //return arrays of length 0
+        //return arrays of length 1
         if(array.length == 1)
             return array;
 
@@ -13,7 +13,7 @@ public class MergeSort {
         System.arraycopy(array, 0, a, 0, middle);
         System.arraycopy(array, middle, b, 0, array.length - middle);
 
-        //recursively shrink a and b to size 1
+        //recursively shrink a and b to length 1
         a = mergeSort(a);
         b = mergeSort(b);
 
