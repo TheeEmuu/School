@@ -22,7 +22,7 @@ public class RandomGenerator extends AbstractGenerator{
     }
 
     public static void main(String[] args){
-        RandomGenerator generator = new RandomGenerator();
+        AbstractGenerator generator = new RandomGenerator();
 
         System.out.println(generator.get());
         generator.next();

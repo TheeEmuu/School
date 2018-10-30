@@ -23,7 +23,7 @@ public class CycleGenerator extends AbstractGenerator {
     }
 
     public static void main(String[] args){
-        CycleGenerator generator = new CycleGenerator(10,12);
+        AbstractGenerator generator = new CycleGenerator(10,12);
 
         System.out.println(generator.get());
         generator.next();

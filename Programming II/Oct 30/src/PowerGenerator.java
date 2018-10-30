@@ -14,7 +14,7 @@ public class PowerGenerator extends AbstractGenerator {
     }
 
     public static void main(String[] args){
-        PowerGenerator generator = new PowerGenerator();
+        AbstractGenerator generator = new PowerGenerator();
 
         System.out.println(generator.get());
         generator.next();
