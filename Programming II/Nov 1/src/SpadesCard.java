@@ -6,7 +6,8 @@ public class SpadesCard extends AbstractCard {
     public SpadesCard(){}
 
     public int value(){
-        if(face() == ACE) return suit() * 13 + KING + 1;
+        if(face() == ACE)
+            return suit() * 13 + KING + 1;
         return get();
     }
 
@@ -20,13 +21,13 @@ public class SpadesCard extends AbstractCard {
         System.out.println(c);
         SpadesCard d = new SpadesCard(KING, HEARTS);
 
-        if (c.compareTo(d) < 0)
-        {
+        if (c.compareTo(d) < 0) {
             System.out.println("Less than King of Hearts.");
-        } else if (c.compareTo(d) == 0)
-        {
+        }
+        else if (c.compareTo(d) == 0) {
             System.out.println("Equal to King of Hearts.");
-        } else {
+        }
+        else {
             System.out.println("More than King of Hearts.");
         }
     }
