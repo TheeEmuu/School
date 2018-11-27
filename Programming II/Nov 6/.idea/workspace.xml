@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f91b415d-29aa-46af-aa5d-de09e76aa9ee" name="Default Changelist" comment="Create Programming competition root">
-      <change afterPath="$PROJECT_DIR$/src/AbstractIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrefixIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringsUnder5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nov 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Nov 1/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f91b415d-29aa-46af-aa5d-de09e76aa9ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,6 +15,7 @@
     <session id="1170989555">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -26,13 +23,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="1062" />
-          <entry key="txt" value="42" />
+          <entry key="txt" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="1062" />
-          <entry key="PLAIN_TEXT" value="42" />
+          <entry key="PLAIN_TEXT" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -153,7 +150,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541484344739" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541484372257" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nov 1" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -218,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541479665135</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Nov 6">
+      <created>1541484382908</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541484382908</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -237,7 +241,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -257,7 +261,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Programming competition root" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Programming competition root" />
+    <MESSAGE value="Nov 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nov 6" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ArrayListIterator.java">
