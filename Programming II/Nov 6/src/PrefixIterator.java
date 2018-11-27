@@ -1,5 +1,6 @@
 public class PrefixIterator extends AbstractIterator {
-    String current, initial;
+    private String current, initial;
+
     public PrefixIterator(String str){
         initial = str;
         reset();

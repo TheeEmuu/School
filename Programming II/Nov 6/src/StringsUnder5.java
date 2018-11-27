@@ -1,10 +1,9 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class StringsUnder5 {
     public static void main(String[] args){
         ArrayList<String> strings = new ArrayList<>();
-
-        AbstractIterator<String> i;
 
         strings.add("Over 5");
         strings.add("the");
@@ -15,11 +14,13 @@ public class StringsUnder5 {
         strings.add("!");
         strings.add("REEEEEEE");
 
-        for(i = (AbstractIterator<String>)strings.iterator(); i.hasNext(); i.next()){
-            String next = i.get();
+        Iterator<String> i = strings.iterator();
 
-            if(next.length() < 5)
-                System.out.println(next);
+        while(i.hasNext()){
+            String element = i.next();
+
+            if(element.length() < 5)
+                System.out.println(element);
         }
     }
 }
