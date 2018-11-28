@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fcf14ce-8853-414f-a23c-41086ac73d77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignment 5/.idea/Assignment 5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment 5/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment 5/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment 5/Users.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment 5/popular sites" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programming II/Nov 6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programming II/Nov 6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 5/popular_sites.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 5/popular_sites.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment 5/popular_sites.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,6 +197,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980299" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
