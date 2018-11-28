@@ -5,7 +5,7 @@ userSet = {}
 
 
 def load_file():
-    logfile = "popular sites"
+    logfile = input("Please enter the name of the log file")
 
     f = open(logfile, "r")
 
