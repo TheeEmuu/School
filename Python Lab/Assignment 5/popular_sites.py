@@ -1,6 +1,8 @@
 import operator
 
-sites = {}
+users = {}
+userSet = {}
+
 
 def load_file():
     logfile = "popular sites"
@@ -16,10 +18,30 @@ def load_file():
 def add_site(site):
     log_entry = site.split()
 
-    if log_entry[0] in sites:
-        sites[log_entry[0]] = sites[log_entry[0]] + 1
+    ip = log_entry[3]
+    site = log_entry[0]
+
+    if ip in users:
+        if site not in userSet[ip]:
+            users[ip] = users[ip] + 1
+            userSet[ip].add(site)
     else:
-        sites[log_entry[0]] = 1
+        users[ip] = 1
+        userSet[ip] = set()
+        userSet[ip].add(site)
+
+    # if ip in users:
+    #     if site in userSet[ip]:
+    #         users[ip] + 1
+    #     else:
+    #         users[ip] = 1
+    #         userSet[ip].add(site)
+    # else:
+    #     users[ip] = 1
+    #     userSet
+    #     userSet[ip].add(site)
+
+
 
 
 def main():
@@ -28,11 +50,11 @@ def main():
     for i in log:
         add_site(i)
 
-    ranking = sorted(sites.items(), key=operator.itemgetter(1), reverse=True)
+    ranking = sorted(users.items(), key=operator.itemgetter(1), reverse=True)
 
-    with open("Top 10 Sites.txt", "w",) as f:
-        for i in range(0, 10):
-            f.write((str)(ranking[i]) + "\n")
+    with open("Users.txt", "w",) as f:
+        for i in ranking:
+            f.write((str)(i) + "\n")
 
 
 main()
