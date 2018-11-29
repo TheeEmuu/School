@@ -420,25 +420,25 @@ public class SinglyLinkedList extends AbstractList
     {
         return new SinglyLinkedListIterator(head);
     }
-    /*
-    // THIS CODE IS NOT AVAILABLE
-    public int size()
-    // post: returns number of elements in list
-    {
-        // number of elements we've seen in list
-        int elementCount = 0;
-        // reference to potential first element
-        Node finger = head;
- 
-        while (finger != null) {
-            // finger references a new element, count it
-            elementCount++;
-            // reference possible next element
-            finger = finger.next();
-        }
-        return elementCount;
-    }
-    */
+//    /*
+//    // THIS CODE IS NOT AVAILABLE
+//    public int size()
+//    // post: returns number of elements in list
+//    {
+//        // number of elements we've seen in list
+//        int elementCount = 0;
+//        // reference to potential first element
+//        Node finger = head;
+//
+//        while (finger != null) {
+//            // finger references a new element, count it
+//            elementCount++;
+//            // reference possible next element
+//            finger = finger.next();
+//        }
+//        return elementCount;
+//    }
+//    */
 
     /**
      * Construct a string representing list.
