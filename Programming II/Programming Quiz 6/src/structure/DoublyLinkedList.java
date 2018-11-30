@@ -1,80 +1,92 @@
-// Implementation of lists, using singly linked elements.
+// Implementation of lists, using doubly linked elements.
 // (c) 1998, 2001 duane a. bailey
-
 package structure;
 import java.util.Iterator;
-import java.util.Enumeration;
+
 /**
- * Singly linked lists have elements connected by a single reference.
- * They are space-efficient, but tail-related operations may be more
- * costly than with doubly linked lists.
- *
- * @version $Id: SinglyLinkedList.java 31 2007-08-06 17:19:56Z bailey $
+ * An implementation of lists that makes use of doubly linked elements.
+ * This provided efficient implementation of both head and tail operations.
+ * 
+ * @version $Id: DoublyLinkedList.java 31 2007-08-06 17:19:56Z bailey $
  * @author, 2001 duane a. bailey
- * @see DoublyLinkedList
  */
-public class SinglyLinkedList extends AbstractList
+public class DoublyLinkedList extends AbstractList
 {
     /**
-     * The number of elements in list.
+     * Number of elements within list.
      */
-    protected int count;                    // list size
+    protected int count;
     /**
-     * The head of the list.  A reference to a singly linked list element.
+     * Reference to head of list.
      */
-    protected Node head; // ref. to first element
+    protected DoublyLinkedNode head;
+    /**
+     * Reference to tail of list.
+     */
+    protected DoublyLinkedNode tail;
 
     /**
-     * Construct an empty list.
+     * Constructs an empty list.
      *
-     * @post generates an empty list
+     * @post constructs an empty list
+     * 
      */
-    public SinglyLinkedList()
+    public DoublyLinkedList()
     {
         head = null;
+        tail = null;
         count = 0;
     }
 
     /**
-     * Add an object to tail of list.
+     * Add a value to head of list.
      *
-     * @post value is added to end of list (see addLast)
+     * @post adds value to beginning of list
      * 
-     * @param value The value to be added to tail of list.
+     * @param value value to be added.
      * @see #addToHead
      */
     public void add(Object value)
     {
-        addLast(value);
+        addFirst(value);
     }
     
     /**
      * Add a value to head of list.
      *
-     * @post value is added to beginning of list
+     * @pre value is not null
+     * @post adds element to head of list
      * 
-     * @param value The value to be added to head of list.
+     * @param value value to be added.
      */
     public void addFirst(Object value)
     {
-        // note order that things happen:
-        // head is parameter, then assigned
-        head = new Node(value, head);
+        // construct a new element, making it head
+        head = new DoublyLinkedNode(value, head, null);
+        // fix tail, if necessary
+        if (tail == null) tail = head;
         count++;
     }
 
     /**
-     * Remove a value from first element of list.
+     * Remove a value from head of list.
+     * Value is returned.
      *
      * @pre list is not empty
-     * @post removes and returns value from beginning of list
+     * @post removes first value from list
      * 
-     * @return The value actually removed.
+     * @return value removed from list.
      */
     public Object removeFirst()
     {
-        Node temp = head;
-        head = head.next(); // move head down list
+        DoublyLinkedNode temp = head;
+        head = head.next();
+        if (head != null) {
+            head.setPrevious(null);
+        } else {
+            tail = null; // remove final value
+        }
+        temp.setNext(null);// helps clean things up; temp is free
         count--;
         return temp.value();
     }
@@ -82,66 +94,66 @@ public class SinglyLinkedList extends AbstractList
     /**
      * Add a value to tail of list.
      *
-     * @post adds value to end of list
+     * @pre value is not null
+     * @post adds new value to tail of list
      * 
-     * @param value The value to be added to tail of list.
+     * @param value value to be added.
      */
     public void addLast(Object value)
     {
-        // location for new value
-        Node temp = new Node(value,null);
-        if (head != null)
-        {
-            // pointer to possible tail
-            Node finger = head;
-            while (finger.next() != null)
-            {
-                finger = finger.next();
-            }
-            finger.setNext(temp);
-        } else head = temp;
+        // construct new element
+        tail = new DoublyLinkedNode(value, null, tail);
+        // fix up head
+        if (head == null) head = tail;
         count++;
     }
 
     /**
-     * Remove last value from list.
+     * Remove a value from tail of list.
      *
      * @pre list is not empty
-     * @post removes last value from list
+     * @post removes value from tail of list
      * 
-     * @return The value actually removed.
+     * @return value removed from list.
      */
     public Object removeLast()
     {
-        Node finger = head;
-        Node previous = null;
-        while (finger.next() != null) // find end of list
-        {
-            previous = finger;
-            finger = finger.next();
-        }
-        // finger is null, or points to end of list
-        if (previous == null)
-        {
-            // has exactly one element
+        DoublyLinkedNode temp = tail;
+        tail = tail.previous();
+        if (tail == null) {
             head = null;
-        }
-        else
-        {
-            // pointer to last element is reset
-            previous.setNext(null);
+        } else {
+            tail.setNext(null);
         }
         count--;
-        return finger.value();
+        return temp.value();
+    }
+    /*
+    public void addLast(Object value)
+    {
+        // construct new element
+        tail = new DoublyLinkedNode(value, null, tail);
+        count++;
     }
 
+    public Object removeLast()
+    {
+        Assert.pre(!isEmpty(),"List is not empty.");
+        DoublyLinkedNode temp = tail;
+        tail = tail.previous();
+        tail.setNext(null);
+        count--;
+        return temp.value();
+    }
+    */
+
     /**
-     * Fetch first element of list.
+     * Get a copy of first value found in list.
      *
      * @pre list is not empty
      * @post returns first value in list
      * 
-     * @return A reference to first element of list.
+     * @return A reference to first value in list.
      */
     public Object getFirst()
     {
@@ -149,38 +161,31 @@ public class SinglyLinkedList extends AbstractList
     }
 
     /**
-     * Fetch last element of list.
+     * Get a copy of last value found in list.
      *
      * @pre list is not empty
      * @post returns last value in list
      * 
-     * @return A reference to last element of list.
+     * @return A reference to last value in list.
      */
     public Object getLast()
     {
-        Node finger = head;
-        while (finger != null &&
-               finger.next() != null)
-        {
-            finger = finger.next();
-        }
-        return finger.value();
+        return tail.value();
     }
 
     /**
-     * Check to see if a value is in list.
+     * Check to see if a value is within list.
      *
-     * @pre value is not null
-     * @post returns true iff value is found in list
+     * @pre value not null
+     * @post returns true iff value is in list
      * 
-     * @param value The value sought.
-     * @return True if value is within list.
+     * @param value A value to be found in list.
+     * @return True if value is in list.
      */
     public boolean contains(Object value)
     {
-        Node finger = head;
-        while (finger != null &&
-               !finger.value().equals(value))
+        DoublyLinkedNode finger = head;
+        while ((finger != null) && (!finger.value().equals(value)))
         {
             finger = finger.next();
         }
@@ -188,51 +193,70 @@ public class SinglyLinkedList extends AbstractList
     }
 
     /**
-     * Remove a value from list.  At most one value will be removed.
+     * Remove a value from list.  At most one value is removed.
+     * Any duplicates remain.  Because comparison is done with "equals,"
+     * actual value removed is returned for inspection.
      *
-     * @pre value is not null
-     * @post removes first element with matching value, if any
+     * @pre value is not null.  List can be empty
+     * @post first element matching value is removed from list
      * 
-     * @param value The value to be removed.
-     * @return The actual value removed.
+     * @param value value to be removed.
+     * @return value actually removed.
      */
     public Object remove(Object value)
     {
-        Node finger = head;
-        Node previous = null;
+        DoublyLinkedNode finger = head;
         while (finger != null &&
                !finger.value().equals(value))
         {
-            previous = finger;
             finger = finger.next();
         }
-        // finger points to target value
-        if (finger != null) {
-            // we found element to remove
-            if (previous == null) // it is first
+        if (finger != null)
+        {
+            // fix next field of element above
+            if (finger.previous() != null)
             {
+                finger.previous().setNext(finger.next());
+            } else {
                 head = finger.next();
-            } else {              // it's not first
-                previous.setNext(finger.next());
             }
-            count--;
+            // fix previous field of element below
+            if (finger.next() != null)
+            {
+                finger.next().setPrevious(finger.previous());
+            } else {
+                tail = finger.previous();
+            }
+            count--;            // fewer elements
             return finger.value();
         }
-        // didn't find it, return null
         return null;
     }
 
     /**
-     * Determine number of elements in list.    
+     * Determine number of elements in list.
      *
      * @post returns number of elements in list
-     * @return The number of elements in list.
+     * 
+     * @return number of elements found in list.
      */
     public int size()
     {
         return count;
     }
-    
+
+    /**
+     * Determine if list is empty.
+     *
+     * @post returns true iff list has no elements
+     * 
+     * @return True iff list has no values.
+     */
+    public boolean isEmpty()
+    {
+        return size() == 0;
+    }
+
     /**
      * Remove all values from list.
      *
@@ -240,7 +264,7 @@ public class SinglyLinkedList extends AbstractList
      */
     public void clear()
     {
-        head = null;
+        head = tail = null;
         count = 0;
     }
 
@@ -256,13 +280,14 @@ public class SinglyLinkedList extends AbstractList
     public Object get(int i)
     {
         if (i >= size()) return null;
-        Node finger = head;
+        DoublyLinkedNode finger = head;
         // search for ith element or end of list
         while (i > 0)
         {
             finger = finger.next();
             i--;
         }
+        // not end of list, return value found
         return finger.value();
     }
 
@@ -278,7 +303,7 @@ public class SinglyLinkedList extends AbstractList
     public Object set(int i, Object o)
     {
         if (i >= size()) return null;
-        Node finger = head;
+        DoublyLinkedNode finger = head;
         // search for ith element or end of list
         while (i > 0)
         {
@@ -301,25 +326,25 @@ public class SinglyLinkedList extends AbstractList
      */
     public void add(int i, Object o)
     {
-        if (i == size()) {
-            addLast(o);
-        } else if (i == 0) {
-            addFirst(o);
-        } else {
-            Node previous = null;
-            Node finger = head;
+        if (i == 0) addFirst(o);
+        else if (i == size()) addLast(o);
+        else {
+            DoublyLinkedNode before = null;
+            DoublyLinkedNode after = head;
             // search for ith position, or end of list
             while (i > 0)
             {
-                previous = finger;
-                finger = finger.next();
+                before = after;
+                after = after.next();
                 i--;
             }
             // create new value to insert in correct position
-            Node current = new Node(o,finger);
+            DoublyLinkedNode current =
+                new DoublyLinkedNode(o,after,before);
             count++;
-            // make previous value point to new value
-            previous.setNext(current);
+            // make after and before value point to new value
+            before.setNext(current);
+            after.setPrevious(current);
         }
     }
 
@@ -336,8 +361,8 @@ public class SinglyLinkedList extends AbstractList
     {
         if (i == 0) return removeFirst();
         else if (i == size()-1) return removeLast();
-        Node previous = null;
-        Node finger = head;
+        DoublyLinkedNode previous = null;
+        DoublyLinkedNode finger = head;
         // search for value indexed, keep track of previous
         while (i > 0)
         {
@@ -345,8 +370,8 @@ public class SinglyLinkedList extends AbstractList
             finger = finger.next();
             i--;
         }
-        // in list, somewhere in middle
         previous.setNext(finger.next());
+        finger.next().setPrevious(previous);
         count--;
         // finger's value is old value, return it
         return finger.value();
@@ -359,13 +384,13 @@ public class SinglyLinkedList extends AbstractList
      * @post returns the (0-origin) index of value,
      *   or -1 if value is not found
      * 
-     * @param value value sought
+     * @param value value sought.
      * @return index (0 is first element) of value, or -1
      */
     public int indexOf(Object value)
     {
         int i = 0;
-        Node finger = head;
+        DoublyLinkedNode finger = head;
         // search for value or end of list, counting along way
         while (finger != null && !finger.value().equals(value))
         {
@@ -394,67 +419,50 @@ public class SinglyLinkedList extends AbstractList
      */
     public int lastIndexOf(Object value)
     {
-        int result = -1;        // assume not found, return -1
-        int i = 0;
-        Node finger = head;
+        int i = size()-1;
+        DoublyLinkedNode finger = tail;
         // search for last matching value, result is desired index
-        while (finger != null)
+        while (finger != null && !finger.value().equals(value))
         {
-            // a match? keep track of location
-            if (finger.value().equals(value)) result = i;
-            finger = finger.next();
-            i++;
+            finger = finger.previous();
+            i--;
         }
-        // return last match
-        return result;
+        if (finger == null)
+        {   // value not found, return indicator
+            return -1;
+        } else {
+            // value found, return index
+            return i;
+        }
     }
 
     /**
-     * Returns an iterator traversing list from head to tail.
+     * Construct an iterator to traverse list.
      *
-     * @post returns enumeration allowing traversal of list
+     * @post returns iterator that allows traversal of list
      * 
-     * @return An iterator to traverse list.
+     * @return An iterator that traverses list from head to tail.
      */
     public Iterator iterator()
     {
-        return new SinglyLinkedListIterator(head);
+        return new DoublyLinkedListIterator(head);
     }
-//    /*
-//    // THIS CODE IS NOT AVAILABLE
-//    public int size()
-//    // post: returns number of elements in list
-//    {
-//        // number of elements we've seen in list
-//        int elementCount = 0;
-//        // reference to potential first element
-//        Node finger = head;
-//
-//        while (finger != null) {
-//            // finger references a new element, count it
-//            elementCount++;
-//            // reference possible next element
-//            finger = finger.next();
-//        }
-//        return elementCount;
-//    }
-//    */
 
     /**
-     * Construct a string representing list.
+     * Construct a string representation of list.
      *
      * @post returns a string representing list
      * 
-     * @return A string representing list.
+     * @return A string representing elements of list.
      */
     public String toString()
     {
         StringBuffer s = new StringBuffer();
-        s.append("<SinglyLinkedList:");
-        Enumeration li = (Enumeration)iterator();
-        while (li.hasMoreElements())
+        s.append("<DoublyLinkedList:");
+        Iterator li = iterator();
+        while (li.hasNext())
         {
-            s.append(" "+li.nextElement());
+            s.append(" "+li.next());
         }
         s.append(">");
         return s.toString();
@@ -476,27 +484,21 @@ public class SinglyLinkedList extends AbstractList
         int i = size();
 
         while(i > 0){
-            add(i - 1, removeFirst());
+            add(0, removeFirst());
             i--;
         }
     }
 
-    public void removeEveryOther(){
-        for(int i = 0; i < size(); i++){
-            remove(i);
-        }
-    }
-
     public static void main(String[] args){
-        SinglyLinkedList list1 = new SinglyLinkedList();
+        DoublyLinkedList list1 = new DoublyLinkedList();
 
-        list1.add(1);
-        list1.add(2);
+        list1.add(5);
         list1.add(3);
         list1.add(4);
-        list1.add(5);
+        list1.add(2);
+        list1.add(1);
 
-        list1.removeEveryOther();
+        list1.reverse();
 
         Iterator it = list1.iterator();
 
@@ -505,4 +507,5 @@ public class SinglyLinkedList extends AbstractList
         }
     }
 }
+
 

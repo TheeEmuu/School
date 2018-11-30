@@ -466,6 +466,45 @@ public class DoublyLinkedList extends AbstractList
         s.append(">");
         return s.toString();
     }
+
+    public void splice(int index, List other){
+        Iterator otherI = other.iterator();
+
+        int i = index;
+        while(otherI.hasNext()){
+            add(i, otherI.next());
+            i++;
+        }
+
+        other.clear();
+    }
+
+    public void reverse(){
+        int i = size();
+
+        while(i > 0){
+            add(0, removeFirst());
+            i--;
+        }
+    }
+
+    public static void main(String[] args){
+        DoublyLinkedList list1 = new DoublyLinkedList();
+
+        list1.add(5);
+        list1.add(3);
+        list1.add(4);
+        list1.add(2);
+        list1.add(1);
+
+        list1.reverse();
+
+        Iterator it = list1.iterator();
+
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+    }
 }
 
 

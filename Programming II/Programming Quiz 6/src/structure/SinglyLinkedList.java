@@ -2,8 +2,10 @@
 // (c) 1998, 2001 duane a. bailey
 
 package structure;
-import java.util.Iterator;
+
 import java.util.Enumeration;
+import java.util.Iterator;
+
 /**
  * Singly linked lists have elements connected by a single reference.
  * They are space-efficient, but tail-related operations may be more
@@ -487,16 +489,38 @@ public class SinglyLinkedList extends AbstractList
         }
     }
 
+    //pre: num is an integer; the list may or may not be empty
+    //post: num is added to the list so that the list is in increasing numerical order
+    //      count should be updated to reflect the number of items in the list
+    public void addSorted(int num){
+        if(isEmpty()){
+            addFirst(num);
+            return;
+        }
+
+        for(int i = 0; i < size(); i++){
+            if((int)get(i) > num){
+                add(i,num);
+                return;
+            }
+        }
+
+        addLast(num);
+    }
+
     public static void main(String[] args){
         SinglyLinkedList list1 = new SinglyLinkedList();
 
-        list1.add(1);
-        list1.add(2);
-        list1.add(3);
-        list1.add(4);
-        list1.add(5);
-
-        list1.removeEveryOther();
+        list1.addSorted(4);
+        list1.addSorted(1);
+        list1.addSorted(3);
+        list1.addSorted(10);
+        list1.addSorted(5);
+        list1.addSorted(2);
+        list1.addSorted(6);
+        list1.addSorted(8);
+        list1.addSorted(7);
+        list1.addSorted(9);
 
         Iterator it = list1.iterator();
 
