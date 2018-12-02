@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07ccefd0-3700-4a93-8456-d97bee0b24d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Assignment 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment 6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 6/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,14 +51,35 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="919539928">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/unique_users.py">
+        <entry file="file://$PROJECT_DIR$/PopStack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            <state relative-caret-position="315">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <marker date="1540737811186" expanded="true" signature="27:32" ph="..." />
+                <marker date="1540737811186" expanded="true" signature="28:32" ph="..." />
+                <marker date="1540737811186" expanded="true" signature="278:281" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Stack">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -88,6 +109,7 @@
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -229,19 +251,22 @@
       <option name="project" value="LOCAL" />
       <updated>1543377258826</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge branch 'master' of https://bitbucket.org/emuu/school&#10;&#10;# Conflicts:&#10;#&#9;Python Lab/Assignment 5/.idea/Assignment 5.iml&#10;#&#9;Python Lab/Assignment 5/.idea/misc.xml">
+      <created>1543599118418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543599118418</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1056" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980299" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
@@ -249,6 +274,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49966952" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50033045" side_tool="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -259,37 +288,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Assignment 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment 5" />
+    <MESSAGE value="Merge branch 'master' of https://bitbucket.org/emuu/school&#10;&#10;# Conflicts:&#10;#&#9;Python Lab/Assignment 5/.idea/Assignment 5.iml&#10;#&#9;Python Lab/Assignment 5/.idea/misc.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://bitbucket.org/emuu/school&#10;&#10;# Conflicts:&#10;#&#9;Python Lab/Assignment 5/.idea/Assignment 5.iml&#10;#&#9;Python Lab/Assignment 5/.idea/misc.xml" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Programs/Python/Lib/_bootlocale.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Programs/Python/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="266" selection-start-line="266" selection-end-line="266" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Top 10 Sites.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/popular_sites.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Programs/Python/Lib/_bootlocale.py" />
+    <entry file="file://D:/Programs/Python/Lib/codecs.py" />
+    <entry file="file://$PROJECT_DIR$/Top 10 Sites.txt" />
+    <entry file="file://$PROJECT_DIR$/popular_sites.py" />
     <entry file="file://$PROJECT_DIR$/PopStack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="315">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <marker date="1540737811186" expanded="true" signature="27:32" ph="..." />
+            <marker date="1540737811186" expanded="true" signature="28:32" ph="..." />
+            <marker date="1540737811186" expanded="true" signature="278:281" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
