@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08cfef0c-baba-4d96-9d5d-c365b3987bf8" name="Default Changelist" comment="Nov 29">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Sept 27" beforeDir="false" afterPath="$PROJECT_DIR$/../Sept 27" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,30 +52,30 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="SinglyLinkedList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/structure/SinglyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
+            <state relative-caret-position="800">
               <caret line="497" selection-start-line="497" selection-end-line="497" />
               <folding>
-                <element signature="method#SinglyLinkedList#0;class#SinglyLinkedList#0" />
-                <element signature="method#addFirst#0;class#SinglyLinkedList#0" />
-                <element signature="method#removeFirst#0;class#SinglyLinkedList#0" />
-                <element signature="method#addLast#0;class#SinglyLinkedList#0" />
-                <element signature="method#removeLast#0;class#SinglyLinkedList#0" />
-                <element signature="method#getLast#0;class#SinglyLinkedList#0" />
-                <element signature="method#contains#0;class#SinglyLinkedList#0" />
-                <element signature="method#remove#0;class#SinglyLinkedList#0" />
-                <element signature="method#clear#0;class#SinglyLinkedList#0" />
-                <element signature="method#get#0;class#SinglyLinkedList#0" />
-                <element signature="method#set#0;class#SinglyLinkedList#0" />
-                <element signature="method#add#1;class#SinglyLinkedList#0" />
-                <element signature="method#remove#1;class#SinglyLinkedList#0" />
-                <element signature="method#indexOf#0;class#SinglyLinkedList#0" />
-                <element signature="method#lastIndexOf#0;class#SinglyLinkedList#0" />
+                <element signature="e#801#970#0" />
+                <element signature="e#1259#1621#0" />
+                <element signature="e#1627#2005#0" />
+                <element signature="e#2011#2594#0" />
+                <element signature="e#2600#3354#0" />
+                <element signature="e#3622#4031#0" />
+                <element signature="e#4037#4520#0" />
+                <element signature="e#4526#5530#0" />
+                <element signature="e#5764#5938#0" />
+                <element signature="e#5944#6488#0" />
+                <element signature="e#6494#7198#0" />
+                <element signature="e#7204#8081#0" />
+                <element signature="e#8087#8937#0" />
+                <element signature="e#8943#9763#0" />
+                <element signature="e#9769#10548#0" />
                 <element signature="e#10842#10850#0" />
-                <element signature="method#toString#0;class#SinglyLinkedList#0" />
+                <element signature="e#11411#11902#0" />
               </folding>
             </state>
           </provider>
@@ -127,9 +128,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,13 +152,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543304783304" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nov 6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programming Quiz 6" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -207,6 +208,7 @@
       <updated>1543298366514</updated>
       <workItem from="1543339317890" duration="2210000" />
       <workItem from="1543512043233" duration="1925000" />
+      <workItem from="1543944469036" duration="672000" />
     </task>
     <task id="LOCAL-00001" summary="Nov 20">
       <created>1543304492424</created>
@@ -233,67 +235,68 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4135000" />
+    <option name="totallyTimeSpent" value="4807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32929516" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32894737" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32929516" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20299146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20512821" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32894737" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32929516" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19818376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32894737" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
     </layout-to-restore>
@@ -317,26 +320,52 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/structure/SinglyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12922">
+          <caret line="497" selection-start-line="497" selection-end-line="497" />
+          <folding>
+            <element signature="e#801#970#0" />
+            <element signature="e#1259#1621#0" />
+            <element signature="e#1627#2005#0" />
+            <element signature="e#2011#2594#0" />
+            <element signature="e#2600#3354#0" />
+            <element signature="e#3622#4031#0" />
+            <element signature="e#4037#4520#0" />
+            <element signature="e#4526#5530#0" />
+            <element signature="e#5764#5938#0" />
+            <element signature="e#5944#6488#0" />
+            <element signature="e#6494#7198#0" />
+            <element signature="e#7204#8081#0" />
+            <element signature="e#8087#8937#0" />
+            <element signature="e#8943#9763#0" />
+            <element signature="e#9769#10548#0" />
+            <element signature="e#10842#10850#0" />
+            <element signature="e#11411#11902#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structure/SinglyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12428">
           <caret line="478" column="6" selection-start-line="478" selection-start-column="6" selection-end-line="478" selection-end-column="6" />
           <folding>
-            <element signature="method#SinglyLinkedList#0;class#SinglyLinkedList#0" />
-            <element signature="method#addFirst#0;class#SinglyLinkedList#0" />
-            <element signature="method#removeFirst#0;class#SinglyLinkedList#0" />
-            <element signature="method#addLast#0;class#SinglyLinkedList#0" />
-            <element signature="method#removeLast#0;class#SinglyLinkedList#0" />
-            <element signature="method#getLast#0;class#SinglyLinkedList#0" />
-            <element signature="method#contains#0;class#SinglyLinkedList#0" />
-            <element signature="method#remove#0;class#SinglyLinkedList#0" />
-            <element signature="method#clear#0;class#SinglyLinkedList#0" />
-            <element signature="method#get#0;class#SinglyLinkedList#0" />
-            <element signature="method#set#0;class#SinglyLinkedList#0" />
-            <element signature="method#add#1;class#SinglyLinkedList#0" />
-            <element signature="method#remove#1;class#SinglyLinkedList#0" />
-            <element signature="method#indexOf#0;class#SinglyLinkedList#0" />
-            <element signature="method#lastIndexOf#0;class#SinglyLinkedList#0" />
+            <element signature="e#801#970#0" />
+            <element signature="e#1259#1621#0" />
+            <element signature="e#1627#2005#0" />
+            <element signature="e#2011#2594#0" />
+            <element signature="e#2600#3354#0" />
+            <element signature="e#3622#4031#0" />
+            <element signature="e#4037#4520#0" />
+            <element signature="e#4526#5530#0" />
+            <element signature="e#5764#5938#0" />
+            <element signature="e#5944#6488#0" />
+            <element signature="e#6494#7198#0" />
+            <element signature="e#7204#8081#0" />
+            <element signature="e#8087#8937#0" />
+            <element signature="e#8943#9763#0" />
+            <element signature="e#9769#10548#0" />
             <element signature="e#10842#10850#0" />
-            <element signature="method#toString#0;class#SinglyLinkedList#0" />
+            <element signature="e#11411#11902#0" />
           </folding>
         </state>
       </provider>
@@ -376,26 +405,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/structure/SinglyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="800">
           <caret line="497" selection-start-line="497" selection-end-line="497" />
           <folding>
-            <element signature="method#SinglyLinkedList#0;class#SinglyLinkedList#0" />
-            <element signature="method#addFirst#0;class#SinglyLinkedList#0" />
-            <element signature="method#removeFirst#0;class#SinglyLinkedList#0" />
-            <element signature="method#addLast#0;class#SinglyLinkedList#0" />
-            <element signature="method#removeLast#0;class#SinglyLinkedList#0" />
-            <element signature="method#getLast#0;class#SinglyLinkedList#0" />
-            <element signature="method#contains#0;class#SinglyLinkedList#0" />
-            <element signature="method#remove#0;class#SinglyLinkedList#0" />
-            <element signature="method#clear#0;class#SinglyLinkedList#0" />
-            <element signature="method#get#0;class#SinglyLinkedList#0" />
-            <element signature="method#set#0;class#SinglyLinkedList#0" />
-            <element signature="method#add#1;class#SinglyLinkedList#0" />
-            <element signature="method#remove#1;class#SinglyLinkedList#0" />
-            <element signature="method#indexOf#0;class#SinglyLinkedList#0" />
-            <element signature="method#lastIndexOf#0;class#SinglyLinkedList#0" />
+            <element signature="e#801#970#0" />
+            <element signature="e#1259#1621#0" />
+            <element signature="e#1627#2005#0" />
+            <element signature="e#2011#2594#0" />
+            <element signature="e#2600#3354#0" />
+            <element signature="e#3622#4031#0" />
+            <element signature="e#4037#4520#0" />
+            <element signature="e#4526#5530#0" />
+            <element signature="e#5764#5938#0" />
+            <element signature="e#5944#6488#0" />
+            <element signature="e#6494#7198#0" />
+            <element signature="e#7204#8081#0" />
+            <element signature="e#8087#8937#0" />
+            <element signature="e#8943#9763#0" />
+            <element signature="e#9769#10548#0" />
             <element signature="e#10842#10850#0" />
-            <element signature="method#toString#0;class#SinglyLinkedList#0" />
+            <element signature="e#11411#11902#0" />
           </folding>
         </state>
       </provider>
