@@ -7,44 +7,44 @@ def get_external(a):
     a = a.split("/")
     return a[5]
 
-def get(type, value):
-    if(type == "film"):
+
+def get(attribute, value):
+    if attribute == "films":
         return swapi.get_film(value).title
-    if(type == "species"):
+    if attribute == "species":
         return swapi.get_species(value).name
-    if(type == "starships"):
+    if attribute == "starships":
         return swapi.get_starship(value).name
-    if(type == "vehicles"):
+    if attribute == "vehicles":
         return swapi.get_vehicle(value).name
 
 
-search = "luke skywalker"
-
-url = 'https://swapi.co/api/people/'
-r = requests.get(url, params={'search': search})
-data = json.loads(r.text)
-print(data)
-data = data["results"][0]
+def read_api(search):
+    url = 'https://swapi.co/api/people/'
+    r = requests.get(url, params={'search': search})
+    data = json.loads(r.text)
+    return data["results"][0]
 
 
-attributes = ("name", "birth_year", "eye_color", "gender", "hair_color", "height", "mass", "skin_color")
-for x in attributes:
-    print(x + ": " + data[x])
+def main():
+    search = input(str("Please input a Star Wars character: "))
 
-#homeworld
-print("Homeworld: " + (swapi.get_planet(get_external(data["homeworld"]))).name)
+    data = read_api(search)
 
-# #films
-# print("Films:")
-# a = len(data["films"])
-# for j in range(0, a):
-#     print("    " + swapi.get_film(get_external(data["films"][j])).title)
+    # read in single value attributes
+    attributes = ("name", "birth_year", "eye_color", "gender", "hair_color", "height", "mass", "skin_color")
+    for x in attributes:
+        print(x + ": " + data[x])
+
+    # homeworld
+    print("Homeworld: " + (swapi.get_planet(get_external(data["homeworld"]))).name)
+
+    # read in multi value attributes
+    attributes = ("films", "species", "starships", "vehicles")
+    for x in attributes:
+        print(x + ":")
+        for j in range(0, len(data[x])):
+            print("    " + str(get(x, get_external(data[x][j]))))
 
 
-attributes = ("films", "species", "starships", "vehicles")
-for x in attributes:
-    print(x + ":")
-    for j in range(0, len(data[x])):
-        # MOVE get_film to url search
-        #print("    " + swapi.get_film(get_external(data[x][j])).name)
-        print("    " + get(x, get_external(data[x][j])))
+main()
