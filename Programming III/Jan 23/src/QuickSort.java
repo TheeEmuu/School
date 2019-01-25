@@ -1,4 +1,6 @@
 public class QuickSort {
+    private static int comparisons;
+
     public static void swap(String data[], int i, int j)
     // pre: 0 <= i,j < data.length
     // post: data[i] and data[j] are exchanged
@@ -16,11 +18,11 @@ public class QuickSort {
         while (true)
         {
             // move right "pointer" toward left
-            while (left < right && data[left].compareTo(data[right]) < 0) right--;
+            while (left < right && data[left].compareTo(data[right]) < 0) right--; comparisons++;
             if (left < right) swap(data,left++,right);
             else return left;
             // move left pointer toward right
-            while (left < right && data[left].compareTo(data[right]) < 0) left++;
+            while (left < right && data[left].compareTo(data[right]) < 0) left++; comparisons++;
             if (left < right) swap(data,left,right--);
             else return right;
         }
@@ -38,6 +40,7 @@ public class QuickSort {
     {
         int pivot; // the final location of the leftmost value
         if (left >= right) return;
+
         pivot = partition(data,left,right); /* 1 - place pivot */
         quickSortRecursive(data,left,pivot-1); /* 2 - sort small */
         quickSortRecursive(data,pivot+1,right);/* 3 - sort large */
@@ -45,17 +48,17 @@ public class QuickSort {
     }
 
     public static void main(String[] args){
-        String[] array = new String[]{"c", "b", "g", "e", "a", "d","f"};
-        for (String x:array) {
-            System.out.print(x + " ");
-        }
-        System.out.println();
-
+        //String array[] = new Randoms().randomStringArray(50, 100);
+        String array[] = new String[]{"a", "b", "c", "d", "e", "f", "g"};
+        long start = System.nanoTime();
         quickSort(array, array.length);
+        long end = System.nanoTime();
 
         for (String x:array) {
             System.out.print(x + " ");
         }
         System.out.println();
+        System.out.println("COMPARISONS: " + comparisons);
+        System.out.println("TIME: " + (end - start));
     }
 }
