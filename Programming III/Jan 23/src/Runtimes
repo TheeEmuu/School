@@ -1,0 +1,23 @@
+Array Length
+Quicksort
+time (ns)
+
+
+50
+123
+78791
+
+100
+288
+143083
+
+200
+674
+280420
+
+500
+1977
+949049
+
+Seems reasonably described by n lg n when graphed and the graph
+of n lg n is adapted appropriately
