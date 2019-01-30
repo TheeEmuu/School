@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e3ef887-7bf3-4af7-a0e3-cc82c3d3cfa6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Jan 23/src/Randoms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Jan 23/src/Runtimes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Quiz 1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Quiz 1/src/Bin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Quiz 1/src/Insertion&amp;Bubble Runtimes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Quiz 1/src/QuickSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Quiz 1/src/Quicksort Runtimes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Quiz 1/src/Randoms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Quiz 1/src/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 23/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 23/out/production/Jan 23/QuickSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 23/out/production/Jan 23/Randoms.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 23/out/production/Jan 23/Runtimes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 28/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 28/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 28/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 28/Jan 28.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 28/src/Television.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Jan 23/src/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Jan 23/src/QuickSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,9 +85,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="x" value="2552" />
+    <option name="y" value="-257" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -97,6 +96,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,15 +114,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548405985846" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548406481017" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jan 28" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -155,7 +153,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548057139365</updated>
-      <workItem from="1548429389623" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="Jan 21">
       <created>1548061426502</created>
@@ -168,21 +165,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="640000" />
+    <option name="totallyTimeSpent" value="20000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3420491" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34578443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
@@ -194,8 +188,6 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -205,9 +197,6 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Jan 21" />
