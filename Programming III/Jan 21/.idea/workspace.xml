@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e3ef887-7bf3-4af7-a0e3-cc82c3d3cfa6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Jan 23/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 23/out/production/Jan 23/QuickSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 23/out/production/Jan 23/Randoms.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 23/out/production/Jan 23/Runtimes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 28/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 28/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 28/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 28/Jan 28.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Jan 28/src/Television.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -10,43 +19,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1243932277">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="Runtimes" value="2" />
-          <entry key="java" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="3" />
-          <entry key="PLAIN_TEXT" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Runtimes" value="355" />
-          <entry key="java" value="2151" />
-          <entry key="txt" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="2151" />
-          <entry key="PLAIN_TEXT" value="361" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
@@ -64,7 +36,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Randoms.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="184">
+                <state relative-caret-position="208">
                   <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -124,7 +96,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,13 +114,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548406481017" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Jan 28" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -192,10 +164,13 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="20000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="2552" y="-257" width="1936" height="1096" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3379531" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34578443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -223,9 +198,6 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Jan 21" />
     <option name="LAST_COMMIT_MESSAGE" value="Jan 21" />
@@ -240,7 +212,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Randoms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="208">
           <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
