@@ -40,7 +40,7 @@ public class Stocks {
 			}
 
 			if(x > n) {
-				for (int i = n; n < points - n; n++) {
+				for (int i = n; i < points - n; i++) {
 					//isPeak
 					for (int j = 0; j < n; j++) {
 						if (prices.get(i - j) < prices.get(i - j - 1)) {
