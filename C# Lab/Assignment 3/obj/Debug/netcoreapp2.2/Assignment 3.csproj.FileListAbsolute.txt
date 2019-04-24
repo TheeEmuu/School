@@ -9,3 +9,7 @@ D:\Programming\School\C# Lab\Assignment 3\obj\Debug\netcoreapp2.2\Assignment 3.A
 D:\Programming\School\C# Lab\Assignment 3\obj\Debug\netcoreapp2.2\Assignment 3.AssemblyInfo.cs
 D:\Programming\School\C# Lab\Assignment 3\obj\Debug\netcoreapp2.2\Assignment 3.dll
 D:\Programming\School\C# Lab\Assignment 3\obj\Debug\netcoreapp2.2\Assignment 3.pdb
+C:\Users\pengu\Documents\Programs\school\C# Lab\Assignment 3\obj\Debug\netcoreapp2.2\Assignment 3.csprojAssemblyReference.cache
+C:\Users\pengu\Documents\Programs\school\C# Lab\Assignment 3\obj\Debug\netcoreapp2.2\Assignment 3.csproj.CoreCompileInputs.cache
+C:\Users\pengu\Documents\Programs\school\C# Lab\Assignment 3\obj\Debug\netcoreapp2.2\Assignment 3.AssemblyInfoInputs.cache
+C:\Users\pengu\Documents\Programs\school\C# Lab\Assignment 3\obj\Debug\netcoreapp2.2\Assignment 3.AssemblyInfo.cs
