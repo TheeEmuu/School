@@ -25,13 +25,13 @@ public class Fraction{
             a = t;
         }
 
+        this.Numerator = this.Numerator / a;
+        this.Denominator = this.Denominator / a;
+
         if(this.Denominator < 0){
             this.Denominator = this.Denominator * -1;
             this.Numerator = this.Numerator * -1;
         }
-
-        this.Numerator = this.Numerator / a;
-        this.Denominator = this.Denominator / a;
     }
 
     public static Fraction operator +(Fraction me, Fraction other){
