@@ -56,19 +56,19 @@ class Analysis{
         return Math.Sqrt(Average(squares));
     }
 
-    // static void Main(string[] args){
-    //     ArrayAnalysisDelegate minimum = new ArrayAnalysisDelegate(Min);
-    //     ArrayAnalysisDelegate maximum = new ArrayAnalysisDelegate(Max);
-    //     ArrayAnalysisDelegate median = new ArrayAnalysisDelegate(Median);
-    //     ArrayAnalysisDelegate average = new ArrayAnalysisDelegate(Average);
-    //     ArrayAnalysisDelegate sd = new ArrayAnalysisDelegate(StandardDeviation);
+    static void Main(string[] args){
+        ArrayAnalysisDelegate minimum = new ArrayAnalysisDelegate(Min);
+        ArrayAnalysisDelegate maximum = new ArrayAnalysisDelegate(Max);
+        ArrayAnalysisDelegate median = new ArrayAnalysisDelegate(Median);
+        ArrayAnalysisDelegate average = new ArrayAnalysisDelegate(Average);
+        ArrayAnalysisDelegate sd = new ArrayAnalysisDelegate(StandardDeviation);
 
-    //     List<double> list = new List<double>() {1, 2, 3, 4, 5, 6};
+        List<double> list = new List<double>() {1, 2, 3, 4, 5, 6};
 
-    //     Console.WriteLine(minimum(list));
-    //     Console.WriteLine(maximum(list));
-    //     Console.WriteLine(median(list));
-    //     Console.WriteLine(average(list));
-    //     Console.WriteLine(sd(list));
-    // }
+        Console.WriteLine(minimum(list));
+        Console.WriteLine(maximum(list));
+        Console.WriteLine(median(list));
+        Console.WriteLine(average(list));
+        Console.WriteLine(sd(list));
+    }
 }
