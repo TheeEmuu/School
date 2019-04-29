@@ -1,3 +1,5 @@
+using System;
+
 public class Fraction{
     private int numerator, denominator;
 
@@ -76,5 +78,15 @@ public class Fraction{
 
     public string toString(){
         return Numerator + "/" + Denominator;
+    }
+
+    static void Main(string[] args){
+        Fraction a = new Fraction(1, 5);
+		Fraction b = new Fraction(2, 5);
+
+		Console.WriteLine((a + b).toString());
+        Console.WriteLine((a - b).toString());
+        Console.WriteLine((a * b).toString());
+        Console.WriteLine((a / b).toString());
     }
 }

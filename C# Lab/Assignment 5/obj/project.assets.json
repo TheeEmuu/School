@@ -477,7 +477,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.2.0": {
-      "sha512": "qIrVLupwT2NYTrf7KM7Nh+mJr36V5MITVRjyGOByVVCwGmQgQmI/6bjZYQv+QdExi4Cm87eCKJX9FdT6nc00Xg==",
+      "sha512": "OK/H8p9Ig6mLMITjXJ4VOewrJg/TU+dAPHE4BdMWMv+8COzBehf7XF1+DofKkmqdHpO2cJoS5Sc9PEZ6PKCbsg==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.2.0",
       "files": [
@@ -687,23 +687,26 @@
   },
   "packageFolders": {
     "C:\\Users\\pengu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pengu\\Documents\\Programs\\school\\C# Lab\\Assignment 5\\Assignment 5.csproj",
+      "projectUniqueName": "d:\\Programming\\school\\C# Lab\\Assignment 5\\Assignment 5.csproj",
       "projectName": "Assignment 5",
-      "projectPath": "C:\\Users\\pengu\\Documents\\Programs\\school\\C# Lab\\Assignment 5\\Assignment 5.csproj",
+      "projectPath": "d:\\Programming\\school\\C# Lab\\Assignment 5\\Assignment 5.csproj",
       "packagesPath": "C:\\Users\\pengu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pengu\\Documents\\Programs\\school\\C# Lab\\Assignment 5\\obj\\",
+      "outputPath": "d:\\Programming\\school\\C# Lab\\Assignment 5\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\pengu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

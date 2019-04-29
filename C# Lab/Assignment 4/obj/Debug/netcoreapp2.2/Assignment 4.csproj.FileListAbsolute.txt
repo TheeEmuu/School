@@ -9,3 +9,14 @@ C:\Users\pengu\Documents\Programs\school\C# Lab\Assignment 4\obj\Debug\netcoreap
 C:\Users\pengu\Documents\Programs\school\C# Lab\Assignment 4\obj\Debug\netcoreapp2.2\Assignment 4.AssemblyInfo.cs
 C:\Users\pengu\Documents\Programs\school\C# Lab\Assignment 4\obj\Debug\netcoreapp2.2\Assignment 4.dll
 C:\Users\pengu\Documents\Programs\school\C# Lab\Assignment 4\obj\Debug\netcoreapp2.2\Assignment 4.pdb
+D:\Programming\school\C# Lab\Assignment 4\bin\Debug\netcoreapp2.2\Assignment 4.deps.json
+D:\Programming\school\C# Lab\Assignment 4\bin\Debug\netcoreapp2.2\Assignment 4.runtimeconfig.json
+D:\Programming\school\C# Lab\Assignment 4\bin\Debug\netcoreapp2.2\Assignment 4.runtimeconfig.dev.json
+D:\Programming\school\C# Lab\Assignment 4\bin\Debug\netcoreapp2.2\Assignment 4.dll
+D:\Programming\school\C# Lab\Assignment 4\bin\Debug\netcoreapp2.2\Assignment 4.pdb
+D:\Programming\school\C# Lab\Assignment 4\obj\Debug\netcoreapp2.2\Assignment 4.csprojAssemblyReference.cache
+D:\Programming\school\C# Lab\Assignment 4\obj\Debug\netcoreapp2.2\Assignment 4.csproj.CoreCompileInputs.cache
+D:\Programming\school\C# Lab\Assignment 4\obj\Debug\netcoreapp2.2\Assignment 4.AssemblyInfoInputs.cache
+D:\Programming\school\C# Lab\Assignment 4\obj\Debug\netcoreapp2.2\Assignment 4.AssemblyInfo.cs
+D:\Programming\school\C# Lab\Assignment 4\obj\Debug\netcoreapp2.2\Assignment 4.dll
+D:\Programming\school\C# Lab\Assignment 4\obj\Debug\netcoreapp2.2\Assignment 4.pdb
