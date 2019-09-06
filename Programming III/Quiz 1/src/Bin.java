@@ -9,6 +9,7 @@ public class Bin {
         data[j] = temp;
     }
 
+    //I am aware this doesn't actually do anything
     public static void binSort(int data[]){
         int temp1, temp2;
         for(int i = 0; i < data.length; i++){

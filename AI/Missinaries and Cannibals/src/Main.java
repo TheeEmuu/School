@@ -1,6 +1,7 @@
 public class Main {
     static class Location{
         int Missionaries, Cannibals;
+        Boolean boat;
 
         public Location(int miss, int cann){
             Missionaries = miss;
@@ -9,18 +10,6 @@ public class Main {
 
         public int[] occupants(){
             return new int[]{Missionaries, Cannibals};
-        }
-    }
-
-    static class Boat{
-        Location cur;
-
-        public Boat(Location start){
-            cur = start;
-        }
-
-        public Location currentLocation(){
-            return cur;
         }
     }
 

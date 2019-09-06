@@ -1,0 +1,33 @@
+Array length
+bubble sort
+insert sort
+
+50
+1225
+682
+
+100
+4950
+2344
+
+200
+19900
+10044
+
+They both seem to grow quadratically, which is what is expected
+
+Array length
+bubble sort (time ns)
+insert sort (time ns)
+
+50
+1225 (218590)
+702 (87272)
+
+100
+4950 (687233)
+2540 (189043)
+
+200
+19900 (1773894)
+10558 (742771)

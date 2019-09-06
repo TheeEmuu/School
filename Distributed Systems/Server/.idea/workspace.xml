@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a13cc8c-8e9a-4378-ab1d-4f81f2eaf131" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Missinaries and Cannibals/Missinaries and Cannibals.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Missinaries and Cannibals/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/Assignment 1.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/Primes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/bin/Debug/netcoreapp2.2/Assignment 1.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/bin/Debug/netcoreapp2.2/Assignment 1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/bin/Debug/netcoreapp2.2/Assignment 1.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/bin/Debug/netcoreapp2.2/Assignment 1.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/bin/Debug/netcoreapp2.2/Assignment 1.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Assignment 1.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Assignment 1.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Assignment 1.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/Assignment 1.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/Debug/netcoreapp2.2/project.razor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 1/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/Assignment 2.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/Assignment 2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/Assignment2.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/CDriveFiles.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/LinesInFile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/VowelCount.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/bin/Debug/netcoreapp2.2/Assignment 2.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/bin/Debug/netcoreapp2.2/Assignment 2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/bin/Debug/netcoreapp2.2/Assignment 2.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/bin/Debug/netcoreapp2.2/Assignment 2.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/bin/Debug/netcoreapp2.2/Assignment 2.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Assignment 2.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Assignment 2.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Assignment 2.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/Assignment 2.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/Assignment 2.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/Assignment 2.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/Assignment 2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/Assignment 2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/Assignment 2.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/Assignment 2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/Assignment 2.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/Debug/netcoreapp2.2/project.razor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/scriptcs_bin/Debug/netcoreapp2.2/Assignment 2.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/scriptcs_bin/Debug/netcoreapp2.2/Assignment 2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/scriptcs_bin/Debug/netcoreapp2.2/Assignment 2.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/scriptcs_bin/Debug/netcoreapp2.2/Assignment 2.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 2/scriptcs_bin/Debug/netcoreapp2.2/Assignment 2.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/.vs/Assignment 3/v15/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/.vs/ProjectSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/Assignment 3.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/MinimumValue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/Volume.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/bin/Debug/netcoreapp2.2/Assignment 3.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/bin/Debug/netcoreapp2.2/Assignment 3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/bin/Debug/netcoreapp2.2/Assignment 3.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/bin/Debug/netcoreapp2.2/Assignment 3.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/bin/Debug/netcoreapp2.2/Assignment 3.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Assignment 3.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Assignment 3.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Assignment 3.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Debug/netcoreapp2.2/Assignment 3.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Debug/netcoreapp2.2/Assignment 3.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Debug/netcoreapp2.2/Assignment 3.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Debug/netcoreapp2.2/Assignment 3.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Debug/netcoreapp2.2/Assignment 3.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Debug/netcoreapp2.2/Assignment 3.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Debug/netcoreapp2.2/project.razor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Release/netcoreapp2.2/Assignment 3.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Release/netcoreapp2.2/Assignment 3.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/Release/netcoreapp2.2/Assignment 3.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 3/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/Assignment 4.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/Fraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/bin/Debug/netcoreapp2.2/Assignment 4.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/bin/Debug/netcoreapp2.2/Assignment 4.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/bin/Debug/netcoreapp2.2/Assignment 4.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/bin/Debug/netcoreapp2.2/Assignment 4.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/bin/Debug/netcoreapp2.2/Assignment 4.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Assignment 4.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Assignment 4.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Assignment 4.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/Assignment 4.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/Assignment 4.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/Assignment 4.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/Assignment 4.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/Assignment 4.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/Assignment 4.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/Assignment 4.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/Assignment 4.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 4/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/Analysis.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/Assignment 5.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/Person.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/bin/Debug/netcoreapp2.2/Assignment 5.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/bin/Debug/netcoreapp2.2/Assignment 5.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/bin/Debug/netcoreapp2.2/Assignment 5.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/bin/Debug/netcoreapp2.2/Assignment 5.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/bin/Debug/netcoreapp2.2/Assignment 5.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Assignment 5.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Assignment 5.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Assignment 5.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/Assignment 5.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/Assignment 5.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/Assignment 5.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/Assignment 5.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/Assignment 5.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/Assignment 5.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/Assignment 5.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/Assignment 5.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 5/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/Assignment 6.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/Banking.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/Counter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/Video.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/VideoEncoder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/bin/Debug/netcoreapp2.2/Assignment 6.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/bin/Debug/netcoreapp2.2/Assignment 6.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/bin/Debug/netcoreapp2.2/Assignment 6.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/bin/Debug/netcoreapp2.2/Assignment 6.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/bin/Debug/netcoreapp2.2/Assignment 6.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Assignment 6.csproj.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Assignment 6.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Assignment 6.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/Assignment 6.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/Assignment 6.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/Assignment 6.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/Assignment 6.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/Assignment 6.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/Assignment 6.csprojAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/Assignment 6.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/Assignment 6.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/Debug/netcoreapp2.2/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 6/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/App.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Assignment 7.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Calculator.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Calculator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Calculator.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Form1.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Form1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Properties/Resources.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Properties/Resources.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Properties/Settings.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 7/Assignment 7/Properties/Settings.settings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/App.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/Assignment 8.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/Form1.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/Form1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/Properties/Resources.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/Properties/Resources.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/Properties/Settings.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/Properties/Settings.settings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/Assignment 8/Assignment 8/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C# Lab/C# Lab.code-workspace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programming III/Feb 1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programming III/Feb 1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programming III/Feb 1/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programming III/Feb 1/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python Lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python Lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Python Lab/Assignment 9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python Lab/Assignment 9/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Q9D0BSSBEAebTohv1pFjF2Xwor" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ProjectServer">
+    <configuration name="ProjectServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProjectServer" />
+      <module name="Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <module name="Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProjectServer" />
+        <item itemvalue="Application.Server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a13cc8c-8e9a-4378-ab1d-4f81f2eaf131" name="Default Changelist" comment="" />
+      <created>1567173692452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567173692452</updated>
+      <workItem from="1567173694552" duration="2664000" />
+      <workItem from="1567176499269" duration="316000" />
+      <workItem from="1567187685823" duration="2055000" />
+      <workItem from="1567451195556" duration="51000" />
+      <workItem from="1567779032827" duration="2290000" />
+      <workItem from="1567792458580" duration="102000" />
+      <workItem from="1567794889575" duration="376000" />
+    </task>
+    <task id="LOCAL-00001" summary="Server">
+      <created>1567176521214</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567176521214</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Project Server">
+      <created>1567781293008</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567781293008</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Server" />
+    <MESSAGE value="Project Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project Server" />
+  </component>
+</project>
