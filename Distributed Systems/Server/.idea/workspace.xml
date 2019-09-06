@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a13cc8c-8e9a-4378-ab1d-4f81f2eaf131" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/TrivialVacuumDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/MazeVacuumEnvironment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/ModelBasedReflexVacuumAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/NondeterministicVacuumEnvironment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/RandomWalkVacuumAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/ReflexVacuumAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/SimpleReflexVacuumAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/TableDrivenVacuumAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/VacuumEnvironment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/VacuumEnvironmentState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/VacuumPercept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/Play/src/vacuum/VacuumWorldFunctions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProjectServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +49,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,6 +96,7 @@
       <workItem from="1567176499269" duration="316000" />
       <workItem from="1567187685823" duration="2055000" />
       <workItem from="1567451195556" duration="51000" />
+      <workItem from="1567779032827" duration="2238000" />
     </task>
     <task id="LOCAL-00001" summary="Server">
       <created>1567176521214</created>

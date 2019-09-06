@@ -1,10 +1,9 @@
 import java.net.*;
 import java.io.*;
-import java.text.ParseException;
 
 public class Server {
     public static void main(String[] args) throws IOException{
-        int portNumber = 6666;
+        int portNumber = 6969;
 
         while(true){
             try(
@@ -27,9 +26,7 @@ public class Server {
                 catch(NumberFormatException e){}
                 System.out.println("-----");
             }
-            catch(IOException e){
-
-            }
+            catch(IOException e){ }
         }
     }
 }
