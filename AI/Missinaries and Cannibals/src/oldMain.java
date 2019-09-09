@@ -1,4 +1,6 @@
-public class Main {
+import search.*;
+
+public class oldMain {
     static class Location{
         int Missionaries, Cannibals;
         Boolean boat;
