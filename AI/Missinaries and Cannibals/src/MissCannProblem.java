@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MissCannProblem implements Problem<State, Action> {
+    public MissCannProblem(){
+
+    }
 
     @Override
     public State getInitialState() {

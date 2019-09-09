@@ -1,5 +1,3 @@
-import search.*;
-
 public class oldMain {
     static class Location{
         int Missionaries, Cannibals;
