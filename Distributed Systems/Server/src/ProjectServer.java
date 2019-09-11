@@ -1,11 +1,11 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.URL;
+import java.util.HashSet;
 
 public class ProjectServer {
+    private static HashSet<String> dictionary;
 
     static class Handle extends Thread {
         Socket clientSocket;
@@ -51,15 +51,26 @@ public class ProjectServer {
         }
 
         private boolean checkSpelling(String word){
-            //TODO
-            return false;
+            return dictionary.contains(word);
         }
     }
 
     public static void main(String[] args) throws IOException{
         int portNumber = 6969;
 
+        System.out.println("Initializing...");
         ServerSocket serverSocket = new ServerSocket(portNumber);
+
+        dictionary = new HashSet<>();
+
+        File dict = new File("dictionary.txt");
+        BufferedReader in = new BufferedReader(new FileReader(dict));
+
+        String st;
+        while((st = in.readLine()) != null)
+            dictionary.add(st);
+
+        System.out.println("Awaiting Connection");
         while(true){
                 Socket clientSocket = serverSocket.accept();
 
