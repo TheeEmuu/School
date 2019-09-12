@@ -1,0 +1,23 @@
+Exercise 1:
+Integer
+Character
+Boolean
+Floating Point
+Double Floating Point
+Void
+Wide Character
+Function
+Array
+Pointer
+Reference
+Class
+Structure
+Union
+Enumeration
+Typedef defined types
+
+Exercise 2:
+Nested variables can see the variables of the block they're in
+but the outer block can't see them
+The difference from Java is that a c++ local variable masks all
+previous variables, whereas java won't mask another local variable
