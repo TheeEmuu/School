@@ -1,18 +1,20 @@
-import java.math.BigInteger;
 import java.net.*;
 import java.io.*;
 import java.nio.ByteBuffer;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ProjectClient {
     public static void main(String[] args) throws IOException{
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Please input the server's IP: ");
+        String ip = input.next();
+
         try (
-            Socket clientSocket = new Socket("127.0.0.1", 6969);
+            Socket clientSocket = new Socket(ip, 6969);
             OutputStream out = clientSocket.getOutputStream();
             InputStream in = clientSocket.getInputStream();
         ){
-            Scanner input = new Scanner(System.in);
             System.out.println("Type STOP to stop the program");
 
             while(true) {
