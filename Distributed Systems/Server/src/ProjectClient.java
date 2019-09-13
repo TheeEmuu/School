@@ -1,13 +1,16 @@
+import java.math.BigInteger;
 import java.net.*;
 import java.io.*;
+import java.nio.ByteBuffer;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ProjectClient {
-    public static void main(String[] args) throws  IOException{
+    public static void main(String[] args) throws IOException{
         try (
             Socket clientSocket = new Socket("127.0.0.1", 6969);
-            PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
-            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            OutputStream out = clientSocket.getOutputStream();
+            InputStream in = clientSocket.getInputStream();
         ){
             Scanner input = new Scanner(System.in);
             System.out.println("Type STOP to stop the program");
@@ -17,15 +20,50 @@ public class ProjectClient {
 
                 if(stream.equals("STOP"))
                     break;
-                out.printf("%d %d %s\n", 0, stream.length(), stream);
 
-                String response = in.readLine();
-                response = response.split(" ")[2];
+                send(stream, out);
+
+                String response = read(in);
+
                 System.out.println(response);
             }
 
-            out.println("1\n");
+            out.write(new byte[]{1});
         }
         catch(IOException e){}
+    }
+
+    private static void send(String word, OutputStream out) throws IOException{
+        out.write(new byte[]{0});
+
+        out.write(ByteBuffer.allocate(4).putInt(word.length()).array());
+
+        out.write(word.getBytes());
+    }
+
+    private static  String read(InputStream in) throws IOException{
+        int code = in.read();
+
+        if(code == 2) {
+            byte[] arrr = new byte[4];
+            in.read(arrr);
+            int length = ByteBuffer.wrap(arrr).getInt();
+
+            String[] arr = new String[length];
+
+            for(int i = 0; i < length; i++){
+                arr[i] = Character.toString((char)in.read());
+            }
+
+            StringBuilder build = new StringBuilder();
+            for(int i = 0; i < arr.length; i++){
+                build.append(arr[i]);
+            }
+            String word = build.toString();
+
+            return word;
+        }
+        else
+            return "ERROR";
     }
 }
