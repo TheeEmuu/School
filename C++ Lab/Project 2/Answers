@@ -1,0 +1,44 @@
+Exercise 1:
+Integer
+Character
+Boolean
+Floating Point
+Double Floating Point
+Void
+Wide Character
+Function
+Array
+Pointer
+Reference
+Class
+Structure
+Union
+Enumeration
+Typedef defined types
+
+Exercise 2:
+Nested variables can see the variables of the block they're in
+but the outer block can't see them
+The difference from Java is that a c++ local variable masks all
+previous variables, whereas java won't mask another local variable
+
+Exercise 3:
+Global variables are virtually never the right solution to any problem.
+Don't use them, no matter how tempting.
+
+Exercise 4:
+namespace ns{
+    int value = 6;
+}
+
+ns::value
+
+Exercise 5:
+smallest_circle.h has multiple free functions, such as load_points,
+find_center, and find_radius, which are then defined in smallest_circle.cpp
+
+all of point.h functions are member functions and they are implemented
+in point.cpp
+
+Exercise 6:
+cout << std::setprecision(3) << double << '\n'
