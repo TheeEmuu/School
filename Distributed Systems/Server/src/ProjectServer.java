@@ -1,12 +1,8 @@
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.URL;
 import java.nio.ByteBuffer;
-import java.util.Arrays;
 import java.util.HashSet;
-
-//dataoutputstream
 
 public class ProjectServer {
     private static HashSet<String> dictionary;

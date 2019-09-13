@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a13cc8c-8e9a-4378-ab1d-4f81f2eaf131" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/ProjectClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/ProjectClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/ProjectServer$Handle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/ProjectServer$Handle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Server/ProjectServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Server/ProjectServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programming III/BinaryTrees/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programming III/BinaryTrees/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Programming III/BinaryTrees/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programming III/BinaryTrees/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectServer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +117,7 @@
       <workItem from="1567792458580" duration="102000" />
       <workItem from="1567794889575" duration="376000" />
       <workItem from="1568383707492" duration="14000" />
-      <workItem from="1568383841130" duration="1264000" />
+      <workItem from="1568383841130" duration="1513000" />
     </task>
     <task id="LOCAL-00001" summary="Server">
       <created>1567176521214</created>
@@ -168,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568338326486</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Project Server">
+      <created>1568386306246</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568386306246</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
