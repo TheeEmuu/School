@@ -16,22 +16,27 @@ public class Main {
     }
 
     public static String Kangaroo(int x1, int v1, int x2, int v2){
-        int x, v;
+        //x1 starts behind x2
+        if((x1 < x2 && v1 > v2)){
+            while(x1 < x2){
+                x1 += v1;
+                x2 += v2;
 
-        if(v1  > v2) {
-            x = x2 - x1;
-            v = v1 - v2;
+                if(x1 == x2)
+                    return "YES";
+            }
         }
-        else {
-            x = x1 - x2;
-            v = v2 - v1;
+        //x2 starts behind x1
+        else if((x2 < x1 && v2 > v1)){
+            while(x1 > x2){
+                x1 += v1;
+                x2 += v2;
+
+                if(x1 == x2)
+                    return "YES";
+            }
         }
 
-        double r = x / v;
-        System.out.println(r);
-        if(r == (int)r && r > 0)
-            return "YES";
-        else
-            return "NO";
+        return "NO";
     }
 }
