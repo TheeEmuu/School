@@ -8,6 +8,7 @@ import aima.core.util.datastructure.XYLocation;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.function.Function;
 
 public class Queens implements Problem<NQueensBoard, QueenAction> {
     public static void main(String[] args) {
