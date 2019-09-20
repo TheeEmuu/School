@@ -12,7 +12,7 @@ public class Puzzle implements Problem<EightPuzzleBoard, PuzzleAction> {
 
     @Override
     public EightPuzzleBoard getInitialState() {
-
+        return null;
     }
 
     @Override

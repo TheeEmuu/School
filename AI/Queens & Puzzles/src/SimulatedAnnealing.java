@@ -9,75 +9,88 @@ public class SimulatedAnnealing<S, A> {
 
     private static double T = 1;
     private static final double Tmin = .0001;
-    private static final double alpha = 0.9;
-    private static final int numIterations = 100;
+    private static double alpha;
+    private static final int numIterations = 500;
 
     private Problem<S, A> problem;
+    S initialState;
     Function<S, Double> energy;
 
     Random random = new Random();
 
-    List<S> states;
-    List<A> actions;
+    public SimulatedAnnealing(Problem<S, A> p, Function<S, Double> heuristic, S init, double schedule){
+        problem = p;
+        energy = heuristic;
+        initialState = init;
+        T = 1;
+        alpha = schedule;
+    }
+
+    public SimulatedAnnealing(Problem<S, A> p, Function<S, Double> heuristic, double schedule){
+        this(p, heuristic, p.getInitialState(), schedule);
+    }
+
+    public SimulatedAnnealing(Problem<S, A> p, Function<S, Double> heuristic, S init){
+        this(p, heuristic, init, .0001);
+    }
 
     public SimulatedAnnealing(Problem<S, A> p, Function<S, Double> heuristic){
-        actions = new ArrayList<>();
-        states = new ArrayList<>();
-        energy = heuristic;
-
-        S currentState = p.getInitialState();
-
-        while(!p.testGoal(currentState)) {
-            List<A> availableActions = p.getActions(currentState);
-
-            ArrayList<S> potentialStates = new ArrayList<>();
-            for(A x : availableActions){
-                potentialStates.add(p.getResult(currentState, x));
-            }
-
-            int desired = anneal(currentState, potentialStates);
-
-            actions.add(availableActions.get(desired));
-            states.add(potentialStates.get(desired));
-            currentState = potentialStates.get(desired);
-        }
+        this(p, heuristic, p.getInitialState(), .0001);
     }
 
-    private int anneal(S currentState, List<S> potentialStates){
-        int currentBest = -1;
-        Double min = energy.apply(currentState);
-        Random neighborFunction = new Random();
-        int neighbor = -1;
+    public S anneal(){
+        S currentState = initialState;
+        S bestState = currentState;
 
         while(T > Tmin){
-            for(int i = 0; i < numIterations; i++) {
-                if(energy.apply(currentState) < min){
-                    min = energy.apply(currentState);
-                    currentBest = neighbor;
+            // Debug steps : System.out.println(energy.apply(currentState) + " " + energy.apply(bestState));
+            for(int i = 0; i < numIterations; i++){
+                if(energy.apply(currentState) < energy.apply(bestState)) {
+                    bestState = currentState;
                 }
 
-                neighbor = neighborFunction.nextInt(potentialStates.size());
+                S neighbor = neighbor(currentState);
+                if(Math.exp((energy.apply(currentState) - energy.apply(neighbor)) / T) > Math.random())
+                    currentState = neighbor;
 
-//                double prob = Math.pow(Math.E, energy.apply(currentState) - energy.apply(potentialStates.get(neighbor)));
-                double prob = 0;
-
-                if(prob > Math.random()) {
-                    currentBest = neighbor;
-                    currentState = potentialStates.get(neighbor);
-                }
+                T -= alpha;
             }
-
-            T = T - alpha;
         }
 
-        return currentBest;
+        return bestState;
     }
 
-    public List<S> getStates() {
-        return states;
-    }
+//    private int anneal(S currentState, List<S> potentialStates){
+//        int currentBest = -1;
+//        Double min = energy.apply(currentState);
+//        Random neighborFunction = new Random();
+//        int neighbor = -1;
+//
+//        while(T > Tmin){
+//            for(int i = 0; i < numIterations; i++) {
+//                if(energy.apply(currentState) < min){
+//                    min = energy.apply(currentState);
+//                    currentBest = neighbor;
+//                }
+//
+//                neighbor = neighborFunction.nextInt(potentialStates.size());
+//
+//                double prob = Math.pow(Math.E, energy.apply(currentState) - energy.apply(potentialStates.get(neighbor)));
+//
+//                if(prob > Math.random()) {
+//                    currentBest = neighbor;
+//                    currentState = potentialStates.get(neighbor);
+//                }
+//            }
+//
+//            T = T - alpha;
+//        }
+//
+//        return currentBest;
+//    }
 
-    public List<A> getActions() {
-        return actions;
+    private S neighbor(S currentState){
+        List<A> availableActions = problem.getActions(currentState);
+        return problem.getResult(currentState, availableActions.get(random.nextInt(availableActions.size())));
     }
 }

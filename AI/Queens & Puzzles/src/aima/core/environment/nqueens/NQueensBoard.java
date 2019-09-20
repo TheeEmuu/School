@@ -244,9 +244,9 @@ public class NQueensBoard {
 		for (int row = 0; row < getSize(); row++) {
 			for (int col = 0; col < getSize(); col++) {
 				if (queenExistsAt(col, row))
-					builder.append('Q');
+					builder.append("Q  ");
 				else
-					builder.append('-');
+					builder.append("-  ");
 			}
 			builder.append("\n");
 		}
