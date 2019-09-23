@@ -1,22 +1,18 @@
 public class State {
-    private int missionariesA, missionariesB;
-    private int cannibalsA, cannibalsB;
+    private int missionariesA, totalMissionaries;
+    private int cannibalsA , totalCannibals;
     private int boat;
 
-    public State(int mA, int cA, int mB, int cB, int b){
+    public State(int mA, int cA, int b){
         missionariesA = mA;
+        totalMissionaries = mA;
         cannibalsA = cA;
-        missionariesB = mB;
-        cannibalsB = cB;
+        totalCannibals = cA;
         boat = b; //1 is a, 2 is b
     }
 
     public State(State state){
-        missionariesA = state.getMissionariesA();
-        missionariesB = state.getMissionariesB();
-        cannibalsA = state.getCannibalsA();
-        cannibalsB = state.getCannibalsB();
-        boat = getBoat();
+        this(state.getMissionariesA(), state.getCannibalsA(), state.getBoat());
     }
 
     public int getBoat() {
@@ -37,11 +33,11 @@ public class State {
     }
 
     public int getMissionariesB() {
-        return missionariesB;
+        return totalMissionaries - missionariesA;
     }
 
     public void setMissionariesB(int missionariesB) {
-        this.missionariesB = missionariesB;
+        this.missionariesA -= missionariesB;
     }
 
     public int getCannibalsA() {
@@ -53,10 +49,10 @@ public class State {
     }
 
     public int getCannibalsB() {
-        return cannibalsB;
+        return totalCannibals - cannibalsA;
     }
 
     public void setCannibalsB(int cannibalsB) {
-        this.cannibalsB = cannibalsB;
+        this.cannibalsA -= cannibalsB;
     }
 }

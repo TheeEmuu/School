@@ -24,4 +24,12 @@ public class Action {
 
         return state;
     }
+
+    public int getMissionariesMoving() {
+        return missionariesMoving;
+    }
+
+    public int getCannibalsMoving() {
+        return cannibalsMoving;
+    }
 }

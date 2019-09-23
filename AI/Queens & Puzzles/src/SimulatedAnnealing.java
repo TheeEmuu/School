@@ -60,35 +60,6 @@ public class SimulatedAnnealing<S, A> {
         return bestState;
     }
 
-//    private int anneal(S currentState, List<S> potentialStates){
-//        int currentBest = -1;
-//        Double min = energy.apply(currentState);
-//        Random neighborFunction = new Random();
-//        int neighbor = -1;
-//
-//        while(T > Tmin){
-//            for(int i = 0; i < numIterations; i++) {
-//                if(energy.apply(currentState) < min){
-//                    min = energy.apply(currentState);
-//                    currentBest = neighbor;
-//                }
-//
-//                neighbor = neighborFunction.nextInt(potentialStates.size());
-//
-//                double prob = Math.pow(Math.E, energy.apply(currentState) - energy.apply(potentialStates.get(neighbor)));
-//
-//                if(prob > Math.random()) {
-//                    currentBest = neighbor;
-//                    currentState = potentialStates.get(neighbor);
-//                }
-//            }
-//
-//            T = T - alpha;
-//        }
-//
-//        return currentBest;
-//    }
-
     private S neighbor(S currentState){
         List<A> availableActions = problem.getActions(currentState);
         return problem.getResult(currentState, availableActions.get(random.nextInt(availableActions.size())));
