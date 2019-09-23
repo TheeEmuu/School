@@ -1,17 +1,12 @@
 import org.json.simple.JSONObject;
 
-import javax.print.DocFlavor;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.net.Authenticator;
 import java.net.InetSocketAddress;
 import java.net.ProxySelector;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.nio.file.Paths;
 
 public class Client {
     public static void main(String[] args){
@@ -25,7 +20,7 @@ public class Client {
         req.put("value", "test");
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://localhost:8600"))
+                .uri(URI.create("127.0.0.1"))
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofString(req.toJSONString()))
                 .build();
