@@ -12,7 +12,15 @@ import java.util.function.Function;
 
 public class Queens implements Problem<NQueensBoard, QueenAction> {
     public static void main(String[] args) {
+        Function<NQueensBoard, Double> heuristic = a -> (double)a.getNumberOfAttackingPairs();
 
+        SimulatedAnnealing<NQueensBoard, QueenAction> search;
+
+        search = new SimulatedAnnealing<NQueensBoard, QueenAction>(new Queens(), heuristic, .0001);
+
+        NQueensBoard result = search.anneal();
+        System.out.println(result.toString());
+        System.out.println(result.getNumberOfAttackingPairs());
     }
 
     @Override
