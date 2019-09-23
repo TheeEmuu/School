@@ -7,10 +7,10 @@ import java.util.function.Function;
 
 public class SimulatedAnnealing<S, A> {
 
-    private static double T = 1;
-    private static final double Tmin = .0001;
-    private static double alpha;
-    private static final int numIterations = 500;
+    private double T = 1;
+    private final double Tmin = .00001;
+    private double alpha;
+    private final int numIterations = 500;
 
     private Problem<S, A> problem;
     S initialState;
@@ -22,7 +22,6 @@ public class SimulatedAnnealing<S, A> {
         problem = p;
         energy = heuristic;
         initialState = init;
-        T = 1;
         alpha = schedule;
     }
 
@@ -41,21 +40,21 @@ public class SimulatedAnnealing<S, A> {
     public S anneal(){
         S currentState = initialState;
         S bestState = currentState;
-
-        while(T > Tmin){
-            // Debug steps : System.out.println(energy.apply(currentState) + " " + energy.apply(bestState));
-            for(int i = 0; i < numIterations; i++){
-                if(energy.apply(currentState) < energy.apply(bestState)) {
+        while (T > Tmin) {
+//            System.out.println(energy.apply(currentState) + " " + energy.apply(bestState));
+            for (int i = 0; i < numIterations; i++) {
+                if (energy.apply(currentState) < energy.apply(bestState)) {
                     bestState = currentState;
                 }
 
                 S neighbor = neighbor(currentState);
-                if(Math.exp((energy.apply(currentState) - energy.apply(neighbor)) / T) > Math.random())
+                if (Math.exp((energy.apply(currentState) - energy.apply(neighbor)) / T) > Math.random())
                     currentState = neighbor;
 
                 T -= alpha;
             }
         }
+
 
         return bestState;
     }
