@@ -28,9 +28,34 @@ public class FrontClient {
 
         List<String> params = Arrays.asList(p.split(" "));
 
-        if(method.equals("restock")){
-            restock(params);
+        switch(method){
+            case "getItems":
+                getItems(params);
+                break;
+            case "purchase":
+                purchase(params);
+                break;
+            case "restock":
+                restock(params);
+                break;
         }
+    }
+
+    public static void getItems(List<String> params){
+        ArrayList<List<String>> list = new ArrayList<>();
+
+        list.add(form("filter", "string", params.get(0)));
+
+        call("getItems", list);
+    }
+
+    public static void purchase(List<String> params){
+        ArrayList<List<String>> list = new ArrayList<>();
+
+        list.add(form("name", "string", params.get(0)));
+        list.add(form("count", "int", params.get(1)));
+
+        call("purchase", list);
     }
 
     public static void restock(List<String> params){
@@ -42,8 +67,10 @@ public class FrontClient {
         call("restock", list);
     }
 
-    public static void call(String methodName, List<List<String>> list){
-        middleman.doThing(methodName, list);
+
+
+    public static void call(String methodName, List<List<String>> params){
+        middleman.doThing(methodName, params);
     }
 
     private static List<String> form(String a, String b, String c){
