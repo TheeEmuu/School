@@ -1,5 +1,4 @@
 import java.util.*;
-import javax.swing.*;
 
 public class FrontClient {
     static BackClient middleman;
@@ -11,14 +10,7 @@ public class FrontClient {
 
         Scanner in = new Scanner(System.in);
 
-//        JFrame frame = new JFrame("Main");
-//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        JButton button = new JButton("Text");
-//        JButton button2 = new JButton("More Text");
-//        frame.getContentPane().add(button, BorderLayout.SOUTH);
-//        frame.getContentPane().add(button2, BorderLayout.SOUTH);
-//        frame.pack();
-//        frame.setVisible(true);
+        menu(null);
 
         System.out.print("What method would you like to call: ");
         String method = in.nextLine();
@@ -41,12 +33,28 @@ public class FrontClient {
         }
     }
 
-    public static void getItems(List<String> params){
+    private static void menu(List<String> items){
+        List<List<String>> a = getItems(items);
+
+        if(a != null){
+            System.out.println("-------Company-------\n");
+            for(List<String> item : a){
+                System.out.printf("%s   %s---------------------%s\n", item.get(0), item.get(1), item.get(2));
+            }
+        }
+    }
+
+    public static List<List<String>> getItems(List<String> params){
         ArrayList<List<String>> list = new ArrayList<>();
 
-        list.add(form("filter", "string", params.get(0)));
+        if(params != null) {
+            list.add(form("filter", "string", params.get(0)));
+        }
+        else{
+            list.add(form("filter", "string", null));
+        }
 
-        call("getItems", list);
+        return call("getItems", list);
     }
 
     public static void purchase(List<String> params){
@@ -67,18 +75,16 @@ public class FrontClient {
         call("restock", list);
     }
 
-
-
-    public static void call(String methodName, List<List<String>> params){
-        middleman.doThing(methodName, params);
+    public static List<List<String>> call(String methodName, List<List<String>> params){
+        return middleman.doThing(methodName, params);
     }
 
-    private static List<String> form(String a, String b, String c){
+    private static List<String> form(String name, String type, String value){
         ArrayList<String> result = new ArrayList<>();
 
-        result.add(a);
-        result.add(b);
-        result.add(c);
+        result.add(name);
+        result.add(type);
+        result.add(value);
 
         return result;
     }
