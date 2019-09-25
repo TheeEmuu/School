@@ -7,19 +7,9 @@ public class FrontClient {
         String ip = "1.0.0.1";
         int port = 6969;
         middleman = new BackClient(ip, port);
+    }
 
-        Scanner in = new Scanner(System.in);
-
-        menu(null);
-
-        System.out.print("What method would you like to call: ");
-        String method = in.nextLine();
-        System.out.println();
-        System.out.print("Please input parameters separated by spaces: ");
-        String p = in.nextLine();
-
-        List<String> params = Arrays.asList(p.split(" "));
-
+    public static void run(String method, List<String> params){
         switch(method){
             case "getItems":
                 getItems(params);
@@ -33,16 +23,6 @@ public class FrontClient {
         }
     }
 
-    private static void menu(List<String> items){
-        List<List<String>> a = getItems(items);
-
-        if(a != null){
-            System.out.println("-------Company-------\n");
-            for(List<String> item : a){
-                System.out.printf("%s   %s---------------------%s\n", item.get(0), item.get(1), item.get(2));
-            }
-        }
-    }
 
     public static List<List<String>> getItems(List<String> params){
         ArrayList<List<String>> list = new ArrayList<>();
