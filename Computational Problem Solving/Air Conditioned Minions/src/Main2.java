@@ -34,7 +34,7 @@ class Minion implements Comparable<Minion>{
 
     public Minion(int min, int max){
         minTemp = min;
-        maxTemp = max + 1;
+        maxTemp = max;
     }
 
     public int getMaxTemp() {
