@@ -6,45 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/Programming/school/C++ Lab/Project 1/main.cpp
-string
+/cygdrive/d/Programming/school/C++ Lab/Project 1/test.cpp
+algorithm
 -
 iostream
 -
-point.h
-/cygdrive/d/Programming/school/C++ Lab/Project 1/point.h
-smallest_circle.h
-/cygdrive/d/Programming/school/C++ Lab/Project 1/smallest_circle.h
-
-/cygdrive/d/Programming/school/C++ Lab/Project 1/point.cpp
-cmath
--
-string
--
-sstream
--
-point.h
-/cygdrive/d/Programming/school/C++ Lab/Project 1/point.h
-
-/cygdrive/d/Programming/school/C++ Lab/Project 1/point.h
-string
--
-
-/cygdrive/d/Programming/school/C++ Lab/Project 1/smallest_circle.cpp
-fstream
--
 vector
 -
-string
--
-point.h
-/cygdrive/d/Programming/school/C++ Lab/Project 1/point.h
-
-/cygdrive/d/Programming/school/C++ Lab/Project 1/smallest_circle.h
-vector
--
-string
--
-point.h
-/cygdrive/d/Programming/school/C++ Lab/Project 1/point.h
 

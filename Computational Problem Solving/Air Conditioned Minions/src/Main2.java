@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main2 {
@@ -13,7 +13,12 @@ public class Main2 {
             minions.add(new Minion(in.nextInt(), in.nextInt()));
         }
 
-        Collections.sort(minions);
+        minions.sort(new SortMinion());
+
+//        System.out.println();
+//        for(Minion x : minions){
+//            System.out.println(x.getMinTemp() + " " + x.getMaxTemp());
+//        }
 
         int rooms = 0;
         int lowestTemp = -1;
@@ -29,12 +34,12 @@ public class Main2 {
     }
 }
 
-class Minion implements Comparable<Minion>{
+class Minion{
     private int maxTemp, minTemp;
 
     public Minion(int min, int max){
         minTemp = min;
-        maxTemp = max + 1;
+        maxTemp = max;
     }
 
     public int getMaxTemp() {
@@ -44,9 +49,14 @@ class Minion implements Comparable<Minion>{
     public int getMinTemp() {
         return minTemp;
     }
+}
 
+class SortMinion implements Comparator<Minion>{
     @Override
-    public int compareTo(Minion o) {
-        return this.getMinTemp() - o.getMinTemp();
+    public int compare(Minion o1, Minion o2) {
+        if(o1.getMaxTemp() == o2.getMaxTemp())
+            return o1.getMinTemp() - o2.getMinTemp();
+        else
+            return o1.getMaxTemp() - o2.getMaxTemp();
     }
 }

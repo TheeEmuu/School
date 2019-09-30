@@ -95,6 +95,12 @@
 		<Unit filename="/cygdrive/d/Programming/school/C++ Lab/Project 1/smallest_circle.h">
 			<Option target="Project_1"/>
 		</Unit>
+		<Unit filename="/cygdrive/d/Programming/school/C++ Lab/Project 1/test.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Programming/school/C++ Lab/Project 1/test.h">
+			<Option target="Project_1"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/Programming/school/C++ Lab/Project 1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
