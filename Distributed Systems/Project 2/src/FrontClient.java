@@ -31,8 +31,10 @@ public class FrontClient {
             list.add(form("filter", "string", params.get(0)));
         }
         else{
-            list.add(form("filter", "string", null));
+            list.add(new ArrayList<>());
+            list.get(0).add("EMPTY");
         }
+
 
         return call("getItems", list);
     }
