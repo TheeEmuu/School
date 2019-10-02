@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Menu {
     static FrontClient front;
+    String filter;
 
     public static void main(String[] args){
         front = new FrontClient("10.1.23.64", 6969);
@@ -26,7 +27,7 @@ public class Menu {
 
             a = front.run(method, params);
 
-            System.out.println(a);
+//            System.out.println(a);
             menu(a);
         }
     }
