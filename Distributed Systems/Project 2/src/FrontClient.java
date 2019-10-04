@@ -28,7 +28,7 @@ public class FrontClient {
     public ArrayList<ArrayList<String>> getItems(List<String> params){
         ArrayList<List<String>> list = new ArrayList<>();
 
-        if(params != null) {
+        if(params != null && params.size() > 0) {
             list.add(form("filter", "string", params.get(0)));
         }
         else{
@@ -41,8 +41,10 @@ public class FrontClient {
     public ArrayList<ArrayList<String>> purchase(List<String> params){
         ArrayList<List<String>> list = new ArrayList<>();
 
-        list.add(form("name", "string", params.get(0)));
-        list.add(form("count", "integer", params.get(1)));
+        if(params.size() >= 2) {
+            list.add(form("name", "string", params.get(0)));
+            list.add(form("count", "integer", params.get(1)));
+        }
 
         return call("purchase", list);
     }
@@ -50,8 +52,10 @@ public class FrontClient {
     public ArrayList<ArrayList<String>> restock(List<String> params){
         ArrayList<List<String>> list = new ArrayList<>();
 
-        list.add(form("name", "string", params.get(0)));
-        list.add(form("count", "integer", params.get(1)));
+        if(params.size() >= 2) {
+            list.add(form("name", "string", params.get(0)));
+            list.add(form("count", "integer", params.get(1)));
+        }
 
         return call("restock", list);
     }

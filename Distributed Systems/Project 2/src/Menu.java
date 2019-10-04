@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -7,10 +8,17 @@ import java.util.Scanner;
 
 public class Menu {
     private static FrontClient front;
-    private List<String> filter;
 
     public static void main(String[] args){
-        front = new FrontClient("10.1.23.64", 6969);
+        try {
+            Scanner fileIn = new Scanner(new File("server information"));
+            String ip = fileIn.nextLine();
+            int port = Integer.parseInt(fileIn.nextLine());
+            front = new FrontClient(ip, port);
+        }catch(Exception e){
+            front = new FrontClient("127.0.0.1", 6969);
+        }
+
 
         ArrayList<ArrayList<String>> a = front.getItems(null);
 
@@ -27,7 +35,7 @@ public class Menu {
             if(method.toLowerCase().equals("getitems"))
                 System.out.print("filter: ");
             else
-                System.out.println("item quantity: ");
+                System.out.print("item, quantity: ");
             String p = in.nextLine();
 
             List<String> params = Arrays.asList(p.split(" "));
