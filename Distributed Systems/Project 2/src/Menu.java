@@ -8,15 +8,16 @@ public class Menu {
     private static FrontClient front;
 
     public static void main(String[] args){
-        front = new FrontClient("lyn182-03", 6969);
-//        try {
-//            Scanner fileIn = new Scanner(new File("server information"));
-//            String ip = fileIn.nextLine();
-//            int port = Integer.parseInt(fileIn.nextLine());
-//            front = new FrontClient(ip, port);
-//        }catch(Exception e){
-//            front = new FrontClient("127.0.0.1", 6969);
-//        }
+        //front = new FrontClient("lyn182-03", 6969);
+        try {
+            Scanner fileIn = new Scanner(new File("/home/LVC/ejj001/Programming/Distributed Systems/Project 2/src/server information"));
+            String ip = fileIn.nextLine();
+            int port = Integer.parseInt(fileIn.nextLine());
+            System.out.println(ip + " " + port);
+            front = new FrontClient(ip, port);
+        }catch(Exception e){
+            front = new FrontClient("127.0.0.1", 6969);
+        }
 
 
         ArrayList<ArrayList<String>> a = front.getItems(null);
