@@ -3,15 +3,14 @@ import java.util.*;
 public class FrontClient {
     BackClient middleman;
 
-
     public FrontClient(String ip, int port){
         middleman = new BackClient(ip, port);
     }
 
     public ArrayList<ArrayList<String>> run(String method, List<String> params){
         ArrayList<ArrayList<String>> ret = new ArrayList<>();
-        switch(method){
-            case "getItems":
+        switch(method.toLowerCase()){
+            case "getitems":
                 ret = getItems(params);
                 break;
             case "purchase":
