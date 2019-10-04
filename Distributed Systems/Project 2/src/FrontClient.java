@@ -1,62 +1,64 @@
 import java.util.*;
 
 public class FrontClient {
-    static BackClient middleman;
+    BackClient middleman;
 
-    public static void main(String[] args){
-        String ip = "1.0.0.1";
-        int port = 6969;
+
+    public FrontClient(String ip, int port){
         middleman = new BackClient(ip, port);
     }
 
-    public static void run(String method, List<String> params){
+    public ArrayList<ArrayList<String>> run(String method, List<String> params){
+        ArrayList<ArrayList<String>> ret = new ArrayList<>();
         switch(method){
             case "getItems":
-                getItems(params);
+                ret = getItems(params);
                 break;
             case "purchase":
-                purchase(params);
+                ret = purchase(params);
                 break;
             case "restock":
-                restock(params);
+                ret = restock(params);
                 break;
         }
+
+        return ret;
     }
 
 
-    public static List<List<String>> getItems(List<String> params){
+    public ArrayList<ArrayList<String>> getItems(List<String> params){
         ArrayList<List<String>> list = new ArrayList<>();
 
         if(params != null) {
             list.add(form("filter", "string", params.get(0)));
         }
         else{
-            list.add(form("filter", "string", null));
+            list.add(form("filter", "string", ""));
         }
 
         return call("getItems", list);
     }
 
-    public static void purchase(List<String> params){
+    public ArrayList<ArrayList<String>> purchase(List<String> params){
         ArrayList<List<String>> list = new ArrayList<>();
 
         list.add(form("name", "string", params.get(0)));
-        list.add(form("count", "int", params.get(1)));
+        list.add(form("count", "integer", params.get(1)));
 
-        call("purchase", list);
+        return call("purchase", list);
     }
 
-    public static void restock(List<String> params){
+    public ArrayList<ArrayList<String>> restock(List<String> params){
         ArrayList<List<String>> list = new ArrayList<>();
 
         list.add(form("name", "string", params.get(0)));
-        list.add(form("count", "int", params.get(1)));
+        list.add(form("count", "integer", params.get(1)));
 
-        call("restock", list);
+        return call("restock", list);
     }
 
-    public static List<List<String>> call(String methodName, List<List<String>> params){
-        return middleman.doThing(methodName, params);
+    public ArrayList<ArrayList<String>> call(String methodName, List<List<String>> params){
+        return middleman.callMethod(methodName, params);
     }
 
     private static List<String> form(String name, String type, String value){
