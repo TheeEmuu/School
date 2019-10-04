@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class FrontClient {
-    BackClient middleman;
+    private BackClient middleman;
 
     public FrontClient(String ip, int port){
         middleman = new BackClient(ip, port);

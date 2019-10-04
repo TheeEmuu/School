@@ -1,6 +1,4 @@
 import java.io.File;
-import java.io.IOException;
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -10,14 +8,15 @@ public class Menu {
     private static FrontClient front;
 
     public static void main(String[] args){
-        try {
-            Scanner fileIn = new Scanner(new File("server information"));
-            String ip = fileIn.nextLine();
-            int port = Integer.parseInt(fileIn.nextLine());
-            front = new FrontClient(ip, port);
-        }catch(Exception e){
-            front = new FrontClient("127.0.0.1", 6969);
-        }
+        front = new FrontClient("lyn182-03", 6969);
+//        try {
+//            Scanner fileIn = new Scanner(new File("server information"));
+//            String ip = fileIn.nextLine();
+//            int port = Integer.parseInt(fileIn.nextLine());
+//            front = new FrontClient(ip, port);
+//        }catch(Exception e){
+//            front = new FrontClient("127.0.0.1", 6969);
+//        }
 
 
         ArrayList<ArrayList<String>> a = front.getItems(null);
@@ -28,7 +27,7 @@ public class Menu {
 
         while(true) {
             System.out.println("What method would you like to call?");
-            System.out.print("getitems, purchase, or restock");
+            System.out.print("getitems, purchase, or restock: ");
             String method = in.nextLine();
             System.out.println();
             System.out.println("Please input parameters separated by spaces: ");
@@ -42,24 +41,32 @@ public class Menu {
 
             a = front.run(method, params);
 
-//            System.out.println(a);
             menu(a);
         }
     }
 
     private static void menu(ArrayList<ArrayList<String>> items) {
         try{
-            int i = Integer.parseInt(items.get(0).get(0));
+            if(items.get(0).get(0).isEmpty()){
 
-            System.out.println("The purchase cost: $" + i);
-        }
-        catch(IndexOutOfBoundsException e){
-            System.out.println("Item restocked");
+                System.out.println("Item restocked");
+            }
+            else {
+                Double i = Double.parseDouble(items.get(0).get(0));
+
+                System.out.println("The purchase cost: $" + i);
+            }
         }
         catch(NumberFormatException e){
-            System.out.println("-------Company-------\n");
-            for (ArrayList<String> item : items) {
-                System.out.printf("%s   %s---------------------%s\n", item.get(0), item.get(1), item.get(2));
+            try {
+                items.get(0).get(1);
+
+                System.out.println("-------Company-------\n");
+                for (ArrayList<String> item : items) {
+                    System.out.printf("%s   %s---------------------%s\n", item.get(0), item.get(1), item.get(2));
+                }
+            }
+            catch(IndexOutOfBoundsException a){
             }
         }
     }
