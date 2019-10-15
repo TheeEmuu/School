@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Programming/school/C++ Lab/Project 4/Processing.h
+vector
+-
+Rectangle.h
+/cygdrive/d/Programming/school/C++ Lab/Project 4/Rectangle.h
+string
+-
+fstream
+-
+vector
+-
+
+/cygdrive/d/Programming/school/C++ Lab/Project 4/Rectangle.h
+utility
+-
+string
+-
+
+/cygdrive/d/Programming/school/C++ Lab/Project 4/main.cpp
+iostream
+-
+Rectangle.h
+/cygdrive/d/Programming/school/C++ Lab/Project 4/Rectangle.h
+Processing.h
+/cygdrive/d/Programming/school/C++ Lab/Project 4/Processing.h
+vector
+-
+set
+-
+
