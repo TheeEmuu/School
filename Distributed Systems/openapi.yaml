@@ -1,0 +1,179 @@
+openapi: 3.0.0
+info:
+  title: Hearthstone
+  version: '1.0'
+servers:
+  - {}
+paths:
+  '/deck/{archetype}':
+    get:
+      summary: Deck/archetype
+      tags:
+        - Deck
+      requestBody:
+        description: ''
+      parameters: []
+      description: 'Returns an example deck of the specified archetype, represented as its deck code'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                  link:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        rel:
+                          type: string
+                        href:
+                          type: string
+                        type:
+                          type: string
+                required:
+                  - code
+              examples:
+                example-1:
+                  value:
+                    code: AAECAaoIBO/3AquMA72ZA+GoAw2cAt4F7/EC4vgCi4UDtJEDtJcDxpkDu6UDz6UD1KUD1aUD+aUDAA==
+                    link:
+                      - rel: next
+                        href: /quest_shaman/2
+                        type: application/json
+          headers: {}
+        '404':
+          description: Not Found
+          headers: {}
+    parameters:
+      - schema:
+          type: string
+        name: archetype
+        in: path
+        required: true
+  '/matchup/{playerA}-{playerB}':
+    get:
+      summary: Matchup
+      tags:
+        - Matchup
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  winrate:
+                    type: number
+              examples:
+                example-1:
+                  value:
+                    winrate: 52.06
+        '404':
+          description: Not Found
+      description: Returns the winrate of PlayerA vs PlayerB
+    parameters:
+      - schema:
+          type: string
+        name: playerA
+        in: path
+        required: true
+      - schema:
+          type: string
+        name: playerB
+        in: path
+        required: true
+  '/deck/{archetype}/{id}':
+    parameters:
+      - type: string
+        name: archetype
+        in: path
+        required: true
+      - type: string
+        name: id
+        in: path
+        required: true
+    get:
+      summary: Deck/archetype/id
+      tags:
+        - Deck
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+              examples:
+                Example:
+                  value:
+                    code: AAECAaoIBO/3AquMA72ZA+GoAw2cAt4F7/EC4vgCi4UDtJEDtJcDxpkDu6UDz6UD1KUD1aUD+aUDAA==
+        '404':
+          description: Not Found
+      description: returns a specific deck of the given archetype
+    post:
+      summary: Update Deck
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+      description: Updates the specified deck
+      tags:
+        - Deck
+    put:
+      summary: New Deck
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Bad Request
+      description: Creates a new deck with the given ID
+      tags:
+        - Deck
+    delete:
+      summary: Delete Deck
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+      description: Deletes the deck with the specified ID
+      tags:
+        - Deck
+  /deck:
+    get:
+      summary: Deck
+      tags:
+        - Deck
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  decks:
+                    type: array
+                    items:
+                      type: string
+              examples:
+                Example:
+                  value:
+                    decks:
+                      - highlander_mage
+                      - quest_shaman
+                      - tempo_rogue
+                      - evolve_shaman
+      description: Returns a list of all deck archetypes in the database
+components:
+  schemas: {}
