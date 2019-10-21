@@ -1,0 +1,2 @@
+It happens for the same reason you can assign a variable in the definition of a while loop.
+So frequencies["aardvark"] creates the map, and simply sets its default value to 0.0
