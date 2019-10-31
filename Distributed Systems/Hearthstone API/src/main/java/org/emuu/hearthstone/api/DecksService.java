@@ -1,38 +1,95 @@
 package org.emuu.hearthstone.api;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+import javax.ws.rs.Path;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.HashSet;
+
+@Path("decks")
 public class DecksService implements Decks {
     @Override
-    public String getDecks() {
-        return null;
-    }
+    public String getDecks(String filter) {
+        if(filter == null)
+            filter = "";
 
-    @Override
-    public String getDecksFiltered(String filter) {
+        String sql = "SELECT Archetype FROM Decks WHERE Archetype LIKE ?";
+
+        try (Connection conn = Database.connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, "%" + filter + "%");
+            ResultSet rs = pstmt.executeQuery();
+
+            JSONObject ret = new JSONObject();
+            JSONArray list = new JSONArray();
+
+            HashSet<String> added = new HashSet<>();
+            while(rs.next()){
+                String archetype = rs.getString("Archetype");
+
+                if(!added.contains(archetype))
+                    list.add(Main.BASE_URI + "decks/" + archetype);
+
+                added.add(archetype);
+            }
+
+            ret.put("decks", list);
+
+            return ret.toString();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
         return null;
     }
 
     @Override
     public String getArchetype(String archetype) {
+        String sql = "SELECT Code FROM Decks WHERE Archetype LIKE ?";
+
+        try (Connection conn = Database.connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, archetype);
+            ResultSet rs = pstmt.executeQuery();
+
+            JSONObject ret = new JSONObject();
+            JSONArray list = new JSONArray();
+            while(rs.next()){
+                list.add(Main.BASE_URI + "decks/" + archetype + "/" + rs.getString("code"));
+            }
+
+            ret.put("decks", list);
+
+            return ret.toString();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
         return null;
     }
 
     @Override
-    public String getDeck(String archetype, String id) {
+    public String getDeck(String archetype, String code) {
         return null;
     }
 
     @Override
-    public String updateDeck(String archetype, String id) {
+    public String updateDeck(String archetype, String code) {
         return null;
     }
 
     @Override
-    public String newDeck(String archetype, String id) {
+    public String newDeck(String archetype, String code) {
+
         return null;
     }
 
     @Override
-    public String deleteDeck(String archetype, String id) {
+    public String deleteDeck(String archetype, String code) {
         return null;
     }
 }
