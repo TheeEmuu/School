@@ -14,7 +14,7 @@ import java.util.Iterator;
 @Path("cards")
 public class CardsService implements Cards{
     @Override
-    public String getCards(String cardName) {
+    public  String getCards(String cardName) {
         JSONParser jsonParser = new JSONParser();
 
         try(FileReader reader = new FileReader("src/cards.collectible.json")){
@@ -41,7 +41,4 @@ public class CardsService implements Cards{
 
         return null;
     }
-
-
-
 }

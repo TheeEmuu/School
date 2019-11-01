@@ -49,7 +49,7 @@ public class DecksService implements Decks {
 
     @Override
     public String getArchetype(String archetype) {
-        String sql = "SELECT Code FROM Decks WHERE Archetype LIKE ?";
+        String sql = "SELECT ID FROM Decks WHERE Archetype LIKE ?";
 
         try (Connection conn = Database.connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -59,7 +59,7 @@ public class DecksService implements Decks {
             JSONObject ret = new JSONObject();
             JSONArray list = new JSONArray();
             while(rs.next()){
-                list.add(Main.BASE_URI + "decks/" + archetype + "/" + rs.getString("code"));
+                list.add(Main.BASE_URI + "decks/" + archetype + "/" + rs.getString("ID"));
             }
 
             ret.put("decks", list);
@@ -73,23 +73,68 @@ public class DecksService implements Decks {
     }
 
     @Override
-    public String getDeck(String archetype, String code) {
+    public String getDeck(String archetype, int id) {
+        String sql = "SELECT Code FROM Decks WHERE ID = ?";
+
+        try (Connection conn = Database.connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, id);
+
+            ResultSet rs = pstmt.executeQuery();
+
+            String ret = Deckstrings.readDeck(rs.getString(1)).toString();
+            System.out.println(ret);
+            return ret;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+        return null;
+
+    }
+
+    @Override
+    public String newDeck(String archetype, Code code) {
+        String sql = "INSERT INTO Decks(Archetype,Code) VALUES(?,?)";
+
+        try (Connection conn = Database.connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, archetype);
+            pstmt.setString(2, code.getCode());
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+        sql = "SELECT ID FROM Decks WHERE Code LIKE ?";
+        try (Connection conn = Database.connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, code.getCode());
+
+            ResultSet rs = pstmt.executeQuery();
+
+            JSONObject ret = new JSONObject();
+            ret.put("link", Main.BASE_URI + "decks/" + archetype + "/" + rs.getInt(1));
+
+            return ret.toString();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
         return null;
     }
 
     @Override
-    public String updateDeck(String archetype, String code) {
-        return null;
-    }
+    public String deleteDeck(String archetype, int id) {
+        String sql = "DELETE FROM Decks WHERE ID = ?";
 
-    @Override
-    public String newDeck(String archetype, String code) {
-
-        return null;
-    }
-
-    @Override
-    public String deleteDeck(String archetype, String code) {
+        try (Connection conn = Database.connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, id);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
         return null;
     }
 }

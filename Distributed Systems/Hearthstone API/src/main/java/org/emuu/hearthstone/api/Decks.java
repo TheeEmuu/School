@@ -18,21 +18,17 @@ public interface Decks {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("{archetype}/{code}")
-    public String getDeck(@PathParam("archetype") String archetype, @PathParam("code") String code);
-
-    @POST
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Path("{archetype}/{code}")
-    public String updateDeck(@PathParam("archetype") String archetype, @PathParam("code") String code);
+    @Path("{archetype}/{id}")
+    public String getDeck(@PathParam("archetype") String archetype, @PathParam("id") int id);
 
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
-    @Path("{archetype}/{code}")
-    public String newDeck(@PathParam("archetype") String archetype, @PathParam("code") String code);
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("{archetype}/new")
+    public String newDeck(@PathParam("archetype") String archetype, Code code);
 
     @DELETE
     @Produces(MediaType.APPLICATION_JSON)
-    @Path("{archetype}/{code}")
-    public String deleteDeck(@PathParam("archetype") String archetype, @PathParam("code") String code);
+    @Path("{archetype}/{id}")
+    public String deleteDeck(@PathParam("archetype") String archetype, @PathParam("id") int id);
 }

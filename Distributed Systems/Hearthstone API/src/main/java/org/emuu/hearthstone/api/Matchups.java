@@ -2,13 +2,14 @@ package org.emuu.hearthstone.api;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
  * Root resource (exposed at "matchups" path)
  */
-@Path("matchups")
+
 public interface Matchups {
 
     /**
@@ -18,6 +19,7 @@ public interface Matchups {
      * @return String that will be returned as a text/plain response.
      */
     @GET
+    @Path("{PlayerA}-{PlayerB}")
     @Produces(MediaType.TEXT_PLAIN)
-    public String getIt();
+    public String getIt(@PathParam("PlayerA") String player, @PathParam("PlayerB")String opponent);
 }
