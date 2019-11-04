@@ -16,6 +16,10 @@ public interface Decks {
     @Path("{archetype}")
     public String getArchetype(@PathParam("archetype") String archetype);
 
+    @DELETE
+    @Path("{archetype}")
+    public void deleteArchetype(@PathParam("archetype") String archetype);
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{archetype}/{id}")

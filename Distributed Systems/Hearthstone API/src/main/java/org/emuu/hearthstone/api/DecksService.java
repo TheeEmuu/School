@@ -73,6 +73,19 @@ public class DecksService implements Decks {
     }
 
     @Override
+    public void deleteArchetype(String archetype){
+        String sql = "DELETE FROM Decks WHERE Archetype = ?";
+
+        try (Connection conn = Database.connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, archetype);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    @Override
     public String getDeck(String archetype, int id) {
         String sql = "SELECT Code FROM Decks WHERE ID = ?";
 
