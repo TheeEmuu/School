@@ -33,7 +33,7 @@ option java_outer_classname = "RaftProtos";
 
 message AppendEntries {
   required int32 term = 1;
-  required int32 leaderId = 2;
+  required string leaderId = 2;
   required int32 previousLogIndex = 3;
   required int32 previousLogTerm = 4;
 
@@ -48,7 +48,7 @@ message AppendEntries {
 
 message RequestVote {
   required int32 term = 1;
-  required int32 candidateId = 2;
+  required string candidateId = 2;
   required int32 lastLogIndex = 3;
   required int32 lastLogTerm = 4;
 }
@@ -62,3 +62,5 @@ message RequestVoteResponse {
   required int32 term = 1;
   required bool voteGranted = 2;
 }
+
+// protoc -I="/home/LVC/ejj001/Programming/Distributed Systems/Raft/src" --java_out="/home/LVC/ejj001/Programming/Distributed Systems/Raft/src" "/home/LVC/ejj001/Programming/Distributed Systems/Raft/src/protocol.proto"
