@@ -25,11 +25,11 @@ public class RaftNode {
     private int commitIndex = 0;
     private int lastApplied = 0;
 
-    // Leader State
-    int[] nextIndex;
-    int[] matchIndex;
-
     public State leader() {
+        // Leader State
+        int[] nextIndex;
+        int[] matchIndex;
+
         return null;
     }
 
