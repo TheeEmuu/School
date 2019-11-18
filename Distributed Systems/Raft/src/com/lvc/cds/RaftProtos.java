@@ -19,43 +19,27 @@ public final class RaftProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required int32 term = 1;</code>
-     */
-    boolean hasTerm();
-    /**
-     * <code>required int32 term = 1;</code>
+     * <code>int32 term = 1;</code>
      */
     int getTerm();
 
     /**
-     * <code>required string leaderId = 2;</code>
-     */
-    boolean hasLeaderId();
-    /**
-     * <code>required string leaderId = 2;</code>
+     * <code>string leaderId = 2;</code>
      */
     java.lang.String getLeaderId();
     /**
-     * <code>required string leaderId = 2;</code>
+     * <code>string leaderId = 2;</code>
      */
     com.google.protobuf.ByteString
         getLeaderIdBytes();
 
     /**
-     * <code>required int32 previousLogIndex = 3;</code>
-     */
-    boolean hasPreviousLogIndex();
-    /**
-     * <code>required int32 previousLogIndex = 3;</code>
+     * <code>int32 previousLogIndex = 3;</code>
      */
     int getPreviousLogIndex();
 
     /**
-     * <code>required int32 previousLogTerm = 4;</code>
-     */
-    boolean hasPreviousLogTerm();
-    /**
-     * <code>required int32 previousLogTerm = 4;</code>
+     * <code>int32 previousLogTerm = 4;</code>
      */
     int getPreviousLogTerm();
 
@@ -84,11 +68,7 @@ public final class RaftProtos {
         int index);
 
     /**
-     * <code>required int32 leaderCommit = 6;</code>
-     */
-    boolean hasLeaderCommit();
-    /**
-     * <code>required int32 leaderCommit = 6;</code>
+     * <code>int32 leaderCommit = 6;</code>
      */
     int getLeaderCommit();
   }
@@ -138,23 +118,23 @@ public final class RaftProtos {
               done = true;
               break;
             case 8: {
-              bitField0_ |= 0x00000001;
+
               term_ = input.readInt32();
               break;
             }
             case 18: {
-              com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x00000002;
-              leaderId_ = bs;
+              java.lang.String s = input.readStringRequireUtf8();
+
+              leaderId_ = s;
               break;
             }
             case 24: {
-              bitField0_ |= 0x00000004;
+
               previousLogIndex_ = input.readInt32();
               break;
             }
             case 32: {
-              bitField0_ |= 0x00000008;
+
               previousLogTerm_ = input.readInt32();
               break;
             }
@@ -164,16 +144,16 @@ public final class RaftProtos {
                 mutable_bitField0_ |= 0x00000010;
               }
               entry_.add(
-                  input.readMessage(com.lvc.cds.RaftProtos.AppendEntries.Pair.PARSER, extensionRegistry));
+                  input.readMessage(com.lvc.cds.RaftProtos.AppendEntries.Pair.parser(), extensionRegistry));
               break;
             }
             case 48: {
-              bitField0_ |= 0x00000010;
+
               leaderCommit_ = input.readInt32();
               break;
             }
             default: {
-              if (!parseUnknownField(
+              if (!parseUnknownFieldProto3(
                   input, unknownFields, extensionRegistry, tag)) {
                 done = true;
               }
@@ -212,29 +192,26 @@ public final class RaftProtos {
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>required string key = 1;</code>
+       * <code>int32 term = 1;</code>
        */
-      boolean hasKey();
+      int getTerm();
+
       /**
-       * <code>required string key = 1;</code>
+       * <code>string key = 2;</code>
        */
       java.lang.String getKey();
       /**
-       * <code>required string key = 1;</code>
+       * <code>string key = 2;</code>
        */
       com.google.protobuf.ByteString
           getKeyBytes();
 
       /**
-       * <code>required string value = 2;</code>
-       */
-      boolean hasValue();
-      /**
-       * <code>required string value = 2;</code>
+       * <code>string value = 3;</code>
        */
       java.lang.String getValue();
       /**
-       * <code>required string value = 2;</code>
+       * <code>string value = 3;</code>
        */
       com.google.protobuf.ByteString
           getValueBytes();
@@ -252,6 +229,7 @@ public final class RaftProtos {
         super(builder);
       }
       private Pair() {
+        term_ = 0;
         key_ = "";
         value_ = "";
       }
@@ -280,20 +258,25 @@ public final class RaftProtos {
               case 0:
                 done = true;
                 break;
-              case 10: {
-                com.google.protobuf.ByteString bs = input.readBytes();
-                bitField0_ |= 0x00000001;
-                key_ = bs;
+              case 8: {
+
+                term_ = input.readInt32();
                 break;
               }
               case 18: {
-                com.google.protobuf.ByteString bs = input.readBytes();
-                bitField0_ |= 0x00000002;
-                value_ = bs;
+                java.lang.String s = input.readStringRequireUtf8();
+
+                key_ = s;
+                break;
+              }
+              case 26: {
+                java.lang.String s = input.readStringRequireUtf8();
+
+                value_ = s;
                 break;
               }
               default: {
-                if (!parseUnknownField(
+                if (!parseUnknownFieldProto3(
                     input, unknownFields, extensionRegistry, tag)) {
                   done = true;
                 }
@@ -324,17 +307,19 @@ public final class RaftProtos {
                 com.lvc.cds.RaftProtos.AppendEntries.Pair.class, com.lvc.cds.RaftProtos.AppendEntries.Pair.Builder.class);
       }
 
-      private int bitField0_;
-      public static final int KEY_FIELD_NUMBER = 1;
+      public static final int TERM_FIELD_NUMBER = 1;
+      private int term_;
+      /**
+       * <code>int32 term = 1;</code>
+       */
+      public int getTerm() {
+        return term_;
+      }
+
+      public static final int KEY_FIELD_NUMBER = 2;
       private volatile java.lang.Object key_;
       /**
-       * <code>required string key = 1;</code>
-       */
-      public boolean hasKey() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required string key = 1;</code>
+       * <code>string key = 2;</code>
        */
       public java.lang.String getKey() {
         java.lang.Object ref = key_;
@@ -344,14 +329,12 @@ public final class RaftProtos {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            key_ = s;
-          }
+          key_ = s;
           return s;
         }
       }
       /**
-       * <code>required string key = 1;</code>
+       * <code>string key = 2;</code>
        */
       public com.google.protobuf.ByteString
           getKeyBytes() {
@@ -367,16 +350,10 @@ public final class RaftProtos {
         }
       }
 
-      public static final int VALUE_FIELD_NUMBER = 2;
+      public static final int VALUE_FIELD_NUMBER = 3;
       private volatile java.lang.Object value_;
       /**
-       * <code>required string value = 2;</code>
-       */
-      public boolean hasValue() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required string value = 2;</code>
+       * <code>string value = 3;</code>
        */
       public java.lang.String getValue() {
         java.lang.Object ref = value_;
@@ -386,14 +363,12 @@ public final class RaftProtos {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            value_ = s;
-          }
+          value_ = s;
           return s;
         }
       }
       /**
-       * <code>required string value = 2;</code>
+       * <code>string value = 3;</code>
        */
       public com.google.protobuf.ByteString
           getValueBytes() {
@@ -416,14 +391,6 @@ public final class RaftProtos {
         if (isInitialized == 1) return true;
         if (isInitialized == 0) return false;
 
-        if (!hasKey()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-        if (!hasValue()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
         memoizedIsInitialized = 1;
         return true;
       }
@@ -431,11 +398,14 @@ public final class RaftProtos {
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 1, key_);
+        if (term_ != 0) {
+          output.writeInt32(1, term_);
         }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          com.google.protobuf.GeneratedMessageV3.writeString(output, 2, value_);
+        if (!getKeyBytes().isEmpty()) {
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 2, key_);
+        }
+        if (!getValueBytes().isEmpty()) {
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 3, value_);
         }
         unknownFields.writeTo(output);
       }
@@ -446,11 +416,15 @@ public final class RaftProtos {
         if (size != -1) return size;
 
         size = 0;
-        if (((bitField0_ & 0x00000001) == 0x00000001)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, key_);
+        if (term_ != 0) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt32Size(1, term_);
         }
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, value_);
+        if (!getKeyBytes().isEmpty()) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, key_);
+        }
+        if (!getValueBytes().isEmpty()) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, value_);
         }
         size += unknownFields.getSerializedSize();
         memoizedSize = size;
@@ -468,16 +442,12 @@ public final class RaftProtos {
         com.lvc.cds.RaftProtos.AppendEntries.Pair other = (com.lvc.cds.RaftProtos.AppendEntries.Pair) obj;
 
         boolean result = true;
-        result = result && (hasKey() == other.hasKey());
-        if (hasKey()) {
-          result = result && getKey()
-              .equals(other.getKey());
-        }
-        result = result && (hasValue() == other.hasValue());
-        if (hasValue()) {
-          result = result && getValue()
-              .equals(other.getValue());
-        }
+        result = result && (getTerm()
+            == other.getTerm());
+        result = result && getKey()
+            .equals(other.getKey());
+        result = result && getValue()
+            .equals(other.getValue());
         result = result && unknownFields.equals(other.unknownFields);
         return result;
       }
@@ -489,14 +459,12 @@ public final class RaftProtos {
         }
         int hash = 41;
         hash = (19 * hash) + getDescriptor().hashCode();
-        if (hasKey()) {
-          hash = (37 * hash) + KEY_FIELD_NUMBER;
-          hash = (53 * hash) + getKey().hashCode();
-        }
-        if (hasValue()) {
-          hash = (37 * hash) + VALUE_FIELD_NUMBER;
-          hash = (53 * hash) + getValue().hashCode();
-        }
+        hash = (37 * hash) + TERM_FIELD_NUMBER;
+        hash = (53 * hash) + getTerm();
+        hash = (37 * hash) + KEY_FIELD_NUMBER;
+        hash = (53 * hash) + getKey().hashCode();
+        hash = (37 * hash) + VALUE_FIELD_NUMBER;
+        hash = (53 * hash) + getValue().hashCode();
         hash = (29 * hash) + unknownFields.hashCode();
         memoizedHashCode = hash;
         return hash;
@@ -630,10 +598,12 @@ public final class RaftProtos {
         @java.lang.Override
         public Builder clear() {
           super.clear();
+          term_ = 0;
+
           key_ = "";
-          bitField0_ = (bitField0_ & ~0x00000001);
+
           value_ = "";
-          bitField0_ = (bitField0_ & ~0x00000002);
+
           return this;
         }
 
@@ -660,17 +630,9 @@ public final class RaftProtos {
         @java.lang.Override
         public com.lvc.cds.RaftProtos.AppendEntries.Pair buildPartial() {
           com.lvc.cds.RaftProtos.AppendEntries.Pair result = new com.lvc.cds.RaftProtos.AppendEntries.Pair(this);
-          int from_bitField0_ = bitField0_;
-          int to_bitField0_ = 0;
-          if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-            to_bitField0_ |= 0x00000001;
-          }
+          result.term_ = term_;
           result.key_ = key_;
-          if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-            to_bitField0_ |= 0x00000002;
-          }
           result.value_ = value_;
-          result.bitField0_ = to_bitField0_;
           onBuilt();
           return result;
         }
@@ -719,13 +681,14 @@ public final class RaftProtos {
 
         public Builder mergeFrom(com.lvc.cds.RaftProtos.AppendEntries.Pair other) {
           if (other == com.lvc.cds.RaftProtos.AppendEntries.Pair.getDefaultInstance()) return this;
-          if (other.hasKey()) {
-            bitField0_ |= 0x00000001;
+          if (other.getTerm() != 0) {
+            setTerm(other.getTerm());
+          }
+          if (!other.getKey().isEmpty()) {
             key_ = other.key_;
             onChanged();
           }
-          if (other.hasValue()) {
-            bitField0_ |= 0x00000002;
+          if (!other.getValue().isEmpty()) {
             value_ = other.value_;
             onChanged();
           }
@@ -736,12 +699,6 @@ public final class RaftProtos {
 
         @java.lang.Override
         public final boolean isInitialized() {
-          if (!hasKey()) {
-            return false;
-          }
-          if (!hasValue()) {
-            return false;
-          }
           return true;
         }
 
@@ -763,17 +720,36 @@ public final class RaftProtos {
           }
           return this;
         }
-        private int bitField0_;
+
+        private int term_ ;
+        /**
+         * <code>int32 term = 1;</code>
+         */
+        public int getTerm() {
+          return term_;
+        }
+        /**
+         * <code>int32 term = 1;</code>
+         */
+        public Builder setTerm(int value) {
+          
+          term_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>int32 term = 1;</code>
+         */
+        public Builder clearTerm() {
+          
+          term_ = 0;
+          onChanged();
+          return this;
+        }
 
         private java.lang.Object key_ = "";
         /**
-         * <code>required string key = 1;</code>
-         */
-        public boolean hasKey() {
-          return ((bitField0_ & 0x00000001) == 0x00000001);
-        }
-        /**
-         * <code>required string key = 1;</code>
+         * <code>string key = 2;</code>
          */
         public java.lang.String getKey() {
           java.lang.Object ref = key_;
@@ -781,16 +757,14 @@ public final class RaftProtos {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
             java.lang.String s = bs.toStringUtf8();
-            if (bs.isValidUtf8()) {
-              key_ = s;
-            }
+            key_ = s;
             return s;
           } else {
             return (java.lang.String) ref;
           }
         }
         /**
-         * <code>required string key = 1;</code>
+         * <code>string key = 2;</code>
          */
         public com.google.protobuf.ByteString
             getKeyBytes() {
@@ -806,36 +780,37 @@ public final class RaftProtos {
           }
         }
         /**
-         * <code>required string key = 1;</code>
+         * <code>string key = 2;</code>
          */
         public Builder setKey(
             java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000001;
+  
           key_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>required string key = 1;</code>
+         * <code>string key = 2;</code>
          */
         public Builder clearKey() {
-          bitField0_ = (bitField0_ & ~0x00000001);
+          
           key_ = getDefaultInstance().getKey();
           onChanged();
           return this;
         }
         /**
-         * <code>required string key = 1;</code>
+         * <code>string key = 2;</code>
          */
         public Builder setKeyBytes(
             com.google.protobuf.ByteString value) {
           if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000001;
+  checkByteStringIsUtf8(value);
+          
           key_ = value;
           onChanged();
           return this;
@@ -843,13 +818,7 @@ public final class RaftProtos {
 
         private java.lang.Object value_ = "";
         /**
-         * <code>required string value = 2;</code>
-         */
-        public boolean hasValue() {
-          return ((bitField0_ & 0x00000002) == 0x00000002);
-        }
-        /**
-         * <code>required string value = 2;</code>
+         * <code>string value = 3;</code>
          */
         public java.lang.String getValue() {
           java.lang.Object ref = value_;
@@ -857,16 +826,14 @@ public final class RaftProtos {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
             java.lang.String s = bs.toStringUtf8();
-            if (bs.isValidUtf8()) {
-              value_ = s;
-            }
+            value_ = s;
             return s;
           } else {
             return (java.lang.String) ref;
           }
         }
         /**
-         * <code>required string value = 2;</code>
+         * <code>string value = 3;</code>
          */
         public com.google.protobuf.ByteString
             getValueBytes() {
@@ -882,36 +849,37 @@ public final class RaftProtos {
           }
         }
         /**
-         * <code>required string value = 2;</code>
+         * <code>string value = 3;</code>
          */
         public Builder setValue(
             java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  
           value_ = value;
           onChanged();
           return this;
         }
         /**
-         * <code>required string value = 2;</code>
+         * <code>string value = 3;</code>
          */
         public Builder clearValue() {
-          bitField0_ = (bitField0_ & ~0x00000002);
+          
           value_ = getDefaultInstance().getValue();
           onChanged();
           return this;
         }
         /**
-         * <code>required string value = 2;</code>
+         * <code>string value = 3;</code>
          */
         public Builder setValueBytes(
             com.google.protobuf.ByteString value) {
           if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  checkByteStringIsUtf8(value);
+          
           value_ = value;
           onChanged();
           return this;
@@ -919,7 +887,7 @@ public final class RaftProtos {
         @java.lang.Override
         public final Builder setUnknownFields(
             final com.google.protobuf.UnknownFieldSet unknownFields) {
-          return super.setUnknownFields(unknownFields);
+          return super.setUnknownFieldsProto3(unknownFields);
         }
 
         @java.lang.Override
@@ -942,7 +910,7 @@ public final class RaftProtos {
         return DEFAULT_INSTANCE;
       }
 
-      @java.lang.Deprecated public static final com.google.protobuf.Parser<Pair>
+      private static final com.google.protobuf.Parser<Pair>
           PARSER = new com.google.protobuf.AbstractParser<Pair>() {
         @java.lang.Override
         public Pair parsePartialFrom(
@@ -973,13 +941,7 @@ public final class RaftProtos {
     public static final int TERM_FIELD_NUMBER = 1;
     private int term_;
     /**
-     * <code>required int32 term = 1;</code>
-     */
-    public boolean hasTerm() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required int32 term = 1;</code>
+     * <code>int32 term = 1;</code>
      */
     public int getTerm() {
       return term_;
@@ -988,13 +950,7 @@ public final class RaftProtos {
     public static final int LEADERID_FIELD_NUMBER = 2;
     private volatile java.lang.Object leaderId_;
     /**
-     * <code>required string leaderId = 2;</code>
-     */
-    public boolean hasLeaderId() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>required string leaderId = 2;</code>
+     * <code>string leaderId = 2;</code>
      */
     public java.lang.String getLeaderId() {
       java.lang.Object ref = leaderId_;
@@ -1004,14 +960,12 @@ public final class RaftProtos {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          leaderId_ = s;
-        }
+        leaderId_ = s;
         return s;
       }
     }
     /**
-     * <code>required string leaderId = 2;</code>
+     * <code>string leaderId = 2;</code>
      */
     public com.google.protobuf.ByteString
         getLeaderIdBytes() {
@@ -1030,13 +984,7 @@ public final class RaftProtos {
     public static final int PREVIOUSLOGINDEX_FIELD_NUMBER = 3;
     private int previousLogIndex_;
     /**
-     * <code>required int32 previousLogIndex = 3;</code>
-     */
-    public boolean hasPreviousLogIndex() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>required int32 previousLogIndex = 3;</code>
+     * <code>int32 previousLogIndex = 3;</code>
      */
     public int getPreviousLogIndex() {
       return previousLogIndex_;
@@ -1045,13 +993,7 @@ public final class RaftProtos {
     public static final int PREVIOUSLOGTERM_FIELD_NUMBER = 4;
     private int previousLogTerm_;
     /**
-     * <code>required int32 previousLogTerm = 4;</code>
-     */
-    public boolean hasPreviousLogTerm() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>required int32 previousLogTerm = 4;</code>
+     * <code>int32 previousLogTerm = 4;</code>
      */
     public int getPreviousLogTerm() {
       return previousLogTerm_;
@@ -1095,13 +1037,7 @@ public final class RaftProtos {
     public static final int LEADERCOMMIT_FIELD_NUMBER = 6;
     private int leaderCommit_;
     /**
-     * <code>required int32 leaderCommit = 6;</code>
-     */
-    public boolean hasLeaderCommit() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
-    }
-    /**
-     * <code>required int32 leaderCommit = 6;</code>
+     * <code>int32 leaderCommit = 6;</code>
      */
     public int getLeaderCommit() {
       return leaderCommit_;
@@ -1114,32 +1050,6 @@ public final class RaftProtos {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasTerm()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasLeaderId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasPreviousLogIndex()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasPreviousLogTerm()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasLeaderCommit()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      for (int i = 0; i < getEntryCount(); i++) {
-        if (!getEntry(i).isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -1147,22 +1057,22 @@ public final class RaftProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (term_ != 0) {
         output.writeInt32(1, term_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!getLeaderIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, leaderId_);
       }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+      if (previousLogIndex_ != 0) {
         output.writeInt32(3, previousLogIndex_);
       }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+      if (previousLogTerm_ != 0) {
         output.writeInt32(4, previousLogTerm_);
       }
       for (int i = 0; i < entry_.size(); i++) {
         output.writeMessage(5, entry_.get(i));
       }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+      if (leaderCommit_ != 0) {
         output.writeInt32(6, leaderCommit_);
       }
       unknownFields.writeTo(output);
@@ -1174,18 +1084,18 @@ public final class RaftProtos {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (term_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(1, term_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!getLeaderIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, leaderId_);
       }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+      if (previousLogIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(3, previousLogIndex_);
       }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+      if (previousLogTerm_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(4, previousLogTerm_);
       }
@@ -1193,7 +1103,7 @@ public final class RaftProtos {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, entry_.get(i));
       }
-      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+      if (leaderCommit_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(6, leaderCommit_);
       }
@@ -1213,33 +1123,18 @@ public final class RaftProtos {
       com.lvc.cds.RaftProtos.AppendEntries other = (com.lvc.cds.RaftProtos.AppendEntries) obj;
 
       boolean result = true;
-      result = result && (hasTerm() == other.hasTerm());
-      if (hasTerm()) {
-        result = result && (getTerm()
-            == other.getTerm());
-      }
-      result = result && (hasLeaderId() == other.hasLeaderId());
-      if (hasLeaderId()) {
-        result = result && getLeaderId()
-            .equals(other.getLeaderId());
-      }
-      result = result && (hasPreviousLogIndex() == other.hasPreviousLogIndex());
-      if (hasPreviousLogIndex()) {
-        result = result && (getPreviousLogIndex()
-            == other.getPreviousLogIndex());
-      }
-      result = result && (hasPreviousLogTerm() == other.hasPreviousLogTerm());
-      if (hasPreviousLogTerm()) {
-        result = result && (getPreviousLogTerm()
-            == other.getPreviousLogTerm());
-      }
+      result = result && (getTerm()
+          == other.getTerm());
+      result = result && getLeaderId()
+          .equals(other.getLeaderId());
+      result = result && (getPreviousLogIndex()
+          == other.getPreviousLogIndex());
+      result = result && (getPreviousLogTerm()
+          == other.getPreviousLogTerm());
       result = result && getEntryList()
           .equals(other.getEntryList());
-      result = result && (hasLeaderCommit() == other.hasLeaderCommit());
-      if (hasLeaderCommit()) {
-        result = result && (getLeaderCommit()
-            == other.getLeaderCommit());
-      }
+      result = result && (getLeaderCommit()
+          == other.getLeaderCommit());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -1251,30 +1146,20 @@ public final class RaftProtos {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasTerm()) {
-        hash = (37 * hash) + TERM_FIELD_NUMBER;
-        hash = (53 * hash) + getTerm();
-      }
-      if (hasLeaderId()) {
-        hash = (37 * hash) + LEADERID_FIELD_NUMBER;
-        hash = (53 * hash) + getLeaderId().hashCode();
-      }
-      if (hasPreviousLogIndex()) {
-        hash = (37 * hash) + PREVIOUSLOGINDEX_FIELD_NUMBER;
-        hash = (53 * hash) + getPreviousLogIndex();
-      }
-      if (hasPreviousLogTerm()) {
-        hash = (37 * hash) + PREVIOUSLOGTERM_FIELD_NUMBER;
-        hash = (53 * hash) + getPreviousLogTerm();
-      }
+      hash = (37 * hash) + TERM_FIELD_NUMBER;
+      hash = (53 * hash) + getTerm();
+      hash = (37 * hash) + LEADERID_FIELD_NUMBER;
+      hash = (53 * hash) + getLeaderId().hashCode();
+      hash = (37 * hash) + PREVIOUSLOGINDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getPreviousLogIndex();
+      hash = (37 * hash) + PREVIOUSLOGTERM_FIELD_NUMBER;
+      hash = (53 * hash) + getPreviousLogTerm();
       if (getEntryCount() > 0) {
         hash = (37 * hash) + ENTRY_FIELD_NUMBER;
         hash = (53 * hash) + getEntryList().hashCode();
       }
-      if (hasLeaderCommit()) {
-        hash = (37 * hash) + LEADERCOMMIT_FIELD_NUMBER;
-        hash = (53 * hash) + getLeaderCommit();
-      }
+      hash = (37 * hash) + LEADERCOMMIT_FIELD_NUMBER;
+      hash = (53 * hash) + getLeaderCommit();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1410,13 +1295,13 @@ public final class RaftProtos {
       public Builder clear() {
         super.clear();
         term_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
+
         leaderId_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
+
         previousLogIndex_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
+
         previousLogTerm_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
+
         if (entryBuilder_ == null) {
           entry_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000010);
@@ -1424,7 +1309,7 @@ public final class RaftProtos {
           entryBuilder_.clear();
         }
         leaderCommit_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000020);
+
         return this;
       }
 
@@ -1453,21 +1338,9 @@ public final class RaftProtos {
         com.lvc.cds.RaftProtos.AppendEntries result = new com.lvc.cds.RaftProtos.AppendEntries(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
         result.term_ = term_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
         result.leaderId_ = leaderId_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
         result.previousLogIndex_ = previousLogIndex_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
         result.previousLogTerm_ = previousLogTerm_;
         if (entryBuilder_ == null) {
           if (((bitField0_ & 0x00000010) == 0x00000010)) {
@@ -1477,9 +1350,6 @@ public final class RaftProtos {
           result.entry_ = entry_;
         } else {
           result.entry_ = entryBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
-          to_bitField0_ |= 0x00000010;
         }
         result.leaderCommit_ = leaderCommit_;
         result.bitField0_ = to_bitField0_;
@@ -1531,18 +1401,17 @@ public final class RaftProtos {
 
       public Builder mergeFrom(com.lvc.cds.RaftProtos.AppendEntries other) {
         if (other == com.lvc.cds.RaftProtos.AppendEntries.getDefaultInstance()) return this;
-        if (other.hasTerm()) {
+        if (other.getTerm() != 0) {
           setTerm(other.getTerm());
         }
-        if (other.hasLeaderId()) {
-          bitField0_ |= 0x00000002;
+        if (!other.getLeaderId().isEmpty()) {
           leaderId_ = other.leaderId_;
           onChanged();
         }
-        if (other.hasPreviousLogIndex()) {
+        if (other.getPreviousLogIndex() != 0) {
           setPreviousLogIndex(other.getPreviousLogIndex());
         }
-        if (other.hasPreviousLogTerm()) {
+        if (other.getPreviousLogTerm() != 0) {
           setPreviousLogTerm(other.getPreviousLogTerm());
         }
         if (entryBuilder_ == null) {
@@ -1571,7 +1440,7 @@ public final class RaftProtos {
             }
           }
         }
-        if (other.hasLeaderCommit()) {
+        if (other.getLeaderCommit() != 0) {
           setLeaderCommit(other.getLeaderCommit());
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -1581,26 +1450,6 @@ public final class RaftProtos {
 
       @java.lang.Override
       public final boolean isInitialized() {
-        if (!hasTerm()) {
-          return false;
-        }
-        if (!hasLeaderId()) {
-          return false;
-        }
-        if (!hasPreviousLogIndex()) {
-          return false;
-        }
-        if (!hasPreviousLogTerm()) {
-          return false;
-        }
-        if (!hasLeaderCommit()) {
-          return false;
-        }
-        for (int i = 0; i < getEntryCount(); i++) {
-          if (!getEntry(i).isInitialized()) {
-            return false;
-          }
-        }
         return true;
       }
 
@@ -1626,31 +1475,25 @@ public final class RaftProtos {
 
       private int term_ ;
       /**
-       * <code>required int32 term = 1;</code>
-       */
-      public boolean hasTerm() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public int getTerm() {
         return term_;
       }
       /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public Builder setTerm(int value) {
-        bitField0_ |= 0x00000001;
+        
         term_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public Builder clearTerm() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         term_ = 0;
         onChanged();
         return this;
@@ -1658,13 +1501,7 @@ public final class RaftProtos {
 
       private java.lang.Object leaderId_ = "";
       /**
-       * <code>required string leaderId = 2;</code>
-       */
-      public boolean hasLeaderId() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required string leaderId = 2;</code>
+       * <code>string leaderId = 2;</code>
        */
       public java.lang.String getLeaderId() {
         java.lang.Object ref = leaderId_;
@@ -1672,16 +1509,14 @@ public final class RaftProtos {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            leaderId_ = s;
-          }
+          leaderId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>required string leaderId = 2;</code>
+       * <code>string leaderId = 2;</code>
        */
       public com.google.protobuf.ByteString
           getLeaderIdBytes() {
@@ -1697,36 +1532,37 @@ public final class RaftProtos {
         }
       }
       /**
-       * <code>required string leaderId = 2;</code>
+       * <code>string leaderId = 2;</code>
        */
       public Builder setLeaderId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  
         leaderId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string leaderId = 2;</code>
+       * <code>string leaderId = 2;</code>
        */
       public Builder clearLeaderId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        
         leaderId_ = getDefaultInstance().getLeaderId();
         onChanged();
         return this;
       }
       /**
-       * <code>required string leaderId = 2;</code>
+       * <code>string leaderId = 2;</code>
        */
       public Builder setLeaderIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  checkByteStringIsUtf8(value);
+        
         leaderId_ = value;
         onChanged();
         return this;
@@ -1734,31 +1570,25 @@ public final class RaftProtos {
 
       private int previousLogIndex_ ;
       /**
-       * <code>required int32 previousLogIndex = 3;</code>
-       */
-      public boolean hasPreviousLogIndex() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>required int32 previousLogIndex = 3;</code>
+       * <code>int32 previousLogIndex = 3;</code>
        */
       public int getPreviousLogIndex() {
         return previousLogIndex_;
       }
       /**
-       * <code>required int32 previousLogIndex = 3;</code>
+       * <code>int32 previousLogIndex = 3;</code>
        */
       public Builder setPreviousLogIndex(int value) {
-        bitField0_ |= 0x00000004;
+        
         previousLogIndex_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 previousLogIndex = 3;</code>
+       * <code>int32 previousLogIndex = 3;</code>
        */
       public Builder clearPreviousLogIndex() {
-        bitField0_ = (bitField0_ & ~0x00000004);
+        
         previousLogIndex_ = 0;
         onChanged();
         return this;
@@ -1766,31 +1596,25 @@ public final class RaftProtos {
 
       private int previousLogTerm_ ;
       /**
-       * <code>required int32 previousLogTerm = 4;</code>
-       */
-      public boolean hasPreviousLogTerm() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>required int32 previousLogTerm = 4;</code>
+       * <code>int32 previousLogTerm = 4;</code>
        */
       public int getPreviousLogTerm() {
         return previousLogTerm_;
       }
       /**
-       * <code>required int32 previousLogTerm = 4;</code>
+       * <code>int32 previousLogTerm = 4;</code>
        */
       public Builder setPreviousLogTerm(int value) {
-        bitField0_ |= 0x00000008;
+        
         previousLogTerm_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 previousLogTerm = 4;</code>
+       * <code>int32 previousLogTerm = 4;</code>
        */
       public Builder clearPreviousLogTerm() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        
         previousLogTerm_ = 0;
         onChanged();
         return this;
@@ -2038,31 +1862,25 @@ public final class RaftProtos {
 
       private int leaderCommit_ ;
       /**
-       * <code>required int32 leaderCommit = 6;</code>
-       */
-      public boolean hasLeaderCommit() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
-      }
-      /**
-       * <code>required int32 leaderCommit = 6;</code>
+       * <code>int32 leaderCommit = 6;</code>
        */
       public int getLeaderCommit() {
         return leaderCommit_;
       }
       /**
-       * <code>required int32 leaderCommit = 6;</code>
+       * <code>int32 leaderCommit = 6;</code>
        */
       public Builder setLeaderCommit(int value) {
-        bitField0_ |= 0x00000020;
+        
         leaderCommit_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 leaderCommit = 6;</code>
+       * <code>int32 leaderCommit = 6;</code>
        */
       public Builder clearLeaderCommit() {
-        bitField0_ = (bitField0_ & ~0x00000020);
+        
         leaderCommit_ = 0;
         onChanged();
         return this;
@@ -2070,7 +1888,7 @@ public final class RaftProtos {
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
+        return super.setUnknownFieldsProto3(unknownFields);
       }
 
       @java.lang.Override
@@ -2093,7 +1911,7 @@ public final class RaftProtos {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<AppendEntries>
+    private static final com.google.protobuf.Parser<AppendEntries>
         PARSER = new com.google.protobuf.AbstractParser<AppendEntries>() {
       @java.lang.Override
       public AppendEntries parsePartialFrom(
@@ -2125,43 +1943,27 @@ public final class RaftProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required int32 term = 1;</code>
-     */
-    boolean hasTerm();
-    /**
-     * <code>required int32 term = 1;</code>
+     * <code>int32 term = 1;</code>
      */
     int getTerm();
 
     /**
-     * <code>required string candidateId = 2;</code>
-     */
-    boolean hasCandidateId();
-    /**
-     * <code>required string candidateId = 2;</code>
+     * <code>string candidateId = 2;</code>
      */
     java.lang.String getCandidateId();
     /**
-     * <code>required string candidateId = 2;</code>
+     * <code>string candidateId = 2;</code>
      */
     com.google.protobuf.ByteString
         getCandidateIdBytes();
 
     /**
-     * <code>required int32 lastLogIndex = 3;</code>
-     */
-    boolean hasLastLogIndex();
-    /**
-     * <code>required int32 lastLogIndex = 3;</code>
+     * <code>int32 lastLogIndex = 3;</code>
      */
     int getLastLogIndex();
 
     /**
-     * <code>required int32 lastLogTerm = 4;</code>
-     */
-    boolean hasLastLogTerm();
-    /**
-     * <code>required int32 lastLogTerm = 4;</code>
+     * <code>int32 lastLogTerm = 4;</code>
      */
     int getLastLogTerm();
   }
@@ -2209,28 +2011,28 @@ public final class RaftProtos {
               done = true;
               break;
             case 8: {
-              bitField0_ |= 0x00000001;
+
               term_ = input.readInt32();
               break;
             }
             case 18: {
-              com.google.protobuf.ByteString bs = input.readBytes();
-              bitField0_ |= 0x00000002;
-              candidateId_ = bs;
+              java.lang.String s = input.readStringRequireUtf8();
+
+              candidateId_ = s;
               break;
             }
             case 24: {
-              bitField0_ |= 0x00000004;
+
               lastLogIndex_ = input.readInt32();
               break;
             }
             case 32: {
-              bitField0_ |= 0x00000008;
+
               lastLogTerm_ = input.readInt32();
               break;
             }
             default: {
-              if (!parseUnknownField(
+              if (!parseUnknownFieldProto3(
                   input, unknownFields, extensionRegistry, tag)) {
                 done = true;
               }
@@ -2261,17 +2063,10 @@ public final class RaftProtos {
               com.lvc.cds.RaftProtos.RequestVote.class, com.lvc.cds.RaftProtos.RequestVote.Builder.class);
     }
 
-    private int bitField0_;
     public static final int TERM_FIELD_NUMBER = 1;
     private int term_;
     /**
-     * <code>required int32 term = 1;</code>
-     */
-    public boolean hasTerm() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required int32 term = 1;</code>
+     * <code>int32 term = 1;</code>
      */
     public int getTerm() {
       return term_;
@@ -2280,13 +2075,7 @@ public final class RaftProtos {
     public static final int CANDIDATEID_FIELD_NUMBER = 2;
     private volatile java.lang.Object candidateId_;
     /**
-     * <code>required string candidateId = 2;</code>
-     */
-    public boolean hasCandidateId() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>required string candidateId = 2;</code>
+     * <code>string candidateId = 2;</code>
      */
     public java.lang.String getCandidateId() {
       java.lang.Object ref = candidateId_;
@@ -2296,14 +2085,12 @@ public final class RaftProtos {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        if (bs.isValidUtf8()) {
-          candidateId_ = s;
-        }
+        candidateId_ = s;
         return s;
       }
     }
     /**
-     * <code>required string candidateId = 2;</code>
+     * <code>string candidateId = 2;</code>
      */
     public com.google.protobuf.ByteString
         getCandidateIdBytes() {
@@ -2322,13 +2109,7 @@ public final class RaftProtos {
     public static final int LASTLOGINDEX_FIELD_NUMBER = 3;
     private int lastLogIndex_;
     /**
-     * <code>required int32 lastLogIndex = 3;</code>
-     */
-    public boolean hasLastLogIndex() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    /**
-     * <code>required int32 lastLogIndex = 3;</code>
+     * <code>int32 lastLogIndex = 3;</code>
      */
     public int getLastLogIndex() {
       return lastLogIndex_;
@@ -2337,13 +2118,7 @@ public final class RaftProtos {
     public static final int LASTLOGTERM_FIELD_NUMBER = 4;
     private int lastLogTerm_;
     /**
-     * <code>required int32 lastLogTerm = 4;</code>
-     */
-    public boolean hasLastLogTerm() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    /**
-     * <code>required int32 lastLogTerm = 4;</code>
+     * <code>int32 lastLogTerm = 4;</code>
      */
     public int getLastLogTerm() {
       return lastLogTerm_;
@@ -2356,22 +2131,6 @@ public final class RaftProtos {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasTerm()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasCandidateId()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasLastLogIndex()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasLastLogTerm()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -2379,16 +2138,16 @@ public final class RaftProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (term_ != 0) {
         output.writeInt32(1, term_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!getCandidateIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, candidateId_);
       }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+      if (lastLogIndex_ != 0) {
         output.writeInt32(3, lastLogIndex_);
       }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+      if (lastLogTerm_ != 0) {
         output.writeInt32(4, lastLogTerm_);
       }
       unknownFields.writeTo(output);
@@ -2400,18 +2159,18 @@ public final class RaftProtos {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (term_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(1, term_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!getCandidateIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, candidateId_);
       }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+      if (lastLogIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(3, lastLogIndex_);
       }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+      if (lastLogTerm_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(4, lastLogTerm_);
       }
@@ -2431,26 +2190,14 @@ public final class RaftProtos {
       com.lvc.cds.RaftProtos.RequestVote other = (com.lvc.cds.RaftProtos.RequestVote) obj;
 
       boolean result = true;
-      result = result && (hasTerm() == other.hasTerm());
-      if (hasTerm()) {
-        result = result && (getTerm()
-            == other.getTerm());
-      }
-      result = result && (hasCandidateId() == other.hasCandidateId());
-      if (hasCandidateId()) {
-        result = result && getCandidateId()
-            .equals(other.getCandidateId());
-      }
-      result = result && (hasLastLogIndex() == other.hasLastLogIndex());
-      if (hasLastLogIndex()) {
-        result = result && (getLastLogIndex()
-            == other.getLastLogIndex());
-      }
-      result = result && (hasLastLogTerm() == other.hasLastLogTerm());
-      if (hasLastLogTerm()) {
-        result = result && (getLastLogTerm()
-            == other.getLastLogTerm());
-      }
+      result = result && (getTerm()
+          == other.getTerm());
+      result = result && getCandidateId()
+          .equals(other.getCandidateId());
+      result = result && (getLastLogIndex()
+          == other.getLastLogIndex());
+      result = result && (getLastLogTerm()
+          == other.getLastLogTerm());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -2462,22 +2209,14 @@ public final class RaftProtos {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasTerm()) {
-        hash = (37 * hash) + TERM_FIELD_NUMBER;
-        hash = (53 * hash) + getTerm();
-      }
-      if (hasCandidateId()) {
-        hash = (37 * hash) + CANDIDATEID_FIELD_NUMBER;
-        hash = (53 * hash) + getCandidateId().hashCode();
-      }
-      if (hasLastLogIndex()) {
-        hash = (37 * hash) + LASTLOGINDEX_FIELD_NUMBER;
-        hash = (53 * hash) + getLastLogIndex();
-      }
-      if (hasLastLogTerm()) {
-        hash = (37 * hash) + LASTLOGTERM_FIELD_NUMBER;
-        hash = (53 * hash) + getLastLogTerm();
-      }
+      hash = (37 * hash) + TERM_FIELD_NUMBER;
+      hash = (53 * hash) + getTerm();
+      hash = (37 * hash) + CANDIDATEID_FIELD_NUMBER;
+      hash = (53 * hash) + getCandidateId().hashCode();
+      hash = (37 * hash) + LASTLOGINDEX_FIELD_NUMBER;
+      hash = (53 * hash) + getLastLogIndex();
+      hash = (37 * hash) + LASTLOGTERM_FIELD_NUMBER;
+      hash = (53 * hash) + getLastLogTerm();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -2612,13 +2351,13 @@ public final class RaftProtos {
       public Builder clear() {
         super.clear();
         term_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
+
         candidateId_ = "";
-        bitField0_ = (bitField0_ & ~0x00000002);
+
         lastLogIndex_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000004);
+
         lastLogTerm_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000008);
+
         return this;
       }
 
@@ -2645,25 +2384,10 @@ public final class RaftProtos {
       @java.lang.Override
       public com.lvc.cds.RaftProtos.RequestVote buildPartial() {
         com.lvc.cds.RaftProtos.RequestVote result = new com.lvc.cds.RaftProtos.RequestVote(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
         result.term_ = term_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
         result.candidateId_ = candidateId_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
         result.lastLogIndex_ = lastLogIndex_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
         result.lastLogTerm_ = lastLogTerm_;
-        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -2712,18 +2436,17 @@ public final class RaftProtos {
 
       public Builder mergeFrom(com.lvc.cds.RaftProtos.RequestVote other) {
         if (other == com.lvc.cds.RaftProtos.RequestVote.getDefaultInstance()) return this;
-        if (other.hasTerm()) {
+        if (other.getTerm() != 0) {
           setTerm(other.getTerm());
         }
-        if (other.hasCandidateId()) {
-          bitField0_ |= 0x00000002;
+        if (!other.getCandidateId().isEmpty()) {
           candidateId_ = other.candidateId_;
           onChanged();
         }
-        if (other.hasLastLogIndex()) {
+        if (other.getLastLogIndex() != 0) {
           setLastLogIndex(other.getLastLogIndex());
         }
-        if (other.hasLastLogTerm()) {
+        if (other.getLastLogTerm() != 0) {
           setLastLogTerm(other.getLastLogTerm());
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -2733,18 +2456,6 @@ public final class RaftProtos {
 
       @java.lang.Override
       public final boolean isInitialized() {
-        if (!hasTerm()) {
-          return false;
-        }
-        if (!hasCandidateId()) {
-          return false;
-        }
-        if (!hasLastLogIndex()) {
-          return false;
-        }
-        if (!hasLastLogTerm()) {
-          return false;
-        }
         return true;
       }
 
@@ -2766,35 +2477,28 @@ public final class RaftProtos {
         }
         return this;
       }
-      private int bitField0_;
 
       private int term_ ;
       /**
-       * <code>required int32 term = 1;</code>
-       */
-      public boolean hasTerm() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public int getTerm() {
         return term_;
       }
       /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public Builder setTerm(int value) {
-        bitField0_ |= 0x00000001;
+        
         term_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public Builder clearTerm() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         term_ = 0;
         onChanged();
         return this;
@@ -2802,13 +2506,7 @@ public final class RaftProtos {
 
       private java.lang.Object candidateId_ = "";
       /**
-       * <code>required string candidateId = 2;</code>
-       */
-      public boolean hasCandidateId() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required string candidateId = 2;</code>
+       * <code>string candidateId = 2;</code>
        */
       public java.lang.String getCandidateId() {
         java.lang.Object ref = candidateId_;
@@ -2816,16 +2514,14 @@ public final class RaftProtos {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          if (bs.isValidUtf8()) {
-            candidateId_ = s;
-          }
+          candidateId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>required string candidateId = 2;</code>
+       * <code>string candidateId = 2;</code>
        */
       public com.google.protobuf.ByteString
           getCandidateIdBytes() {
@@ -2841,36 +2537,37 @@ public final class RaftProtos {
         }
       }
       /**
-       * <code>required string candidateId = 2;</code>
+       * <code>string candidateId = 2;</code>
        */
       public Builder setCandidateId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  
         candidateId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required string candidateId = 2;</code>
+       * <code>string candidateId = 2;</code>
        */
       public Builder clearCandidateId() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        
         candidateId_ = getDefaultInstance().getCandidateId();
         onChanged();
         return this;
       }
       /**
-       * <code>required string candidateId = 2;</code>
+       * <code>string candidateId = 2;</code>
        */
       public Builder setCandidateIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000002;
+  checkByteStringIsUtf8(value);
+        
         candidateId_ = value;
         onChanged();
         return this;
@@ -2878,31 +2575,25 @@ public final class RaftProtos {
 
       private int lastLogIndex_ ;
       /**
-       * <code>required int32 lastLogIndex = 3;</code>
-       */
-      public boolean hasLastLogIndex() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      /**
-       * <code>required int32 lastLogIndex = 3;</code>
+       * <code>int32 lastLogIndex = 3;</code>
        */
       public int getLastLogIndex() {
         return lastLogIndex_;
       }
       /**
-       * <code>required int32 lastLogIndex = 3;</code>
+       * <code>int32 lastLogIndex = 3;</code>
        */
       public Builder setLastLogIndex(int value) {
-        bitField0_ |= 0x00000004;
+        
         lastLogIndex_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 lastLogIndex = 3;</code>
+       * <code>int32 lastLogIndex = 3;</code>
        */
       public Builder clearLastLogIndex() {
-        bitField0_ = (bitField0_ & ~0x00000004);
+        
         lastLogIndex_ = 0;
         onChanged();
         return this;
@@ -2910,31 +2601,25 @@ public final class RaftProtos {
 
       private int lastLogTerm_ ;
       /**
-       * <code>required int32 lastLogTerm = 4;</code>
-       */
-      public boolean hasLastLogTerm() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      /**
-       * <code>required int32 lastLogTerm = 4;</code>
+       * <code>int32 lastLogTerm = 4;</code>
        */
       public int getLastLogTerm() {
         return lastLogTerm_;
       }
       /**
-       * <code>required int32 lastLogTerm = 4;</code>
+       * <code>int32 lastLogTerm = 4;</code>
        */
       public Builder setLastLogTerm(int value) {
-        bitField0_ |= 0x00000008;
+        
         lastLogTerm_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 lastLogTerm = 4;</code>
+       * <code>int32 lastLogTerm = 4;</code>
        */
       public Builder clearLastLogTerm() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        
         lastLogTerm_ = 0;
         onChanged();
         return this;
@@ -2942,7 +2627,7 @@ public final class RaftProtos {
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
+        return super.setUnknownFieldsProto3(unknownFields);
       }
 
       @java.lang.Override
@@ -2965,7 +2650,7 @@ public final class RaftProtos {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<RequestVote>
+    private static final com.google.protobuf.Parser<RequestVote>
         PARSER = new com.google.protobuf.AbstractParser<RequestVote>() {
       @java.lang.Override
       public RequestVote parsePartialFrom(
@@ -2997,20 +2682,12 @@ public final class RaftProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required int32 term = 1;</code>
-     */
-    boolean hasTerm();
-    /**
-     * <code>required int32 term = 1;</code>
+     * <code>int32 term = 1;</code>
      */
     int getTerm();
 
     /**
-     * <code>required bool success = 2;</code>
-     */
-    boolean hasSuccess();
-    /**
-     * <code>required bool success = 2;</code>
+     * <code>bool success = 2;</code>
      */
     boolean getSuccess();
   }
@@ -3056,17 +2733,17 @@ public final class RaftProtos {
               done = true;
               break;
             case 8: {
-              bitField0_ |= 0x00000001;
+
               term_ = input.readInt32();
               break;
             }
             case 16: {
-              bitField0_ |= 0x00000002;
+
               success_ = input.readBool();
               break;
             }
             default: {
-              if (!parseUnknownField(
+              if (!parseUnknownFieldProto3(
                   input, unknownFields, extensionRegistry, tag)) {
                 done = true;
               }
@@ -3097,17 +2774,10 @@ public final class RaftProtos {
               com.lvc.cds.RaftProtos.AppendEntriesResponse.class, com.lvc.cds.RaftProtos.AppendEntriesResponse.Builder.class);
     }
 
-    private int bitField0_;
     public static final int TERM_FIELD_NUMBER = 1;
     private int term_;
     /**
-     * <code>required int32 term = 1;</code>
-     */
-    public boolean hasTerm() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required int32 term = 1;</code>
+     * <code>int32 term = 1;</code>
      */
     public int getTerm() {
       return term_;
@@ -3116,13 +2786,7 @@ public final class RaftProtos {
     public static final int SUCCESS_FIELD_NUMBER = 2;
     private boolean success_;
     /**
-     * <code>required bool success = 2;</code>
-     */
-    public boolean hasSuccess() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>required bool success = 2;</code>
+     * <code>bool success = 2;</code>
      */
     public boolean getSuccess() {
       return success_;
@@ -3135,14 +2799,6 @@ public final class RaftProtos {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasTerm()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasSuccess()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -3150,10 +2806,10 @@ public final class RaftProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (term_ != 0) {
         output.writeInt32(1, term_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (success_ != false) {
         output.writeBool(2, success_);
       }
       unknownFields.writeTo(output);
@@ -3165,11 +2821,11 @@ public final class RaftProtos {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (term_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(1, term_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (success_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, success_);
       }
@@ -3189,16 +2845,10 @@ public final class RaftProtos {
       com.lvc.cds.RaftProtos.AppendEntriesResponse other = (com.lvc.cds.RaftProtos.AppendEntriesResponse) obj;
 
       boolean result = true;
-      result = result && (hasTerm() == other.hasTerm());
-      if (hasTerm()) {
-        result = result && (getTerm()
-            == other.getTerm());
-      }
-      result = result && (hasSuccess() == other.hasSuccess());
-      if (hasSuccess()) {
-        result = result && (getSuccess()
-            == other.getSuccess());
-      }
+      result = result && (getTerm()
+          == other.getTerm());
+      result = result && (getSuccess()
+          == other.getSuccess());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -3210,15 +2860,11 @@ public final class RaftProtos {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasTerm()) {
-        hash = (37 * hash) + TERM_FIELD_NUMBER;
-        hash = (53 * hash) + getTerm();
-      }
-      if (hasSuccess()) {
-        hash = (37 * hash) + SUCCESS_FIELD_NUMBER;
-        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-            getSuccess());
-      }
+      hash = (37 * hash) + TERM_FIELD_NUMBER;
+      hash = (53 * hash) + getTerm();
+      hash = (37 * hash) + SUCCESS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getSuccess());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -3353,9 +2999,9 @@ public final class RaftProtos {
       public Builder clear() {
         super.clear();
         term_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
+
         success_ = false;
-        bitField0_ = (bitField0_ & ~0x00000002);
+
         return this;
       }
 
@@ -3382,17 +3028,8 @@ public final class RaftProtos {
       @java.lang.Override
       public com.lvc.cds.RaftProtos.AppendEntriesResponse buildPartial() {
         com.lvc.cds.RaftProtos.AppendEntriesResponse result = new com.lvc.cds.RaftProtos.AppendEntriesResponse(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
         result.term_ = term_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
         result.success_ = success_;
-        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -3441,10 +3078,10 @@ public final class RaftProtos {
 
       public Builder mergeFrom(com.lvc.cds.RaftProtos.AppendEntriesResponse other) {
         if (other == com.lvc.cds.RaftProtos.AppendEntriesResponse.getDefaultInstance()) return this;
-        if (other.hasTerm()) {
+        if (other.getTerm() != 0) {
           setTerm(other.getTerm());
         }
-        if (other.hasSuccess()) {
+        if (other.getSuccess() != false) {
           setSuccess(other.getSuccess());
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -3454,12 +3091,6 @@ public final class RaftProtos {
 
       @java.lang.Override
       public final boolean isInitialized() {
-        if (!hasTerm()) {
-          return false;
-        }
-        if (!hasSuccess()) {
-          return false;
-        }
         return true;
       }
 
@@ -3481,35 +3112,28 @@ public final class RaftProtos {
         }
         return this;
       }
-      private int bitField0_;
 
       private int term_ ;
       /**
-       * <code>required int32 term = 1;</code>
-       */
-      public boolean hasTerm() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public int getTerm() {
         return term_;
       }
       /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public Builder setTerm(int value) {
-        bitField0_ |= 0x00000001;
+        
         term_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public Builder clearTerm() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         term_ = 0;
         onChanged();
         return this;
@@ -3517,31 +3141,25 @@ public final class RaftProtos {
 
       private boolean success_ ;
       /**
-       * <code>required bool success = 2;</code>
-       */
-      public boolean hasSuccess() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required bool success = 2;</code>
+       * <code>bool success = 2;</code>
        */
       public boolean getSuccess() {
         return success_;
       }
       /**
-       * <code>required bool success = 2;</code>
+       * <code>bool success = 2;</code>
        */
       public Builder setSuccess(boolean value) {
-        bitField0_ |= 0x00000002;
+        
         success_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required bool success = 2;</code>
+       * <code>bool success = 2;</code>
        */
       public Builder clearSuccess() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        
         success_ = false;
         onChanged();
         return this;
@@ -3549,7 +3167,7 @@ public final class RaftProtos {
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
+        return super.setUnknownFieldsProto3(unknownFields);
       }
 
       @java.lang.Override
@@ -3572,7 +3190,7 @@ public final class RaftProtos {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<AppendEntriesResponse>
+    private static final com.google.protobuf.Parser<AppendEntriesResponse>
         PARSER = new com.google.protobuf.AbstractParser<AppendEntriesResponse>() {
       @java.lang.Override
       public AppendEntriesResponse parsePartialFrom(
@@ -3604,20 +3222,12 @@ public final class RaftProtos {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>required int32 term = 1;</code>
-     */
-    boolean hasTerm();
-    /**
-     * <code>required int32 term = 1;</code>
+     * <code>int32 term = 1;</code>
      */
     int getTerm();
 
     /**
-     * <code>required bool voteGranted = 2;</code>
-     */
-    boolean hasVoteGranted();
-    /**
-     * <code>required bool voteGranted = 2;</code>
+     * <code>bool voteGranted = 2;</code>
      */
     boolean getVoteGranted();
   }
@@ -3663,17 +3273,17 @@ public final class RaftProtos {
               done = true;
               break;
             case 8: {
-              bitField0_ |= 0x00000001;
+
               term_ = input.readInt32();
               break;
             }
             case 16: {
-              bitField0_ |= 0x00000002;
+
               voteGranted_ = input.readBool();
               break;
             }
             default: {
-              if (!parseUnknownField(
+              if (!parseUnknownFieldProto3(
                   input, unknownFields, extensionRegistry, tag)) {
                 done = true;
               }
@@ -3704,17 +3314,10 @@ public final class RaftProtos {
               com.lvc.cds.RaftProtos.RequestVoteResponse.class, com.lvc.cds.RaftProtos.RequestVoteResponse.Builder.class);
     }
 
-    private int bitField0_;
     public static final int TERM_FIELD_NUMBER = 1;
     private int term_;
     /**
-     * <code>required int32 term = 1;</code>
-     */
-    public boolean hasTerm() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
-    }
-    /**
-     * <code>required int32 term = 1;</code>
+     * <code>int32 term = 1;</code>
      */
     public int getTerm() {
       return term_;
@@ -3723,13 +3326,7 @@ public final class RaftProtos {
     public static final int VOTEGRANTED_FIELD_NUMBER = 2;
     private boolean voteGranted_;
     /**
-     * <code>required bool voteGranted = 2;</code>
-     */
-    public boolean hasVoteGranted() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
-    }
-    /**
-     * <code>required bool voteGranted = 2;</code>
+     * <code>bool voteGranted = 2;</code>
      */
     public boolean getVoteGranted() {
       return voteGranted_;
@@ -3742,14 +3339,6 @@ public final class RaftProtos {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
-      if (!hasTerm()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasVoteGranted()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -3757,10 +3346,10 @@ public final class RaftProtos {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (term_ != 0) {
         output.writeInt32(1, term_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (voteGranted_ != false) {
         output.writeBool(2, voteGranted_);
       }
       unknownFields.writeTo(output);
@@ -3772,11 +3361,11 @@ public final class RaftProtos {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+      if (term_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(1, term_);
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (voteGranted_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, voteGranted_);
       }
@@ -3796,16 +3385,10 @@ public final class RaftProtos {
       com.lvc.cds.RaftProtos.RequestVoteResponse other = (com.lvc.cds.RaftProtos.RequestVoteResponse) obj;
 
       boolean result = true;
-      result = result && (hasTerm() == other.hasTerm());
-      if (hasTerm()) {
-        result = result && (getTerm()
-            == other.getTerm());
-      }
-      result = result && (hasVoteGranted() == other.hasVoteGranted());
-      if (hasVoteGranted()) {
-        result = result && (getVoteGranted()
-            == other.getVoteGranted());
-      }
+      result = result && (getTerm()
+          == other.getTerm());
+      result = result && (getVoteGranted()
+          == other.getVoteGranted());
       result = result && unknownFields.equals(other.unknownFields);
       return result;
     }
@@ -3817,15 +3400,11 @@ public final class RaftProtos {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasTerm()) {
-        hash = (37 * hash) + TERM_FIELD_NUMBER;
-        hash = (53 * hash) + getTerm();
-      }
-      if (hasVoteGranted()) {
-        hash = (37 * hash) + VOTEGRANTED_FIELD_NUMBER;
-        hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-            getVoteGranted());
-      }
+      hash = (37 * hash) + TERM_FIELD_NUMBER;
+      hash = (53 * hash) + getTerm();
+      hash = (37 * hash) + VOTEGRANTED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getVoteGranted());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -3960,9 +3539,9 @@ public final class RaftProtos {
       public Builder clear() {
         super.clear();
         term_ = 0;
-        bitField0_ = (bitField0_ & ~0x00000001);
+
         voteGranted_ = false;
-        bitField0_ = (bitField0_ & ~0x00000002);
+
         return this;
       }
 
@@ -3989,17 +3568,8 @@ public final class RaftProtos {
       @java.lang.Override
       public com.lvc.cds.RaftProtos.RequestVoteResponse buildPartial() {
         com.lvc.cds.RaftProtos.RequestVoteResponse result = new com.lvc.cds.RaftProtos.RequestVoteResponse(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
-          to_bitField0_ |= 0x00000001;
-        }
         result.term_ = term_;
-        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
-          to_bitField0_ |= 0x00000002;
-        }
         result.voteGranted_ = voteGranted_;
-        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -4048,10 +3618,10 @@ public final class RaftProtos {
 
       public Builder mergeFrom(com.lvc.cds.RaftProtos.RequestVoteResponse other) {
         if (other == com.lvc.cds.RaftProtos.RequestVoteResponse.getDefaultInstance()) return this;
-        if (other.hasTerm()) {
+        if (other.getTerm() != 0) {
           setTerm(other.getTerm());
         }
-        if (other.hasVoteGranted()) {
+        if (other.getVoteGranted() != false) {
           setVoteGranted(other.getVoteGranted());
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -4061,12 +3631,6 @@ public final class RaftProtos {
 
       @java.lang.Override
       public final boolean isInitialized() {
-        if (!hasTerm()) {
-          return false;
-        }
-        if (!hasVoteGranted()) {
-          return false;
-        }
         return true;
       }
 
@@ -4088,35 +3652,28 @@ public final class RaftProtos {
         }
         return this;
       }
-      private int bitField0_;
 
       private int term_ ;
       /**
-       * <code>required int32 term = 1;</code>
-       */
-      public boolean hasTerm() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
-      }
-      /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public int getTerm() {
         return term_;
       }
       /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public Builder setTerm(int value) {
-        bitField0_ |= 0x00000001;
+        
         term_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required int32 term = 1;</code>
+       * <code>int32 term = 1;</code>
        */
       public Builder clearTerm() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        
         term_ = 0;
         onChanged();
         return this;
@@ -4124,31 +3681,25 @@ public final class RaftProtos {
 
       private boolean voteGranted_ ;
       /**
-       * <code>required bool voteGranted = 2;</code>
-       */
-      public boolean hasVoteGranted() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
-      }
-      /**
-       * <code>required bool voteGranted = 2;</code>
+       * <code>bool voteGranted = 2;</code>
        */
       public boolean getVoteGranted() {
         return voteGranted_;
       }
       /**
-       * <code>required bool voteGranted = 2;</code>
+       * <code>bool voteGranted = 2;</code>
        */
       public Builder setVoteGranted(boolean value) {
-        bitField0_ |= 0x00000002;
+        
         voteGranted_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>required bool voteGranted = 2;</code>
+       * <code>bool voteGranted = 2;</code>
        */
       public Builder clearVoteGranted() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        
         voteGranted_ = false;
         onChanged();
         return this;
@@ -4156,7 +3707,7 @@ public final class RaftProtos {
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
+        return super.setUnknownFieldsProto3(unknownFields);
       }
 
       @java.lang.Override
@@ -4179,7 +3730,7 @@ public final class RaftProtos {
       return DEFAULT_INSTANCE;
     }
 
-    @java.lang.Deprecated public static final com.google.protobuf.Parser<RequestVoteResponse>
+    private static final com.google.protobuf.Parser<RequestVoteResponse>
         PARSER = new com.google.protobuf.AbstractParser<RequestVoteResponse>() {
       @java.lang.Override
       public RequestVoteResponse parsePartialFrom(
@@ -4240,18 +3791,18 @@ public final class RaftProtos {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016protocol.proto\"\300\001\n\rAppendEntries\022\014\n\004te" +
-      "rm\030\001 \002(\005\022\020\n\010leaderId\030\002 \002(\t\022\030\n\020previousLo" +
-      "gIndex\030\003 \002(\005\022\027\n\017previousLogTerm\030\004 \002(\005\022\"\n" +
+      "\n\016protocol.proto\"\316\001\n\rAppendEntries\022\014\n\004te" +
+      "rm\030\001 \001(\005\022\020\n\010leaderId\030\002 \001(\t\022\030\n\020previousLo" +
+      "gIndex\030\003 \001(\005\022\027\n\017previousLogTerm\030\004 \001(\005\022\"\n" +
       "\005entry\030\005 \003(\0132\023.AppendEntries.Pair\022\024\n\014lea" +
-      "derCommit\030\006 \002(\005\032\"\n\004Pair\022\013\n\003key\030\001 \002(\t\022\r\n\005" +
-      "value\030\002 \002(\t\"[\n\013RequestVote\022\014\n\004term\030\001 \002(\005" +
-      "\022\023\n\013candidateId\030\002 \002(\t\022\024\n\014lastLogIndex\030\003 " +
-      "\002(\005\022\023\n\013lastLogTerm\030\004 \002(\005\"6\n\025AppendEntrie" +
-      "sResponse\022\014\n\004term\030\001 \002(\005\022\017\n\007success\030\002 \002(\010" +
-      "\"8\n\023RequestVoteResponse\022\014\n\004term\030\001 \002(\005\022\023\n" +
-      "\013voteGranted\030\002 \002(\010B\031\n\013com.lvc.cdsB\nRaftP" +
-      "rotos"
+      "derCommit\030\006 \001(\005\0320\n\004Pair\022\014\n\004term\030\001 \001(\005\022\013\n" +
+      "\003key\030\002 \001(\t\022\r\n\005value\030\003 \001(\t\"[\n\013RequestVote" +
+      "\022\014\n\004term\030\001 \001(\005\022\023\n\013candidateId\030\002 \001(\t\022\024\n\014l" +
+      "astLogIndex\030\003 \001(\005\022\023\n\013lastLogTerm\030\004 \001(\005\"6" +
+      "\n\025AppendEntriesResponse\022\014\n\004term\030\001 \001(\005\022\017\n" +
+      "\007success\030\002 \001(\010\"8\n\023RequestVoteResponse\022\014\n" +
+      "\004term\030\001 \001(\005\022\023\n\013voteGranted\030\002 \001(\010B\031\n\013com." +
+      "lvc.cdsB\nRaftProtosb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -4276,7 +3827,7 @@ public final class RaftProtos {
     internal_static_AppendEntries_Pair_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AppendEntries_Pair_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "Term", "Key", "Value", });
     internal_static_RequestVote_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_RequestVote_fieldAccessorTable = new
