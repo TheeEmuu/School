@@ -26,5 +26,5 @@ int main() {
     auto radius = find_radius(center, points);
 
     // let's print our results:
-    cout << "\n\nThe center is at " << center << " and the radius is " << radius << endl;
+    cout << "\n\nThe center is at " << center.to_string() << " and the radius is " << radius << endl;
 }

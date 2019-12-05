@@ -29,13 +29,13 @@ double Point::distance_to(const Point& other) const {
 
 
 void Point::add(const Point& other) {
-    x + other.x;
-    y + other.y;
+    x += other.x;
+    y += other.y;
 }
 
 void Point::scale(double factor) {
-    x * factor;
-    y * factor;
+    x *= factor;
+    y *= factor;
 }
 
 // make a string representation of this point for printing

@@ -45,7 +45,7 @@ Point find_center(const vector<Point>& points) {
     // now divide by the number of points to find the average.
     // I created the scale member function to make this work, since
     // the coordinates of the point are private to that class.
-    double factor = 1/points.size();
+    double factor = 1.0/points.size();
     center.scale(factor);
 
     return center;

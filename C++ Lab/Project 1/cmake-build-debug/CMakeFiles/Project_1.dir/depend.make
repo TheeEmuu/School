@@ -11,5 +11,3 @@ CMakeFiles/Project_1.dir/point.cpp.o: ../point.h
 CMakeFiles/Project_1.dir/smallest_circle.cpp.o: ../point.h
 CMakeFiles/Project_1.dir/smallest_circle.cpp.o: ../smallest_circle.cpp
 
-CMakeFiles/Project_1.dir/test.cpp.o: ../test.cpp
-

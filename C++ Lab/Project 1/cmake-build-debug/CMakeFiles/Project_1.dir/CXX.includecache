@@ -6,11 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/Programming/school/C++ Lab/Project 1/test.cpp
-algorithm
+/cygdrive/d/Programming/school/C++ Lab/Project 1/main.cpp
+string
 -
 iostream
 -
+point.h
+/cygdrive/d/Programming/school/C++ Lab/Project 1/point.h
+smallest_circle.h
+/cygdrive/d/Programming/school/C++ Lab/Project 1/smallest_circle.h
+
+/cygdrive/d/Programming/school/C++ Lab/Project 1/point.h
+string
+-
+
+/cygdrive/d/Programming/school/C++ Lab/Project 1/smallest_circle.h
 vector
 -
+string
+-
+point.h
+/cygdrive/d/Programming/school/C++ Lab/Project 1/point.h
 
