@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Project_6.dir/main.cpp.o CMakeFiles/Project_6.dir/School.cpp.o CMakeFiles/Project_6.dir/Student.cpp.o  -o Project_6.exe -Wl,--out-implib,libProject_6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
