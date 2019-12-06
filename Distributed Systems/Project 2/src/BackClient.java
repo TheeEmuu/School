@@ -66,7 +66,6 @@ public class BackClient {
                 .GET()
                 .build();
         try {
-
             request = HttpRequest.newBuilder()
                     .uri(URI.create("http://"+ip+":"+port+"/"))
                     .header("Content-Type", "application/json")

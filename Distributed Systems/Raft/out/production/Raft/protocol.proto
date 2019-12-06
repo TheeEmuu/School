@@ -26,42 +26,41 @@
 //  repeated Person people = 1;
 //}
 
-syntax = "proto3";
+syntax = "proto2";
 
 option java_package = "com.lvc.cds";
 option java_outer_classname = "RaftProtos";
 
 message AppendEntries {
-  int32 term = 1;
-  string leaderId = 2;
-  int32 previousLogIndex = 3;
-  int32 previousLogTerm = 4;
+  required int32 term = 1;
+  required string leaderId = 2;
+  required int32 previousLogIndex = 3;
+  required int32 previousLogTerm = 4;
 
   message Pair {
-    int32 term = 1;
-    string key = 2;
-    string value = 3;
+    required string key = 1;
+    required string value = 2;
   }
 
   repeated Pair entry = 5;
-  int32 leaderCommit = 6;
+  required int32 leaderCommit = 6;
 }
 
 message RequestVote {
-  int32 term = 1;
-  string candidateId = 2;
-  int32 lastLogIndex = 3;
-  int32 lastLogTerm = 4;
+  required int32 term = 1;
+  required string candidateId = 2;
+  required int32 lastLogIndex = 3;
+  required int32 lastLogTerm = 4;
 }
 
 message AppendEntriesResponse {
-  int32 term = 1;
-  bool success = 2;
+  required int32 term = 1;
+  required bool success = 2;
 }
 
 message RequestVoteResponse {
-  int32 term = 1;
-  bool voteGranted = 2;
+  required int32 term = 1;
+  required bool voteGranted = 2;
 }
 
 // protoc -I="/home/LVC/ejj001/Programming/Distributed Systems/Raft/src" --java_out="/home/LVC/ejj001/Programming/Distributed Systems/Raft/src" "/home/LVC/ejj001/Programming/Distributed Systems/Raft/src/protocol.proto"
