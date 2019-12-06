@@ -1,0 +1,24 @@
+without references:
+100 : 0
+500 : 2
+2500 : 18
+12500 : 265
+62500 : 6637
+312500 : 298802
+
+with references:
+100 : 0
+500 : 2
+2500 : 18
+12500 : 267
+62500 : 9479
+312500 : 379583
+
+
+Passing references actually made the program run slower, suprisingly enough.
+
+It is not possible to use const, because the vector is modified in the function.
+
+Doing some research, I've found that the default return is a copy, but that
+you can pass a reference or pointer by modifying the return type in the
+function declaration.
