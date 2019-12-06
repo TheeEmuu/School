@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Programming/school/C++ Lab/Project 8/Base.cpp
+Base.h
+/cygdrive/d/Programming/school/C++ Lab/Project 8/Base.h
+iostream
+-
+
+/cygdrive/d/Programming/school/C++ Lab/Project 8/Base.h
+
+/cygdrive/d/Programming/school/C++ Lab/Project 8/Derived.cpp
+Derived.h
+/cygdrive/d/Programming/school/C++ Lab/Project 8/Derived.h
+Base.h
+/cygdrive/d/Programming/school/C++ Lab/Project 8/Base.h
+iostream
+-
+
+/cygdrive/d/Programming/school/C++ Lab/Project 8/Derived.h
+Base.h
+/cygdrive/d/Programming/school/C++ Lab/Project 8/Base.h
+
+/cygdrive/d/Programming/school/C++ Lab/Project 8/main.cpp
+Base.h
+/cygdrive/d/Programming/school/C++ Lab/Project 8/Base.h
+Derived.h
+/cygdrive/d/Programming/school/C++ Lab/Project 8/Derived.h
+iostream
+-
+fstream
+-
+vector
+-
+memory
+-
+
