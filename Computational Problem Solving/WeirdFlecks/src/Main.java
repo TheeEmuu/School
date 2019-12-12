@@ -1,76 +1,73 @@
 import java.awt.geom.Point2D;
 import java.util.*;
 
+@SuppressWarnings("SuspiciousNameCombination")
 public class Main {
-    //https://open.kattis.com/problems/weirdflecksbutok
+    // https://open.kattis.com/problems/weirdflecksbutok
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
 
         int size = in.nextInt();
 
-        PriorityQueue<Flaw> flaws = new PriorityQueue<>(new Comparator<Flaw>() {
-            @Override
-            public int compare(Flaw flaw, Flaw t1) {
-                if(Math.random() > .5)
-                    return 1;
-                else
-                    return -1;
-            }
-        });
+//        PriorityQueue<Flaw> flaws = new PriorityQueue<>(new Comparator<Flaw>() {
+//            @Override
+//            public int compare(Flaw flaw, Flaw t1) {
+//                if(Math.random() > .5)
+//                    return 1;
+//                else
+//                    return -1;
+//            }
+//        });
+        ArrayList<Flaw> flaws = new ArrayList<>();
         for(int i = 0; i < size; i++){
             flaws.add(new Flaw(in.nextDouble(), in.nextDouble(), in.nextDouble()));
         }
+        Collections.shuffle(flaws, new Random());
 
-        System.out.println(Math.min(Math.min(xy(new PriorityQueue<>(flaws)), yz(new PriorityQueue<>(flaws))), zx(new PriorityQueue<>(flaws))));
+        System.out.println(Math.min(Math.min(xy(flaws), yz(flaws)), zx(flaws)));
 
 //        Circle circle = new Circle(new Point(0, 2), new Point(0, 0));
 //        System.out.println(circle.diameter());
     }
 
-    public static double xy(PriorityQueue<Flaw> flaws){
-        Flaw flaw = flaws.poll();
-        Point x = new Point(flaw.x, flaw.y);
-        flaw = flaws.poll();
-        Point y = new Point(flaw.x, flaw.y);
-        Circle circle = new Circle(x, y);
+    public static double xy(List<Flaw> flaws){
+        ArrayList<Point> points = new ArrayList<>();
+        for(Flaw flaw : flaws){
+            points.add(new Point(flaw.x, flaw.y));
+        }
+        Circle circle = new Circle(points.get(0), points.get(1));
 
-        while(!flaws.isEmpty()){
-            flaw = flaws.poll();
-            Point add = new Point(flaw.x, flaw.y);
-            circle.add(add);
+        for(int i = 2; i < flaws.size(); i++){
+            circle.add(points.subList(0, i + 1), points.get(i));
         }
 
         return circle.diameter();
     }
 
-    public static double yz(PriorityQueue<Flaw> flaws){
-        Flaw flaw = flaws.poll();
-        Point x = new Point(flaw.y, flaw.z);
-        flaw = flaws.poll();
-        Point y = new Point(flaw.y, flaw.z);
-        Circle circle = new Circle(x, y);
+    public static double yz(List<Flaw> flaws){
+        ArrayList<Point> points = new ArrayList<>();
+        for(Flaw flaw : flaws){
+            points.add(new Point(flaw.y, flaw.z));
+        }
+        Circle circle = new Circle(points.get(0), points.get(1));
 
-        while(!flaws.isEmpty()){
-            flaw = flaws.poll();
-            Point add = new Point(flaw.y, flaw.z);
-            circle.add(add);
+        for(int i = 2; i < flaws.size(); i++){
+            circle.add(points.subList(0, i + 1), points.get(i));
         }
 
         return circle.diameter();
 
     }
 
-    public static double zx(PriorityQueue<Flaw> flaws){
-        Flaw flaw = flaws.poll();
-        Point x = new Point(flaw.z, flaw.x);
-        flaw = flaws.poll();
-        Point y = new Point(flaw.z, flaw.x);
-        Circle circle = new Circle(x, y);
+    public static double zx(List<Flaw> flaws){
+        ArrayList<Point> points = new ArrayList<>();
+        for(Flaw flaw : flaws){
+            points.add(new Point(flaw.z, flaw.x));
+        }
+        Circle circle = new Circle(points.get(0), points.get(1));
 
-        while(!flaws.isEmpty()){
-            flaw = flaws.poll();
-            Point add = new Point(flaw.z, flaw.x);
-            circle.add(add);
+        for(int i = 2; i < flaws.size(); i++){
+            circle.add(points.subList(0, i + 1), points.get(i));
         }
 
         return circle.diameter();
@@ -97,6 +94,12 @@ public class Main {
         Point center;
         double radius;
         Point[] points = new Point[3];
+
+        Circle(Point a){
+            center = a;
+            radius = 0;
+        }
+
         Circle(Point a, Point b){
             center = new Point((a.x + b.x)/2, (a.y + b.y)/2);
             radius = Point2D.distance(a.x, a.y, center.x, center.y);
@@ -131,41 +134,16 @@ public class Main {
             return radius * 2;
         }
 
-        void add(Point add){
+        Circle add(List<Point> points, Point add){
             if(!contains(add)){
-                ArrayList<Circle> circles = new ArrayList<>();
-                circles.add(new Circle(points[0], add));
-                circles.add(new Circle(points[1], add));
-                circles.add(new Circle(points[0], points[1], add));
-
-                if(points[2] != null) {
-                    circles.add(new Circle(points[2], add));
-                    circles.add(new Circle(points[0], points[2], add));
-                    circles.add(new Circle(points[1], points[2], add));
+                if(points.size() == 1){
+                    return new Circle(points.get(0));
                 }
 
-                int bestCircle = -1;
-                for(int i = 0; i < circles.size(); i++){
-                    Circle circle = circles.get(i);
-
-                    if(circle.contains(points[0]) &&
-                            circle.contains(points[1]) &&
-                            circle.contains(add) &&
-                            !(points[2] != null && !circle.contains(points[2]))){
-                        if(bestCircle == -1 || circle.radius < circles.get(bestCircle).radius){
-                            bestCircle = i;
-                        }
-                    }
-                }
-
-                    Circle best = circles.get(bestCircle);
-                    points[0] = best.points[0];
-                    points[1] = best.points[1];
-                    points[2] = best.points[2];
-                    center = best.center;
-                    radius = best.radius;
-
+                Circle best =
             }
+
+            return this;
         }
     }
 
