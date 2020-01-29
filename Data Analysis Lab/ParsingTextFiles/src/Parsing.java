@@ -2,6 +2,10 @@ import java.io.*;
 import java.util.*;
 
 public class Parsing {
+    /*
+    Takes an input stream of a tab-delimited file and returns an ArrayList of Hashmaps containing
+    the data in each entry
+     */
     public static ArrayList<HashMap<String, Object>> parseTabs(InputStream a) throws IOException {
         Reader in = new InputStreamReader(a);
 
@@ -32,6 +36,10 @@ public class Parsing {
         return handle(table);
     }
 
+    /*
+    Takes an input stream of a csv file and returns an ArrayList of Hashmaps containing
+    the data in each entry
+     */
     public static ArrayList<HashMap<String, Object>> parseCSV(InputStream a) throws IOException {
         Reader in = new InputStreamReader(a);
 
@@ -66,7 +74,10 @@ public class Parsing {
         return handle(table);
     }
 
-    public static ArrayList<HashMap<String, Object>> handle(ArrayList<ArrayList<String>> table){
+    /*
+    Used by the above methods to translate the files into ArrayList<Map> format
+     */
+    private static ArrayList<HashMap<String, Object>> handle(ArrayList<ArrayList<String>> table){
         ArrayList<String> schema = table.get(0);
         // 0 for string, 1 for int, 2 for double
         int[] types = new int[schema.size()];
@@ -116,6 +127,10 @@ public class Parsing {
         return entries;
     }
 
+    /*
+    Sums the numeric values of a specified column in the given table
+    returns a double
+     */
     public static double sumColumnValues(ArrayList<HashMap<String, Object>> table, String columnName){
         double total = 0;
         for (HashMap<String, Object> entry : table) {
@@ -125,6 +140,9 @@ public class Parsing {
         return total;
     }
 
+    /*
+    Sums the length of strings in the specified column in the given table
+     */
     public static int sumColumnLengths(ArrayList<HashMap<String, Object>> table, String columnName){
         int total = 0;
         for (HashMap<String, Object> entry : table) {
