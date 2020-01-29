@@ -110,7 +110,7 @@ public class Main {
             points[1] = b;
             points[2] = c;
 
-            double d = 2 * (a.x * (b.y - c.y) + b.y * (c.y - a.y) + c.x * (a.y - b.y));
+            double d = 2 * (a.x * (b.y - c.y) + b.x * (c.y - a.y) + c.x * (a.y - b.y));
 
             double x = ((Math.pow(a.x, 2) + Math.pow(a.y, 2)) * (b.y - c.y) +
                         (Math.pow(b.x, 2) + Math.pow(b.y, 2)) * (c.y - a.y) +
@@ -143,6 +143,9 @@ public class Main {
                     circles.add(new Circle(points[0], points[2], add));
                     circles.add(new Circle(points[1], points[2], add));
                 }
+                else{
+                   int k = 5;
+                }
 
                 int bestCircle = -1;
                 for(int i = 0; i < circles.size(); i++){
@@ -158,6 +161,9 @@ public class Main {
                     }
                 }
 
+                if(bestCircle == -1){
+                    System.out.println();
+                }
                     Circle best = circles.get(bestCircle);
                     points[0] = best.points[0];
                     points[1] = best.points[1];

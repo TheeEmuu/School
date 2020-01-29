@@ -15,7 +15,7 @@ with references:
 312500 : 379583
 
 
-Passing references actually made the program run slower, suprisingly enough.
+Passing references actually made the program run slower.
 
 It is not possible to use const, because the vector is modified in the function.
 
