@@ -8,17 +8,18 @@ string_similarity <- function(csv1, csv2){
   a_data <- a[, a_column]
   b_data <- b[, b_column]
   
+  t <- readline(prompt = "How similar do the objects need to be? : ")
   type <- readline(prompt = "Edit similarity or Jacard similarity? : ")
   if(tolower(type) == "jacard similarity"){
     q <- readline("What is the q value? : ")
-    jacard(a_data, b_data, q)
+    jacard(a_data, b_data, q, t)
   }
   else{
-    edit_dist(a_data, b_data)
+    edit_dist(a_data, b_data, t)
   }
 }
 
-jacard <- function(a_data, b_data, q){
+jaccard <- function(a_data, b_data, q, t){
   a_q_grams <- vector(mode = "list", length = length(a_data))
   b_q_grams <- vector(mode = "list", length = length(b_data))
   
@@ -30,7 +31,17 @@ jacard <- function(a_data, b_data, q){
     b_q_grams[i] <- q_grams(b_data[i], q)
   }
   
-  
+  for(i in a_q_grams){
+    for(k in b_b_grams){
+      same <- intersect(i, k)
+      total <- union(i, k)
+      sim <- same / total
+      
+      if(sim > t){
+        
+      }
+    }
+  }
 }
 
 q_grams(word, q){
@@ -42,7 +53,7 @@ q_grams(word, q){
   return(grams)
 }
 
-edit_dist <- function(a_data, b_data){
+edit_dist <- function(a_data, b_data, t){
   
 }
 
