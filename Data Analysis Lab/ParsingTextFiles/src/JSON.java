@@ -4,7 +4,6 @@ import org.json.simple.JSONObject;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 
 public class JSON {
     public static void main(String[] args) throws IOException {
