@@ -13,8 +13,6 @@ public class JSON {
         for(HashMap<String, Object> x : csv){
             x.put("Address", new Address((String) x.get("Address")));
         }
-
-
     }
 
     public static JSONObject addressToJson(Address address){
