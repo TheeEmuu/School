@@ -1,6 +1,8 @@
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
 public class Binary {
     public static void main(String[] args) throws IOException {
@@ -43,5 +45,40 @@ public class Binary {
         }
 
         return obj;
+    }
+
+    static void encodeNoSerialization(ArrayList<HashMap<String, Object>> a) throws IOException {
+        DataOutputStream out = null;
+        try {
+            out = new DataOutputStream(new FileOutputStream("binaryfile"));
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        Set<String> keys = a.get(0).keySet();
+        for(String x : keys){
+            try {
+                out.writeUTF(x);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        for(HashMap<String, Object> x : a){
+            for(Map.Entry<String, Object> entry : x.entrySet()){
+                if(entry.getValue() instanceof String){
+                    out.writeUTF((String)entry.getValue());
+                }
+                else{
+                    out.write((byte[]) entry.getValue());
+                }
+            }
+        }
+    }
+
+    static void decodeNoSerialization(String filename){
+        ArrayList<HashMap<String, Object>> data = new ArrayList<>();
+
+
     }
 }
