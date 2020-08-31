@@ -79,6 +79,6 @@ public class Binary {
     static void decodeNoSerialization(String filename){
         ArrayList<HashMap<String, Object>> data = new ArrayList<>();
 
-
+        
     }
 }
