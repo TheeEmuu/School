@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 // I cannot get the first thread to notify the second
 public class TwoThread {
+  static Object lock = new Object();
 
   public static void main(String[] args) {
     Input input = new Input();
@@ -15,15 +16,21 @@ public class TwoThread {
 
 class Input implements Runnable {
   int value;
+
   @Override
   public void run() {
-    while(true){
-      synchronized(this){
+    while (true) {
+      synchronized (TwoThread.lock) {
         Scanner in = new Scanner(System.in);
         System.out.println("Input a number");
         value = in.nextInt();
 
-        this.notify();
+        TwoThread.lock.notifyAll();
+        try {
+          TwoThread.lock.wait();
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
       }
     }
   }
@@ -44,8 +51,8 @@ class Listen implements Runnable {
   public void run() {
     try {
       while(true){
-        synchronized(input){
-          input.wait();
+        synchronized(TwoThread.lock){
+          TwoThread.lock.wait();
           int value = input.getValue();
           System.out.println(value);
         }
