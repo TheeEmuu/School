@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Assignment 2</title>
+  </head>
+  <style>
+    body {background-color: #0c0c0c;}
+    .center{
+      margin-top: 50%;
+      color: #ffffffde;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      font-size: 32px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  </style>
+  <body>
+    <script>
+      window.onload = function(){
+        var temperature = prompt("Please input the temperature in Fahrenheit");
+
+        //absoulte 0
+        if(temperature < -459.67)
+          document.getElementById("centerText").innerHTML = "It's uhh... below absoulte zero. How are you seeing this";
+        //freezing
+        else if (temperature < 32)
+          document.getElementById("centerText").innerHTML = "It's below freezing, wear a heavy coat";
+        //room temperature
+        else if (temperature < 68)
+          document.getElementById("centerText").innerHTML = "It's a chilly day, you may need a jacket";
+        //hot day
+        else if (temperature < 86)
+          document.getElementById("centerText").innerHTML = "It's a nice day, enjoy";
+        //really hot day
+        else
+          document.getElementById("centerText").innerHTML = "It's a hot day, bring sunscreen";
+      }
+    </script>
+    <div>
+      <div class="center">
+        <p id="centerText"></p>
+      </div>
+    </div>
+  </body>
+</html>
