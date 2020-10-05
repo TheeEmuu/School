@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Browser Aim Training</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<style>
+body{background-color: #0c0c0c;}
+
+#buttons{
+  margin: auto;
+}
+
+.score{
+  color:  rgba(255, 255, 255, 0.87);
+  font-size: xx-large;
+  /* margin: 0 auto; */
+}
+
+#gameButton{
+  position: absolute;
+  left: 0%;
+  top: 10%;
+  opacity: 0%;
+}
+
+.functionButton{
+  margin: 5em;
+}
+
+.controlBox{
+  margin: 0 auto;
+}
+</style>
+<script>
+  
+  var speed = prompt("How fast should targets appear (in ms)?");
+
+  var run;
+
+  var score = 0;
+  var highScore = 0;
+
+  ///begins the main gameplay loop
+  function start(){
+    run = setInterval(appear, speed);
+  }
+  ///stops the main gameplay loop, hides the button and resets the scores
+  function restart(){
+    clearInterval(run);
+    $("#gameButton").attr("disabled", true);
+    $("#gameButton").css("opacity", "0%");
+    var newSpeed = prompt("How fast should targets appear (in ms)?");
+    if(newSpeed != null){
+      speed = newSpeed;
+      score = 0;
+      highScore = 0;
+      updateScore();
+    }
+    else
+      start();
+  }
+
+  ///the main gameplay loop
+  function appear(){
+    //checks if the button had been pressed, if not, resets score
+    if(!$("#gameButton").attr("disabled")){
+      score = 0;
+      updateScore();
+    }
+    //randomly position button and make it appear
+    $("#gameButton").css("left", randomPercent(10, 95));
+    $("#gameButton").css("top", randomPercent(10, 95));
+    $("#gameButton").attr("disabled", false);
+    $("#gameButton").css("opacity", "100%");
+  }
+
+  ///run when user clicks the game button, increments score
+  function hit(){
+    score++;
+    updateScore();
+    $("#gameButton").attr("disabled", true);
+    $("#gameButton").css("opacity", "0%");
+  }
+
+  ///returns a random percentage between min and max
+  function randomPercent(min, max){
+    return (Math.floor(Math.random() * (max - min)) + min) + "%";
+  }
+
+  ///updates the score displays with the current scores
+  function updateScore(){
+    if(score > highScore)
+      highScore = score
+    $("#score").html("Score: " + score);
+    $("#highScore").html("High Score: " + highScore);
+  }
+</script>
+</head>
+
+<body>
+<input id="gameButton", type="button", value="Click Me!", onclick="hit()">
+<div style="width: 100%; display: table-row;">
+  <div class="score", id="score", style="display: table-cell">Score: 0</div>
+  <dir class="score", id="highScore", style="display: table-cell">High Score: 0</dir>
+</div>  
+
+  
+<div id="buttons">
+  <input class="functionButton", type="button", value="Start", onclick="start()">
+  <input class="functionButton", type="button", value="Restart", onclick="restart()">
+</div>  
+
+</body>
+</html>
