@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>I'm sorry Yarnall</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<style>
+
+</style>
+<script>
+    async function f() {
+        let promise = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("done!"), 3000)
+        });
+
+        let result = await promise; // wait until the promise resolves (*)
+
+        alert(result); // "done!"
+    }
+
+    $(document).ready(function(){
+        f();
+        alert("working");
+    });
+</script>
+</head>
+</html>

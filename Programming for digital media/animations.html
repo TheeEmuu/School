@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>
+
+</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<style>
+body{background-color: #0c0c0c;}
+
+.shown{
+    color: rgba(255, 255, 255, 0.87);
+    font-size: x-large;
+    padding: 1%;
+    position: relative;
+}
+
+.hidden{
+    color: rgba(255, 255, 255, 0.87);
+    font-size: x-large;
+    padding: 1%;
+    position: relative;
+    /* visibility: hidden; */
+}
+
+.shownBox{
+    position: absolute;
+    left: 0%;
+    width: 45%;
+}
+
+.hiddenBox{
+    position: absolute;
+    left: 50%;
+    width: 45%;
+}
+</style>
+<script>
+$(document).ready(function(){
+    $(".hidden").hide();
+
+    $("#shown1").click(function(){
+        $("#hidden1").show();
+    });
+    $("#shown2").click(function(){
+        $("#hidden2").fadeIn(500);
+    });
+    $("#shown3").click(function(){
+        var div = $("#hidden3")
+        div.css("opacity", 0);
+        div.show();
+        div.animate({opacity: '0.4'}, 500);
+        div.animate({opacity: '0.2'}, 500);
+        div.animate({opacity: '0.6'}, 500);
+        div.animate({opacity: '0.4'}, 500);
+        div.animate({opacity: '0.8'}, 500);
+        div.animate({opacity: '0.6'}, 500);
+        div.animate({opacity: '1'}, 500);
+    });
+    $("#shown4").click(function(){
+        $("#hidden4").slideDown();
+    });
+    $("#shown5").click(function(){
+        var div = $("#hidden5")
+        div.fadeIn();
+        if(Math.random() > .5)
+            div.animate({left: "+=5%"}, 200);
+        else
+            div.animate({left: "-=5%"}, 200);
+    });
+});
+</script>
+<body>
+    <div class="shownBox">
+        <div class="shown", id="shown1">
+            This is shown
+        </div>
+        <div class="shown", id="shown2">
+            This is also shown
+        </div>
+        <div class="shown", id="shown3">
+            This too is shown
+        </div>
+        <div class="shown", id="shown4">
+            Hey, this div is here too
+        </div>
+        <div class="shown", id="shown5">
+            This is the last div
+        </div>
+    </div>
+
+    <div class="hiddenBox">
+        <div class="hidden", id="hidden1">
+            This was not shown
+        </div>
+        <div class="hidden", id="hidden2">
+            This was hidden
+        </div>
+        <div class="hidden", id="hidden3">
+            Oooh spooky hidden div
+        </div>
+        <div class="hidden", id="hidden4">
+            I was invisible, now I'm visible
+        </div>
+        <div class="hidden", id="hidden5">
+            Hello Dave, signed the ghost divs
+        </div>
+    </div>
+</body>
+</head>
+</html>
