@@ -1,0 +1,105 @@
+<!-- Sarah -->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Contact</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="scripts/navBar.js"></script>
+	<link rel="stylesheet" href="styles/navBar.css">
+	
+	<script>
+		$(document).ready(function(){
+			$("#myModal").modal('show');});	
+	</script>
+
+	<script>
+		// get modal
+		var modal = document.getElementById("myModal");
+
+		// get <span> element that closes modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// when user clicks on (x), close modal
+		span.onclick = function() {
+		modal.style.display = "none";}
+
+		// when user clicks outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";}}
+	</script>
+<style>
+	body {background-color:#2b2b2b;}
+	.contact-form {margin:auto; margin-top:120px; padding:20px; width:23%;}
+	input {margin:0 30px; font-size:1em; border-radius:5px; width:250px;}
+	textarea {border-radius:5px; font-size:1em; margin:0 30px; color:black; width:250px; height:100px;}
+    span {padding-left:30px; color:orange; font-size:18px;}
+	.modal {display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4);}
+	.modal-content {position: relative; background-color: #fefefe; margin: auto; padding: 0; border: 1px solid #888; width: 80%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); -webkit-animation-name: animatetop; -webkit-animation-duration: 0.4s; animation-name: animatetop; animation-duration: 0.4s}
+	@-webkit-keyframes animatetop {from {top:-300px; opacity:0} to {top:0; opacity:1}}
+	@keyframes animatetop {from {top:-300px; opacity:0} to {top:0; opacity:1}}
+	.close {color: white; float: right; font-size: 28px; font-weight: bold;}
+	.close:hover,.close:focus { color: #000; text-decoration: none; cursor: pointer;}
+	.modal-header {padding: 2px 16px; background-color:orange; color: black;}
+	.modal-body {padding: 2px 16px; background-color:#ECECEC;}
+</style>
+</head>
+
+<body>
+	<div class="navBar">
+        <div class="navChild", id="home">
+            Home
+        </div>
+        <div class="navChild", id="attractions">
+            Attractions
+            <ul>
+                <li>Hayride</li>
+                <li>Haunted House</li>
+                <li>Corn Maze</li>
+                <li>Food</li>
+            </ul>
+        </div>
+        <div class="navChild", id="calendar">
+            Calendar
+        </div>
+        <div class="navChild", id="contact">
+            Contact Us
+        </div>
+    </div>
+	<div class="contact-form">
+	    <span>Your Name:</span>
+		<br>
+	    <form id="contact-form" method="post" action="">
+		<input name="name" type="text" class="form-control" placeholder="Ex:John Smith" required vspace="20px">
+		<br>
+		<br>
+		<span>Your Email</span>
+		<br>
+		<input name="email" type="email" class="form-control" placeholder="example@gmail.com" required vspace="20px">
+		<br>
+		<br>
+		<span>Your Message</span>
+		<br>
+		<textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+		<br>
+		<br>
+		<input type="submit" class="form-control submit" value="SEND" vspace="10px" style="width:260px">	
+		</form>
+	</div>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+			  <span class="close">&times;</span>
+			  <h2>Haunted Hay Ride</h2>
+			</div>
+			<div class="modal-body">
+			  <p>Get 25% OFF your next hay ride by using the code: HJD280</p>
+			  <p style="color:red">Offer expires Jan. 1st, 2020</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

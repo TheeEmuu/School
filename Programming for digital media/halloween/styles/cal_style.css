@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Roboto-Slab;
+    src: url(fonts/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #2b2b2b;
+}
+
+#header {
+    font-size: 45px;
+    margin: auto;
+    text-align: center;
+    font-family: Roboto-Slab;
+}
+.days {
+  justify-content: center;
+  margin: 0;
+}
+
+.weekdays {
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.weekdays li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13%;
+  height: 100%;
+  margin: auto;
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-size: 25px;
+  color: black;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13%;
+  height: 100%;
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 25px;
+  color: black;
+}
+
+.days li > div {
+    text-align: right;
+    font-family: Roboto;
+    width: 95%;
+    height: 155.5px;
+    margin: auto;
+    margin-right: -47.75px;
+    margin-bottom: 5px;
+    padding-top: 4.5px;
+    padding-right: 4.5px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    min-height: 155.5px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#number {
+    font-size: 25px;
+}
+
+#info {
+    margin-top: 55px;
+    font-size: 28px;
+}
+
+#hours {
+    font-size: 17px;
+    margin-top: 0px;
+    padding: 0px;
+    top: 0;
+}
+
+[data-open="false"] {
+    background-color: #949494;
+}
+
+[data-open="true"] {
+    background-color: aquamarine;
+    margin-bottom: 0px;
+    
+}

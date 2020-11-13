@@ -1,0 +1,121 @@
+<!-- Eli -->
+<html>
+<head>
+    <title>Halloween Thing</title>
+    <link rel="stylesheet" href="styles/home_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="scripts/navBar.js"></script>
+    <link rel="stylesheet" href="styles/navBar.css">
+    <script>
+        var slideIndex = 1;
+        $(document).ready(function(){
+            showSlides(slideIndex);
+            $("#navBar").load("navBar.html");
+        });
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="navChild", id="home">
+            Home
+        </div>
+        <div class="navChild", id="attractions">
+            Attractions
+            <ul>
+                <li>Hayride</li>
+                <li>Haunted House</li>
+                <li>Corn Maze</li>
+                <li>Food</li>
+            </ul>
+        </div>
+        <div class="navChild", id="calendar">
+            Calendar
+        </div>
+        <div class="navChild", id="contact">
+            Contact Us
+        </div>
+    </div>
+    <div id="slideshow" , class="slideshow">
+        <div class="slides fade">
+            <img src="assets/hayride.jpg" , width="100%", height="100%">
+        </div>
+        <div class="slides fade">
+            <img src="assets/cemetery.jpg" , width="100%", height="100%">
+        </div>
+        <div class="slides fade">
+            <img src="assets/haunted house.jpeg" , width="100%", height="100%">
+        </div>
+        <div class="slides fade">
+            <img src="assets/scarecrow.jpg" , width="100%", height="100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <section id="containers">
+        <div id="leftContainer" , class="textContainer">
+            <div style="font-size: 48; font-weight: bold;">
+                News
+            </div>
+            <div class="containerBox">
+                Hay ride opens this week!
+            </div>
+            <div class="containerBox">
+                New attraction: The Haunted Hayride coming this Halloween
+            </div>
+            <div class="containerBox">
+                Check out this year's lineup on the attractions page, new attractions every year!
+            </div>
+            <div class="containerBox">
+                Opening week is upon us, make sure to get your tickets now
+            </div>
+        </div>
+        <div id="spacer"></div>
+        <div id="rightContainer" , class="textContainer">
+            <div style="font-size: 48; font-weight: bold;">
+                Social Media
+            </div>
+            <div class="containerBox">
+                Twitter: Come check out the new ride this weekend!
+            </div>
+            <div class="containerBox">
+                Facebook: 
+            </div>
+            <div class="containerBox">
+                placeholder
+            </div>
+            <div class="containerBox">
+                placeholder
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
